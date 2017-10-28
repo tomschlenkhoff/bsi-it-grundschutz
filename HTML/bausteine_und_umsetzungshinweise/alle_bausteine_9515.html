@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.3.4 Samba
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_9515.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_9515.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine und Umsetzungshinweise
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine und Umsetzungshinweise</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine und Umsetzungshinweise</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.3.4 Samba</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.3.4 Samba</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#9515_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9515_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9515_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9515_1.3">
+<span class="toctext">1.3 Abgrenzung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9515_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#9515_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9515_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9515_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9515_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9515_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9515_4.1">
+<span class="toctext">4.1 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9515_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="9515_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="9515_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p><span style="font-style: italic">Samba</span> ist ein frei verfügbarer und vollwertiger Active Directory Domain Controller (AD DC), der Authentisierungs-, Datei- und Druckdienste bereitstellen kann und dadurch die Interoperabilität zwischen der Windows- und Unix-Welt ermöglicht. <span style="font-style: italic">Samba</span> führt viele unterschiedliche Protokolle und Techniken zusammen. Dazu gehört beispielsweise das <span style="font-style: italic">Server-Message-Block-(SMB)-</span>Protokoll, auch bekannt unter dem neueren Namen <span style="font-style: italic">Common Internet File System</span> (CIFS). Als <span style="font-style: italic">Samba</span>-Server werden Server bezeichnet, auf denen <span style="font-style: italic">Samba</span> betrieben wird. In der Regel sind das Linux-Server. </p>
+<p>Wurde <span style="font-style: italic">Samba</span> korrekt konzipiert und ordentlich konfiguriert, interagiert die Anwendung mit einem Windows-Client oder -Server, als ob er selbst ein Windows-System wäre.</p>
+</p>
+<a name="9515_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel des Bausteins ist es darzustellen, wie <span style="font-style: italic">Samba</span> in Institutionen sicher eingesetzt werden kann und wie sich die durch Samba bereitgestellten Informationen schützen lassen.</p>
+</p>
+<a name="9515_1.3"></a>
+<h3>1.3 Abgrenzung</h3>
+<p>
+<p>Dieser Baustein betrachtet <span style="font-style: italic">Samba</span> als Authentisierungs-, Datei- und Druckdienst. Da <span style="font-style: italic">Samba</span> in der Regel auf Linux-Servern eingesetzt wird und dort aus der Windows-Server-Welt bekannte Dienste darstellt, sind die Sicherheitsaspekte der Bausteine SYS.1.1 <span style="font-style: italic">Allgemeiner Server</span> und SYS.2.1 <span style="font-style: italic">Server unter Linux</span> zu berücksichtigen. Sicherheitsanforderungen für Drucker, Fileserver oder Verzeichnisdienste sind dagegen nicht Bestandteil dieses Bausteins, sondern werden in den Bausteinen SYS.4.1 <span style="font-style: italic">Drucker, Kopierer und Multifunktionsgeräte</span>, APP.2.1 <span style="font-style: italic">Allgemeiner Verzeichnisdienst</span> und APP.3.6 <span style="font-style: italic">DNS-Server</span> sowie APP.2.3 <span style="font-style: italic">OpenLDAP</span>, auch wenn die <span style="font-style: italic">Samba</span>-internen DNS- und LDAP-Dienste verwendet werden, beschrieben. Des Weiteren sind aufgrund der <span style="font-style: italic">Samba</span>-Funktionen, die Bausteine APP.3.3 <span style="font-style: italic">Fileserver</span> und APP.2.2 <span style="font-style: italic">Active Directory</span> zu berücksichtigen.</p>
+</p>
+<a name="9515_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind im Bereich<span style="font-style: italic"> Samba</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Abhören ungeschützter Kommunikationsverbindungen von Samba</h3>
+<p>
+<p>Wenn Angreifer ungeschützte Kommunikationsverbindungen von <span style="font-style: italic">Samba</span> abhören, können Informationen abgefangen und missbraucht werden. Beim Dateitransfer zwischen Linux-Servern, Windows-Servern und Clients werden oftmals Protokolle ohne umfangreiche Sicherheitseigenschaften eingesetzt, sodass sowohl Authentifizierungs- als auch Nutzdaten für Dritte zugänglich sind und von Unberechtigten missbraucht werden könnten. Das kann dazu führen, dass schützenswerte Informationen aus der Institution fließen.</p>
+</p>
+<h3>2.2 Fehlerhafte Protokollierung in Samba</h3>
+<p>
+<p>Nicht sachgerecht gestaltete oder fehlende Protokollierung in <span style="font-style: italic">Samba</span> kann zu Sicherheitsproblemen führen. Ohne eine angemessene Protokollierung bleiben Fehler oder Angriffe unerkannt und es können keine Präventivmaßnahmen und Indikatoren für Frühwarnsysteme definiert werden.</p>
+</p>
+<h3>2.3 Fehlerhafte Notfallvorsorge in Samba</h3>
+<p>
+<p>Auch Defizite bei der Notfallvorsorge können zu längeren Ausfallzeiten von <span style="font-style: italic">Samba</span> führen. So kann sich etwa nach einen erfolgten Angriff eine notwendige Neuinstallation verzögern, wenn Installationspakete nicht verfügbar sind. Vorhandene Installationspakete können wiederum zu unerwünschten Ergebnissen führen, wenn keine Versionsverwaltung für die Konfigurationsdateien verwendet wurde oder Kompilierungs- sowie Installationsoptionen der <span style="font-style: italic">Samba</span>-Server nicht vorgehalten werden.</p>
+</p>
+<h3>2.4 Fehlende Anpassung von Samba</h3>
+<p>
+<p>Um einige Fähigkeiten des <span style="font-style: italic">Samba</span>-Servers zu zeigen und um den Administratoren einen schnellen Einstieg zu ermöglichen, wird während der Installation des <span style="font-style: italic">Samba</span>-Servers die Konfigurationsdatei <span style="font-style: italic">smb.conf</span> mit Standardeinstellungen erzeugt. Mit den in dieser Datei voreingestellten Optionen kann der <span style="font-style: italic">Samba</span>-Server im Anschluss gestartet werden. Wird diese Datei unbedacht ohne weitere Einstellungen benutzt, kann das zu erheblichen Sicherheitslücken führen. Doch auch wenn die Datei geändert wird, können Fehler auftreten, die dazu führen, dass vertrauliche Informationen eingesehen werden können oder dass die Sicherheit, die Verfügbarkeit und die Leistung der Dienste eines <span style="font-style: italic">Samba</span>-Servers beeinträchtigt werden.</p>
+</p>
+<h3>2.5 Software-Schwachstellen oder -Fehler in Samba</h3>
+<p>
+<p><span style="font-style: italic">Samba</span> ist eine freie Software, die innerhalb einer Community erstellt und weiterentwickelt wird. Eine gleichmäßige Qualität des Quellcodes kann daher nicht gewährleistet werden. Das kann zu Software-Schwachstellen oder -Fehlern und damit zu schwerwiegenden Sicherheitslücken in der Anwendung oder allen damit vernetzten IT-Systemen führen. Angreifer können solche Sicherheitslücken für unterschiedliche Angriffe nutzen. So beispielsweise, um Schadsoftware einzuschleusen und damit möglicherweise unbefugt an schützenswerte Informationen, wie vertrauliche Daten oder Dokumente und Zugangsdaten, zu gelangen. Ferner können Angreifer über Sicherheitslücken IT-Systeme manipulieren, was dazu führen kann, dass sich diese nicht mehr benutzen lassen oder nur noch fehlerhaft funktionieren.</p>
+</p>
+<h3>2.6 Unberechtigte Nutzung oder Administration von Samba</h3>
+<p>
+<p>Unbefugte können durch die Nutzung von Anwendungen oder Systemen an vertrauliche Informationen gelangen, diese manipulieren oder Störungen verursachen, sodass sie <span style="font-style: italic">Samba</span> unberechtigt administrieren können. Besonders kritisch ist es, wenn Konfigurationswerkzeuge wie z. B. das <span style="font-style: italic">Samba Web Administration Tool</span> (SWAT) eingesetzt werden. SWAT war bis vor Version 4 ein fester Bestandteil von <span style="font-style: italic">Samba</span>, wurde aber von den <span style="font-style: italic">Samba</span>-Entwicklern gering priorisiert. Daher wurden auch schwächere oder gar keine Sicherheitsmechanismen implementiert, beispielsweise wurde HTTPS nicht unterstützt.</p>
+</p>
+<h3>2.7 Fehlerhafte Administration von Samba</h3>
+<p>
+<p>Sind die Administratoren mit den umfangreichen Funktionen, Komponenten, Optionen und Konfigurationseinstellungen von <span style="font-style: italic">Samba</span> zu wenig vertraut, kann dies zu weitreichenden Komplikationen führen. So können Fehlkonfigurationen des DNS oder des Benutzer- und Rechtemanagements dazu führen, dass Unbefugte auf Ressourcen zugreifen können. Des Weiteren kann dies zu Betriebsunterbrechungen führen oder es können schützenswerte Informationen offengelegt werden.</p>
+</p>
+<h3>2.8 Schadprogramme im Umfeld von Samba-Diensten</h3>
+<p>
+<p>Wird <span style="font-style: italic">Samba</span> auf Linux-Systemen als Dateiserver eingesetzt, dann ist der Server selbst nicht direkt anfällig für Windows-Schadprogramme. Diese können aber in infizierten Dateien enthalten sein, die darauf abgelegt sind. Durch das <span style="font-style: italic">Samba</span>-System werden dann diese infizierten Dateien allen angebundenen Windows-Clients bereitgestellt und somit aktiv verbreitet.</p>
+</p>
+<h3>2.9 Datenverlust bei Samba</h3>
+<p>
+<p>Ein Datenverlust wirkt sich erheblich auf den IT-Einsatz aus. Wenn geschäftsrelevante Informationen zerstört oder verfälscht werden, können dadurch Geschäftsprozesse und Fachaufgaben verzögert oder gar nicht mehr ausgeführt werden. Bei <span style="font-style: italic">Samba</span> ist beispielsweise zu beachten, dass sich die Eigenschaften der Dateisysteme unter Windows und Unix erheblich voneinander unterscheiden. Deswegen ist nicht immer sichergestellt, dass die Zugriffsrechte unter Windows aufrechterhalten bleiben. Auch können dadurch Informationen zu <span style="font-style: italic">Alternate Data Streams</span> (ADS) und DOS-Attributen verloren gehen.</p>
+</p>
+<h3>2.10 Integritätsverlust schützenswerter Informationen bei Samba</h3>
+<p>
+<p>Wenn Informationen nicht mehr integer sind, kann es dadurch zu vielen Problemen kommen. Informationen können dann im einfachsten Fall nicht mehr gelesen, also auch nicht mehr weiterverarbeitet werden. <span style="font-style: italic">Samba</span> selbst legt wichtige Betriebsdaten in Datenbanken im <span style="font-style: italic">Trivial-Database</span>-(TDB)-Format ab. Sollten diese Datenbanken vom Betriebssystems nicht ausreichend leistungsfähig und konsistent behandelt werden, können sie Probleme verursachen, wenn <span style="font-style: italic">Samba</span>-Dienste benutzt werden.</p>
+</p>
+<a name="9515_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind spezifische Anforderungen für den Bereich <span style="font-style: italic">Samba</span> aufgeführt. Grundsätzlich ist der IT-Betrieb dafür zuständig, die Anforderungen zu erfüllen. Abweichungen hiervon werden in den entsprechenden Anforderungen gesondert erwähnt. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür verantwortlich, dass alle Anforderungen gemäß dem festlegten Sicherheitskonzept erfüllt und überprüft werden.</p>
+</p>
+<table>
+<tr>
+<th>Bausteinverantwortlicher</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Verantwortliche</th>
+<td>
+Leiter IT
+</td>
+</tr>
+</table>
+<a name="9515_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN vorrangig umgesetzt werden:</p>
+<ul>
+<li><h4>APP.3.4.A1 Planung des Einsatzes eines Samba-Servers [Leiter IT]</h4>
+<p>Die Einführung eines <span style="font-style: italic">Samba</span>-Servers MUSS sorgfältig geplant und geregelt werden. Dabei MUSS abhängig vom Einsatzszenario definiert werden, welche Aufgaben der <span style="font-style: italic">Samba</span>-Server zukünftig erfüllen soll, in welcher Betriebsart er daher betrieben wird und welche Komponenten von <span style="font-style: italic">Samba</span> und welche weiteren Komponenten dafür erforderlich sind.</p>
+<p>Soll die Cluster-Lösung CTDB (Cluster Trivia Data Base) eingesetzt werden, MUSS die Einführung von Samba sorgfältig konzeptioniert werden. Wenn <span style="font-style: italic">Samba</span> die Active-Directory-(AD)-Dienste auch für Linux- und Unix-Systeme bereitstellen soll, MUSS die Einführung sorgfältig geplant und die Installation getestet werden. Des Weiteren MUSS das Authentisierungsverfahren für das AD sorgfältig konzipiert und implementiert werden. Die Einführung und die Reihenfolge, in der die <span style="font-style: italic">Stackable-Virtual-File-System-</span>(VFS)-Module ausgeführt werden, MUSS sorgfältig konzipiert und die Umsetzung dokumentiert werden.</p>
+<p>Wird IPv6 unter Samba benutzt, MUSS auch das sorgfältig geplant und zudem in einer betriebsnahen Testumgebung auf eine fehlerfreie Integration hin überprüft werden.</p>
+</li>
+<li><h4>APP.3.4.A2 Sichere Grundkonfiguration eines Samba-Servers</h4>
+<p>Nachdem der <span style="font-style: italic">Samba</span>-Server installiert wurde, MUSS der Dienst sicher konfiguriert werden. Hierfür MÜSSEN unter anderem Einstellungen für die Zugriffskontrollen, aber auch Einstellungen, welche die Leistungsfähigkeit des Servers beeinflussen, angepasst werden. Es MUSS sichergestellt werden, dass die Zugriffsberechtigungen für jeden Benutzer individuell bestimmt werden.</p>
+<p>Generell MUSS sichergestellt werden, dass nur ausgewählten Benutzern und Benutzergruppen erlaubt wird, sich mit dem <span style="font-style: italic">Samba</span>-Dienst zu verbinden und dass Benutzer nur auf die Informationen innerhalb ihrer Freigaben zugreifen können.</p>
+<p><span style="font-style: italic">Samba</span> MUSS so konfiguriert werden, dass Verbindungen nur von sicheren Hosts und Netzen entgegengenommen werden und dass es sich nur mit sicheren Netzadressen verbindet. Änderungen an der Konfiguration SOLLTEN sorgfältig dokumentiert werden, sodass zu jeder Zeit nachvollzogen werden kann, wer aus welchem Grund was geändert hat. Dabei MUSS nach jeder Änderung überprüft werden, ob die Syntax noch korrekt ist.</p>
+<p>Zusätzliche Softwaremodule, wie SWAT, DÜRFEN NICHT installiert werden.</p>
+</li>
+</ul>
+<a name="9515_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik im Bereich Samba. Sie SOLLTEN grundsätzlich umgesetzt werden.</p>
+<ul>
+<li><h4>APP.3.4.A3 Sichere Konfiguration des Betriebssystems für einen Samba-Server</h4>
+<p>Datenbanken im Trivial-Database-(TDB)-Format SOLLTEN NICHT auf einer Partition gespeichert werden, die ReiserFS als Dateisystem benutzt. Wird eine <span style="font-style: italic">netlogon</span>-Freigabe konfiguriert, SOLLTEN unberechtigte Benutzer NICHT Dateien in dieser Freigabe modifizieren können.</p>
+<p>Das Betriebssystem des <span style="font-style: italic">Samba</span>-Servers SOLLTE Access Control Lists (ACLs) in Verbindung mit dem eingesetzten Dateisystem unterstützen. Zusätzlich SOLLTE sichergestellt werden, dass das Dateisystem mit den passenden Parametern eingebunden wird.</p>
+<p>Die Voreinstellungen von <span style="font-style: italic">SMB</span> <span style="font-style: italic">Message Signing</span> SOLLTEN beibehalten werden, sofern sie nicht im Widerspruch zu den existierenden Sicherheitsrichtlinien im Informationsverbund stehen. Mit einem lokalen Paketfilter SOLLTEN Ports, über die der <span style="font-style: italic">Samba</span>-Server nicht erreichbar sein soll, geblockt werden.</p>
+<p>Es SOLLTE <span style="font-style: italic">Kerberos</span> eingesetzt werden, um die Schwachstellen von NT LAN-Manager (NTLM) oder NTLMv2 sowie eine zu hohe Netzlast zu vermeiden. Wird mit <span style="font-style: italic">Kerberos</span> authentisiert, SOLLTE der zentrale Zeitserver lokal auf dem Domain Controller installiert werden. Der NTP-Dienst SOLLTE so gehärtet werden, dass nur autorisierte Clients die Zeit abfragen können.</p>
+</li>
+<li><h4>APP.3.4.A4 Sicherstellung der NTFS-Eigenschaften auf einem Samba-Server</h4>
+<p>Wird eine Version von <span style="font-style: italic">Samba</span> eingesetzt, die im <span style="font-style: italic">New Technology File System</span> (NTFS) sogenannte <span style="font-style: italic">Alternate Data Streams</span> (ADS) nicht abbilden kann, SOLLTE sichergestellt werden, dass Dateisystemobjekte keine ADS mit wichtigen Informationen enthalten, bevor diese über Systemgrenzen hinweg kopiert oder verschoben werden.</p>
+</li>
+<li><h4>APP.3.4.A5 Sichere Konfiguration der Zugriffssteuerung bei einem Samba-Server</h4>
+<p>Die von <span style="font-style: italic">Samba</span> standardmäßig verwendeten Parameter, mit denen DOS-Attribute auf das Linux-Dateisystem abgebildet werden, SOLLTEN NICHT verwendet werden. Stattdessen SOLLTE <span style="font-style: italic">Samba</span> so konfiguriert werden, dass es DOS-Attribute und die Statusindikatoren zur Vererbung (Flag) in <span style="font-style: italic">Extended Attributes</span> speichert. Die Freigaben SOLLTEN ausschließlich über die Registry verwaltet werden.</p>
+<p>Ferner SOLLTEN die effektiven Zugriffsberechtigungen auf die Freigaben des <span style="font-style: italic">Samba</span>-Servers ebenso wie die Protokolldateien regelmäßig überprüft werden.</p>
+</li>
+<li><h4>APP.3.4.A6 Sichere Konfiguration von Winbind unter Samba</h4>
+<p>Der Einsatz von <span style="font-style: italic">Winbind</span> SOLLTE sorgfältig geplant und geregelt werden. Für jeden Windows-Domänenbenutzer SOLLTE im Betriebssystem des Servers ein Benutzerkonto mit allen Gruppenmitgliedschaften vorhanden sein. Falls das nicht möglich ist, SOLLTE <span style="font-style: italic">Winbind</span> eingesetzt werden. Dabei SOLLTE <span style="font-style: italic">Winbind</span> Domänen-Benutzernamen in eindeutige Linux-Benutzernamen umsetzen. Hierbei SOLLTE beachtet werden, dass Kollisionen zwischen lokalen Linux-Benutzern und Domänen-Benutzern verhindert werden.</p>
+<p>Des Weiteren SOLLTEN die PAM (<span style="font-style: italic">Pluggable Authentication Modules</span>) eingebunden werden.</p>
+</li>
+<li><h4>APP.3.4.A7 Sichere Konfiguration von DNS unter Samba</h4>
+<p>Wenn <span style="font-style: italic">Samba</span> als DNS-Server eingesetzt wird, SOLLTE die Einführung sorgfältig geplant und die Umsetzung vorab getestet werden. </p>
+<p>Da <span style="font-style: italic">Samba</span> verschiedene AD-Integrationsmodi unterstützt, SOLLTEN die DNS-Einstellungen entsprechend dem Verwendungsszenario von <span style="font-style: italic">Samba</span> vorgenommen werden. Wird <span style="font-style: italic">Samba</span> als primärer AD DC verwendet, SOLLTE der DNS-Dienst auf dem <span style="font-style: italic">Samba-</span>Server installiert und sorgfältig konfiguriert werden.</p>
+</li>
+<li><h4>APP.3.4.A8 Sichere Konfiguration von LDAP unter Samba</h4>
+<p>Werden die Benutzer unter <span style="font-style: italic">Samba</span> mit LDAP verwaltet, SOLLTE das sorgfältig geplant und dokumentiert werden. Die Zugriffsberechtigungen auf das LDAP SOLLTEN mittels ACLs geregelt werden.</p>
+</li>
+<li><h4>APP.3.4.A9 Sichere Konfiguration von Kerberos unter Samba</h4>
+<p>Zur Authentisierung SOLLTE das von <span style="font-style: italic">Samba</span> implementierte <span style="font-style: italic">Heimdal Kerberos Key Distribution Center</span> (KDC) verwendet werden. Es SOLLTE darauf geachtet werden, dass die von <span style="font-style: italic">Samba</span> vorgegebene Kerberos-Konfigurationsdatei verwendet wird. Es SOLLTEN nur ausreichend sichere Verschlüsselungsverfahren für Kerberos-Tickets benutzt werden.</p>
+</li>
+<li><h4>APP.3.4.A10 Sicherer Einsatz externer Programme auf einem Samba-Server</h4>
+<p>Da externe Programme Einfallstore für Angreifer bieten, SOLLTE sichergestellt werden, dass <span style="font-style: italic">Samba</span> nur überprüfte und vertrauenswürdige externe Programme aufruft.</p>
+</li>
+<li><h4>APP.3.4.A11 Sicherer Einsatz von Kommunikationsprotokollen beim Einsatz eines Samba-Servers</h4>
+<p>Für ein zuverlässig funktionierendes Netz SOLLTEN auf den Windows-Clients nur wirklich benötigte Protokolle genutzt werden. Falls <span style="font-style: italic">Netware</span>-Systeme auf den <span style="font-style: italic">Samba</span>-Server zugreifen müssen, SOLLTE berücksichtigt werden, dass <span style="font-style: italic">Internetwork Packet Exchange</span> (IPX) benötigt wird. Sofern IPv6 eingesetzt wird, SOLLTEN erforderliche Besonderheiten berücksichtigt werden.</p>
+</li>
+<li><h4>APP.3.4.A12 Schulung der Administratoren eines Samba-Servers</h4>
+<p>Administratoren SOLLTEN zu den genutzten spezifischen Bereichen von <span style="font-style: italic">Samba</span>, wie z. B. Benutzerauthentisierung, Windows- und Unix-Rechtemodelle, aber auch zu NTFS ACLs und NTFS ADS ausgebildet werden.</p>
+</li>
+<li><h4>APP.3.4.A13 Regelmäßige Sicherung wichtiger Systemkomponenten eines Samba-Servers</h4>
+<p>Es SOLLTEN alle Systemkomponenten in das institutionsweite Datensicherungskonzept eingebunden werden, die erforderlich sind, um einen <span style="font-style: italic">Samba</span>-Server wiederherzustellen. Auch die Kontoinformationen aus allen eingesetzten Backends SOLLTEN berücksichtigt werden. Ebenso SOLLTEN alle TDB-Dateien gesichert werden. Des Weiteren SOLLTE die Registry mitgesichert werden, falls sie für Freigaben eingesetzt wurde. </p>
+<p>Die Konfigurationsdaten, Statusinformationen und Systemdateien SOLLTEN kompatibel zueinander sein.</p>
+</li>
+<li><h4>APP.3.4.A14 Erstellen eines Notfallplans für den Ausfall von Samba-Servern</h4>
+<p>Um den <span style="font-style: italic">Samba</span>-Server im Notfall schnell neu installieren zu können, SOLLTEN die notwendigen Installationspakete und Informationen an einem festgelegten Ort hinterlegt werden. Es SOLLTE gewährleistet sein, dass sie jederzeit verfügbar sind. Die Dokumentation der <span style="font-style: italic">Samba</span>-Konfiguration SOLLTE dabei stets aktuell und nachvollziehbar sein.</p>
+<p>Für den <span style="font-style: italic">Samba</span>-Server SOLLTE abhängig von der Serverrolle und den Verfügbarkeitsanforderungen getestet werden, ob er sich wiederherstellen lässt und wie lange das dauert. Anhand der Ergebnisse SOLLTE der Notfallplan verbessert werden.</p>
+</li>
+</ul>
+<a name="9515_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse. Die jeweils in Klammern angegebenen Buchstaben zeigen an, welche Grundwerte durch die Anforderung vorrangig geschützt werden (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit).</p>
+<ul>
+<li><h4>APP.3.4.A15 Verschlüsselung der Datenpakete unter Samba(CI)</h4>
+<p>Um die Integrität und Vertraulichkeit der Datenpakete auf dem Transportweg zu gewährleisten, SOLLTEN die Datenpakete mit den in SBM3 integrierten Verschlüsselungsverfahren verschlüsselt werden.</p>
+</li>
+</ul>
+<a name="9515_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<a name="9515_4.1"></a>
+<h3>4.1 Literatur</h3>
+<p>Weiterführende Informationen zu Gefährdungen und Sicherheitsmaßnahmen im Bereich "Samba" finden sich unter anderem in folgenden Veröffentlichungen:</p>
+<ul class="literaturverzeichnis">
+<li>[SAMBA] Samba<br>Opening Windows to a Wider World, SAMBA, (zuletzt abgerufen am 29.09.2017)<br><a href="https://www.samba.org/">https://www.samba.org/</a></li>
+<li>[UBUNTU] ubuntuuser<br>Wiki Samba, (zuletzt abgerufen am 29.09.2017)<br><a href="https://wiki.ubuntuusers.de/Samba">https://wiki.ubuntuusers.de/Samba</a></li>
+</ul>
+<a name="9515_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die folgenden elementaren Gefährdungen sind für den Baustein "Samba" von Bedeutung.</p>
+<ul>
+<li>G 0.15 Abhören</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>G 0.15</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.3.4.A1</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A2</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A3</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A4</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A5</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.4.A6</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A7</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A8</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A9</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A10</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A11</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A12</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.4.A13</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.4.A15</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

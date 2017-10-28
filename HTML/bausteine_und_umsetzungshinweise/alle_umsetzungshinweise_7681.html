@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+Umsetzungshinweise zum Baustein NET.2.1 WLAN-Betrieb
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_7681.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_7681.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine und Umsetzungshinweise
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine und Umsetzungshinweise</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine und Umsetzungshinweise</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">
+Umsetzungshinweise zum Baustein NET.2.1 WLAN-Betrieb
+</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>
+Umsetzungshinweise zum Baustein NET.2.1 WLAN-Betrieb
+</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#7681_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7681_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7681_1.2">
+<span class="toctext">1.2 Lebenszyklus</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7681_2">
+<span class="toctext">2 Maßnahmen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7681_2.1">
+<span class="toctext">2.1 Basis-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7681_2.2">
+<span class="toctext">2.2 Standard-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7681_2.3">
+<span class="toctext">2.3 Maßnahmen für erhöhten Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7681_3">
+<span class="toctext">3 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7681_3.1">
+<span class="toctext">3.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7681_3.2">
+<span class="toctext">3.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="7681_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="7681_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>WLANs können entsprechend den Bedürfnissen eines Betreibers und der Hardware-Ausstattung, die zur Verfügung steht, in zwei verschiedenen Modi betrieben werden. Im Ad-hoc-Modus kommunizieren zwei oder mehr mobile Endgeräte, die mit einer WLAN-Karte ausgestattet sind, direkt miteinander. Da sich WLANs im Ad-hoc-Modus selbstständig, ohne feste Infrastruktur aufbauen und konfigurieren können und somit eine vollvermaschte parallele Netz-Infrastruktur etablieren können, wird davon abgeraten, WLANs im Ad-hoc-Modus in einer zu schützenden Umgebung zu betreiben. Dieser wird im Folgenden nicht weiter betrachtet. In den vorliegenden Umsetzungshinweisen wird davon ausgegangen, dass alle Access Points (Zugangspunkte) zentral administriert und nicht im Ad-hoc-Modus betrieben werden. </p>
+<p>Für die Umsetzungshinweise wird auf die folgenden drei fiktiven Szenarien zurückgegriffen.</p>
+<p>1. Szenario</p>
+<ul><li>Die Informationen sind nicht als vertraulich klassifiziert.</li><li>Access Points dürfen über eine Cloud-Infrastruktur administriert werden.</li><li>Die Benutzer nutzen die zur Verfügung gestellte WLAN-Infrastruktur für die Telefonie.</li></ul>
+<p>2. Szenario</p>
+<ul><li>Die Informationen sind teilweise als vertraulich klassifiziert.</li><li>Access Points dürfen nicht über eine Cloud-Infrastruktur administriert werden.</li><li>Die Benutzer nutzen die zur Verfügung gestellte WLAN-Infrastruktur für die Telefonie.</li><li>Die Benutzer können über die WLAN-Infrastruktur außerdem auf interne Kollaborations- und Dokumentenmanagementsysteme zugreifen.</li></ul>
+<p>3. Szenario</p>
+<ul><li>Die Informationen sind teilweise als streng vertraulich klassifiziert.</li><li>Access Points dürfen nicht über eine Cloud-Infrastruktur administriert werden.</li><li>Die Benutzer nutzen die zur Verfügung gestellte WLAN-Infrastruktur für die Telefonie.</li><li>Die Benutzer können über die WLAN-Infrastruktur außerdem auf interne Kollaborations- und Dokumentenmanagementsysteme, Finanzdaten oder kritische Systeme der Institution zugreifen.</li></ul>
+</p>
+<a name="7681_1.2"></a>
+<h3>1.2 Lebenszyklus</h3>
+<p>
+<p><span style="font-weight: bold">Planung und Konzeption</span></p>
+<p>Alle gewünschten Nutzungsszenarien und Funktionen sowie die damit einhergehenden regulatorischen Anforderungen sollten in der Planungs- und Konzeptionsphase in das Design der zukünftigen WLAN-Infrastruktur einfließen. Grundlage hierfür ist eine durchdachte WLAN-Strategie (siehe NET.2.1.M1 <span style="font-style: italic">Festlegung einer Strategie für den Einsatz von WLANs</span>). Die bestehenden Prozesse sollten darauf hin analysiert werden, ob sie mögliche Schnittstellen zu den Prozessen der zukünftigen WLAN-Infrastruktur aufweisen und bei Bedarf sollten sie aktualisiert werden. Zudem sollte geprüft werden, ob die Funktionen, die die WLAN-Infrastruktur mit sich bringt mit den geschäftlichen, sicherheitstechnischen und datenschutzrechtlichen Regelungen vereinbar sind.</p>
+<p>Neben der Strategie sind die Auswahl des richtigen WLAN-Standards und den damit verbundenen Kryptoverfahren (siehe NET.2.1.M2 <span style="font-style: italic">Auswahl eines geeigneten WLAN-Standards</span> und NET.2.1.M3 <span style="font-style: italic">Auswahl geeigneter Kryptoverfahren für WLAN</span>) wichtige Themen, die bereits in der Planungsphase adressiert werden müssen.</p>
+<p>Alle getroffenen Entscheidungen über Sicherheitseinstellungen, ausgewählte WLAN-Standards, sowie die Regelungen für die Administration des WLANs, sollten in einer WLAN-Sicherheitsrichtlinie niederzuschreiben (siehe NET.2.1.M10 <span style="font-style: italic">Erstellung einer Sicherheitsrichtlinie für den Betrieb von WLANs</span>). Wissenswertes zu WLANs ist unter &#34;Wissenswertes&#34; im Kapitel 3.1.1 <span style="font-style: italic">Einführung in WLAN-Grundbegriffe</span> zu finden. </p>
+<p><span style="font-weight: bold">Beschaffung</span></p>
+<p>Bei der Auswahl der WLAN-Komponenten ist die Maßnahme NET.2.1.M11 <span style="font-style: italic">Geeignete Auswahl von WLAN-Komponenten</span> anzuwenden. Da sich Standards, Protokolle und integrierte Sicherheitsmechanismen stetig fortentwickeln, unterliegen WLANs einem schnellen Wandel. Dies bedeutet, dass die WLAN-Infrastruktur an sich oder einzelne Komponenten häufiger migriert werden müssen. Für Migrationsphasen einzelner WLAN-Komponenten oder gar ganzer WLAN-Bereiche müssen notwendige WLAN-Migrationsschritte sorgfältig geplant und idealerweise in einem Proof of Concept (Machbarkeitsnachweis) vor der eigentlichen Migration verifiziert werden.</p>
+<p><span style="font-weight: bold">Umsetzung</span></p>
+<p>Um die maximal möglichen Übertragungsraten zu erreichen, ist es nicht unerheblich, an welcher Stelle die Access Points im Raum positioniert sind (siehe NET.2.1.M4 <span style="font-style: italic">Geeignete Aufstellung von Access Points</span>). Die WLAN-Komponenten oder die WLAN-Managementlösung müssen bei der Installation stets gemäß den internen Sicherheitsrichtlinien konfiguriert werden (siehe NET.2.1.M5 <span style="font-style: italic">Sichere Basis-Konfiguration der Access Points</span> und NET.2.1.M6 <span style="font-style: italic">Sichere Konfiguration der WLAN-Clients</span>). Werden WLANs mit der eventuell bereits vorhandenen kabelgebundenen Infrastruktur verbunden, muss der Übergang zwischen WLANs und LAN entsprechend des höheren Schutzbedarfs abgesichert werden (siehe NET.2.1.M7 <span style="font-style: italic">Aufbau eines Distribution Systems</span> und NET.2.1.M9 <span style="font-style: italic">Sichere Anbindung von WLANs an ein LAN</span>).</p>
+<p>Um Fehlkonfigurationen oder Fehlbedienungen zu vermeiden und auf mögliche Gefahren hinzuweisen, die entstehen können, wenn WLANs unsachgemäß betrieben werden, sind Verantwortliche ausreichend zu schulen und zu sensibilisieren. Weitere Informationen hierzu sind im Baustein ORP.3 <span style="font-style: italic">Sensibilisierung und Schulung zur Informationssicherheit</span> zu finden. </p>
+<p><span style="font-weight: bold">Betrieb</span></p>
+<p>Ist das WLAN in Betrieb genommen und wurden alle WLAN-Verantwortlichen ausreichend geschult, so ist durch regelmäßige Audits (siehe NET.2.1.M14 <span style="font-style: italic">Regelmäßige Audits der WLAN-Komponenten</span>) sicherzustellen, dass alle getroffenen Sicherheitseinstellungen stets aktuell sind und diese Einstellungen auch greifen. Unumgänglich ist ein Schlüsselmanagement für die eingesetzten kryptographischen Schlüssel, um die Kommunikation in WLANs abzusichern (siehe CON.1 <span style="font-style: italic">Kryptokonzept</span>). Wird eine WLAN-Managementlösung (siehe NET.2.1.M12 <span style="font-style: italic">Einsatz einer geeigneten WLAN-Management-Lösung</span>) eingesetzt, können die Schlüssel, Einstellungen sowie die WLAN-Komponenten selbst zentral von einer Stelle aus verwaltet werden.</p>
+<p><span style="font-weight: bold">Aussonderung</span></p>
+<p>Werden WLAN-Komponenten außer Betrieb genommen, sind Konfigurationseinstellungen zu entfernen und wieder auf Standardwerte zurückzusetzen. Weitere Informationen hierzu sind im Baustein CON.6 <span style="font-style: italic">Löschen und Vernichten</span> zu finden.</p>
+<p><span style="font-weight: bold">Notfallvorsorge</span></p>
+<p>Wurden Angriffe auf WLANs erkannt, so müssen die Verantwortlichen der WLANs wissen, wie sie sich zu verhalten haben (siehe NET.2.1.M8 <span style="font-style: italic">Verhaltensregeln bei WLAN-Sicherheitsvorfällen</span>). Hieraus ergibt sich ein Notfallplan, welche Schritte notwendig und welche Personen zu informieren sind, wenn ein Sicherheitsvorfall eintritt. </p>
+</p>
+<a name="7681_2"></a>
+<h2>2 Maßnahmen</h2>
+<p>Im Folgenden sind spezifische Umsetzungshinweise im Bereich "WLAN-Betrieb" aufgeführt.</p>
+<a name="7681_2.1"></a>
+<h3>2.1 Basis-Maßnahmen</h3>
+<p>Die folgenden Maßnahmen sollten vorrangig umgesetzt werden:</p>
+<ul>
+<li>
+<h4>NET.2.1.M1&nbsp;Festlegung einer Strategie für den Einsatz von WLANs[Leiter IT]</h4>
+<p>Wenn die folgenden Fragen beantwortet werden, kann hieraus die WLAN-Strategie in ihren Grundzügen hergeleitet werden.</p>
+<ul><li>In welchen Bereichen (organisatorisch sowie räumlich) soll eine WLAN-Infrastruktur genutzt werden?</li><li>Welche Potenziale erschließt die Nutzung einer WLAN-Infrastruktur?
+<ul><li>Welche Aspekte der Mobilität werden durch WLANs ermöglicht?</li><li>Welche Funktionen bzw. Anwendungen sollen durch die WLAN-Nutzung bereitgestellt bzw. unterstützt werden (z. B. Voice over WLAN, Media Broadcasting, Kollaboration, Videokonferenzen, Gastzugang/Hotspot, Einbindung von mobilen Endgeräten, Client-Netz-Segmentierung)?</li><li>Welche Geschäftsprozesse lassen sich durch die Nutzung von WLANs optimieren?</li></ul>
+</li><li>Welches Sicherheitsrisiko entsteht dadurch, dass eine WLAN-Infrastruktur genutzt wird bzw. welches Risiko stellt der Verlust von Daten/Informationen über WLANs dar?</li><li>Welche gesetzlichen Regelungen müssen eingehalten werden?</li><li>Welche klassifizierten Daten/Informationen dürfen nicht ohne zusätzliche kryptographische Schutzmechanismen übertragen werden?</li><li>Wer ist für den Betrieb der WLAN-Infrastruktur verantwortlich?
+<ul><li>Wird die WLAN-Infrastruktur extern administriert?</li><li>Darf die WLAN-Infrastruktur cloudbasiert administriert werden?</li></ul>
+</li><li>Welche Anforderungen werden an die Verfügbarkeit der WLAN-Infrastruktur gestellt?</li></ul>
+</li>
+<li>
+<h4>NET.2.1.M2&nbsp;Auswahl eines geeigneten WLAN-Standards[Planer]</h4>
+<p>Im Rahmen des WLAN-Designs, das den dokumentierten strategischen Anforderungen folgt, müssen potenziell störende Systeme in der Nähe des späteren Aufstellungsorts von Access Points ermittelt und evaluiert werden. Werden Mikrowellen in der Nähe von Access Points oder anderen IT-Systemen betrieben, können Störungen auftreten. Mögliche weitere Störquellen können Bluetooth-Sender, Hochspannungsleitungen, schnurlose Telefone (DECT) oder LCD-Monitore sowie das Baumaterial selbst sein.</p>
+<p>Wenn die Anforderungen an die Beschaffung von Hard- und Software zusammengestellt werden, muss darauf geachtet werden, dass die Authentisierung nach dem Standard IEEE 802.11i-2004 oder neuer realisiert wird.</p>
+<p>Um Brute-Force-Angriffe auf WLAN-Passwörter zu vermeiden, sollte die WLAN-Infrastruktur den Standard IEEE 802.11s unterstützen. Dieser Standard definiert mittels Simultaneous Authentication of Equals (SAE), dass das eigentliche Passwort nicht mehr über den Funkkanal übertragen wird. Hierdurch kann den bisher üblichen Angriffen durch Mitschneiden eines Verbindungsaufbaus mit anschließendem Brute-Force-Angriff auf das WLAN-Passwort effektiv begegnet werden. Der Standard IEEE 802.11ac definiert, wie Management-Frames mittels Protected Management Frames (PMF) gegen gefälschte Deassoziierungspakete eines Angreifers abzusichern sind. Um PMF effektiv nutzen zu können, muss jedoch auch das Endgerät den Standard IEEE 802.11ac unterstützen.</p>
+<p>In Tabelle 1 sind diverse Authentisierungsmöglichkeiten für die drei fiktiven Szenarien abgebildet.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>Authentisierungsoption</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Offen (keine Authentisierung)</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Wired Equivalent Privacy (WEP)</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Message Authentication Code (MAC) </td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Pre-Shared Key</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Standard IEEE 802.1X / Extensible Authentication Protocol (EAP)</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Captive Portal (empfohlene Methode für Gast-Netze)</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr></tbody></table>
+<p>Tabelle : WLAN-Authentisierungsmethoden</p>
+<p>Tabelle 2 gibt einen Überblick über die unterstützten IEEE-802.1X-EAP-Lösungen auf Basis der aufgeführten Endgeräte bzw. deren Betriebssysteme. Sie listet nicht alle Varianten auf und zeigt nicht die Wertigkeit der einzelnen Systeme. Es sollte EAP-TLS oder EAP-AKA anstelle von EAP-PEAP, EAP-TTLS oder EAP-SIM verwendet werden. Da EAP-PEAP und EAP-TTLS derzeit jedoch noch häufig eingesetzt werden, werden sie in der Tabelle dennoch aufgeführt.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'><br>Betriebssystem</th>
+<th rowspan='1' colspan='1'>Authentisierungs-option</th>
+<th rowspan='1' colspan='1'>Authentisierungs-option</th>
+<th rowspan='1' colspan='1'>Authentisierungs-option</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>EAP-PEAP</td>
+<td rowspan='1' colspan='1'>EAP-TTLS</td>
+<td rowspan='1' colspan='1'>EAP-TLS</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Windows 10</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Windows 8.1</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Windows 7</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja (nach Update, siehe Kapitel Fehler: Referenz nicht gefunden)</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Mac OS X </td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Linux</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>iOS</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Android</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>BlackBerry 10</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Windows Phone 10</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Windows Phone 8.1</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr></tbody></table>
+<p>Tabelle : WLAN-EAP-Authentisierungsvarianten je nach Art des Betriebssystems</p>
+<p>Wenn EAP-TTLS verwendet wird, müssen kryptographisch abgesicherte Authentisierungsverfahren eingesetzt werden. Für die IEEE-802.1X-basierte Authentisierung von Smartphones und Tablets an der WLAN-Infrastruktur bietet sich zusätzlich EAP-SIM/EAP-AKA an.</p>
+</li>
+<li>
+<h4>NET.2.1.M3&nbsp;Auswahl geeigneter Kryptoverfahren für WLAN[Planer]</h4>
+<p>Um WLANs sicher zu betreiben, muss die Kommunikation hierüber kryptographisch über Wi-Fi Protected Access 2 (WPA2) abgesichert sein. Leicht zu kompromittierende kryptographische Verfahren dürfen nicht mehr eingesetzt werden. Falls WEP oder WPA noch benutzt werden, sollte durch eine hierfür geplante Migration auf WPA2 aktualisiert werden.</p>
+<p>Wird WPA2 mit Pre-Shared Keys (WPA2-PSK) verwendet, muss ein komplexer Schlüssel mit einer Mindestlänge von 20 Zeichen konfiguriert sein. Da der Schlüssel regelmäßig ausgetauscht werden muss, ist diese Methode nur für kleine WLAN-Installationen wirtschaftlich tragbar. Zudem muss bei WPA2-PSK darauf geachtet werden, dass die deutschen Umlaute und spezielle Steuerzeichen nicht eingesetzt werden können.</p>
+</li>
+<li>
+<h4>NET.2.1.M4&nbsp;Geeignete Aufstellung von Access Points[Haustechnik]</h4>
+<p>Um Manipulationen an den Access Points vorzubeugen, müssen diese in stabilen Gehäusen untergebracht sein, die im Inneren eines Gebäudes an der Wand montiert werden können. Zusätzlich kann ein Access Point gegen zu einfachen Diebstahl z. B. durch ein Kensington Lock am Gehäuse selbst abgesichert werden. Aus WLAN-versorgungstechnischen Gründen sollten Access Points nicht in Zwischendecken oder abgehängten Decken untergebracht werden, wenn keine externen Antennen genutzt werden. Dies gilt auch für die Anbringung von Metallkäfigen zum Schutz von Access Points, da auch sie die Übertragungsqualität und den Durchsatz eines WLANs essentiell beeinflussen, insbesondere wenn Beamforming-Technik entsprechend dem Standard IEEE 802.11ac eingesetzt wird.</p>
+<p>Die optimalen Aufstellungsorte der Access Points sollten durch eine Ausleuchtungsmessung ermittelt werden. </p>
+<p>Werden Außenbereiche versorgt, müssen Außeninstallationen (Antennen und gegebenenfalls Access Points) vor Witterungseinflüssen, elektrischen Entladungen und unberechtigtem Zugriff geeignet geschützt werden. Außerhalb von Gebäuden sollten Access Points möglichst nicht angebracht werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M5&nbsp;Sichere Basis-Konfiguration der Access Points</h4>
+<p>Voreingestellte SSIDs, Zugangskennwörter oder kryptographische Schlüssel müssen direkt nach Inbetriebnahme geändert werden, um den späteren sicheren Betrieb nicht zu gefährden. Die Access Points dürfen nicht im Auslieferungszustand produktiv in Betrieb genommen werden. Beispielsweise sollte der Name des Service Set Identifiers (SSID) keine Rückschlüsse auf die Hardware, die Institution, eventuelle Dienstleister und den Einsatzzweck ermöglichen. </p>
+<p>Durch die Verantwortlichen muss regelmäßig überprüft werden, ob alle sicherheitsrelevanten Updates und Patches für die etablierte WLAN-Infrastruktur eingespielt sind. Damit Empfänger und Sender optimal und sicher zusammenspielen, ist dies auch für die zugehörigen WLAN-Gerätetreiber auf den WLAN-Clients zu berücksichtigen. Eine neue Software-Version oder ein Patch sollten erst nach einem angemessenen Test eingespielt werden. Die spezifizierten Melde- und Informationsprozeduren im Änderungsmanagement sollen beschreiben, wer und wie bei derartigen Änderungen zu informieren ist. Ebenso ist die Dokumentation der WLAN-Infrastruktur anzupassen.</p>
+<p>Im Folgenden wird aufgezeigt, mit welchen Einstellungsempfehlungen die WLAN-Infrastruktur weiter abgesichert werden kann.</p>
+<p><span style="font-weight: bold">Schließen aller nicht benötigten offenen Ports</span></p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>Port-Nummer</th>
+<th rowspan='1' colspan='1'>Beschreibung</th>
+<th rowspan='1' colspan='1'>Hinweise</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>21/TCP</td>
+<td rowspan='1' colspan='1'>Wird meist genutzt, um ein Image des Access Points vom WLAN-Controller herunterzuladen</td>
+<td rowspan='1' colspan='1'>Müssen erhöhte Sicherheitsanforderungen erfüllt werden (Szenario 3), sollten Images kryptographisch abgesichert heruntergeladen werden.</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>23/TCP</td>
+<td rowspan='1' colspan='1'>Teletype Network (Telnet)</td>
+<td rowspan='1' colspan='1'>Der Zugang via Telnet darf nicht ermöglicht werden.</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>67/UDP</td>
+<td rowspan='1' colspan='1'>DHCP-Server-Funktionen</td>
+<td rowspan='1' colspan='1'>Ist kein DHCP-Service verfügbar, müssen die DHCP-Server-Funktionen deaktiviert werden.</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>80/TCP</td>
+<td rowspan='1' colspan='1'>Hypertext Transfer Protocol (HTTP)</td>
+<td rowspan='1' colspan='1'>Ist kein HTTP-Service verfügbar, muss dieser Dienst deaktiviert werden.</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>123/UDP</td>
+<td rowspan='1' colspan='1'><span style="text-decoration: underline">Network Time Protocol</span> (NTP) – Zeitdienst für die Access Points</td>
+<td rowspan='1' colspan='1'>Müssen erhöhte Sicherheitsanforderungen (Szenario 3) erfüllt werden, sollte die Zeitsynchronisation kryptographisch abgesichert erfolgen.</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>161/UDP</td>
+<td rowspan='1' colspan='1'>SNMP-Management-Zugang</td>
+<td rowspan='1' colspan='1'>Der Zugang mittels SNMP sollte auf Basis der Version 3 realisiert sein.</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>514/UDP</td>
+<td rowspan='1' colspan='1'>Syslog für den Empfang von Meldungen von den Access Points</td>
+<td rowspan='1' colspan='1'>Müssen erhöhte Sicherheitsanforderungen (Szenario 3) erfüllt werden, sollten Meldungen der Access Points nur kryptographisch abgesichert empfangen werden können.</td>
+</tr></tbody></table>
+<p>Tabelle 3: Schließen aller nicht benötigten offenen Ports</p>
+<p><span style="font-weight: bold">Sperren nicht benötigter Services</span></p>
+<p>Für alle drei fiktiven Szenarien wird empfohlen, die Verschlüsselungsmethode WPA2-AES-CCM (128 Bit) anstelle von WPA2-TKIP zu nutzen.</p>
+<p>Das Dokument Technische Richtlinie TR-02102 (siehe [TR02102]) des BSI enthält Empfehlungen für die Verwendung von SSL/TLS. Diese Empfehlungen sollten die Basis für die spätere Aktivierung der genutzten Cipher-Suiten sein. Mit welcher TLS-Version für welches der drei fiktiven Szenarien die Informationen ausreichend abgesichert werden können, zeigt die folgende Tabelle.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>TLS v1.0</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>TLS v1.1</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>TLS v1.2</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr></tbody></table>
+<p>Tabelle 4: Empfohlene TLS-Versionen je Szenario</p>
+<p><span style="font-weight: bold">Sperren nicht benötigter Management-Zugänge</span></p>
+<p>Um potentielle Angriffsvektoren zu reduzieren, sollte die Administration der WLAN-Komponenten z. B. via Secure Shell (SSH), HyperText Transfer Protocol Secure (HTTPS) oder SNMP aus einem dedizierten Management-Netz heraus erfolgen. Die WLAN-Infrastruktur sollte nicht über einen per WLAN angebundenen Client administriert werden.</p>
+<p>Um Innentäter-Angriffe vorzubeugen, sollte eine zentrale Authentisierung auf Basis von personalisierten Benutzerkonten etabliert werden. Die für das Benutzerkonto des Administrators hinterlegten Berechtigungen müssen nach dem Minimalprinzip erfolgen.</p>
+<p>Im Rahmen der Notfallvorsorge ist es empfehlenswert, ein lokales Benutzerkonto (Notfallbenutzerkonto) zu hinterlegen. Das Passwort des Notfallbenutzerkontos muss der etablierten Passwortrichtlinie der Institution genügen. Nach jeder Verwendung des Notfallbenutzerkontos muss dessen Passwort geändert werden. Verwendung und Einsatzgrund müssen anschließend nachvollziehbar dokumentiert werden.</p>
+<p><span style="font-weight: bold">Erkennen und Sperren unberechtigter Benutzer-Zugänge</span></p>
+<p>ARP-Spoofing-Angriffe sollten erkannt und abgewehrt werden, wenn IP-Adressen via DHCP-Server vergeben werden. Hierfür können DHCP Snooping und Dynamic ARP Inspection (DAI) eingesetzt werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M6&nbsp;Sichere Konfiguration der WLAN-Clients</h4>
+<p>Für einen sicheren WLAN-Betrieb ist es wichtig, dass auch alle mit den WLANs gekoppelten Clients sicher konfiguriert sind. Geeignete Anforderungen für eine sichere Konfiguration von Clients sind im Baustein SYS 2.1 <span style="font-style: italic">Allgemeiner Client</span> und NET.2.2 <span style="font-style: italic">WLAN-Nutzung</span> definiert. Zusätzlich muss die WLAN-Schnittstelle deaktiviert werden, wenn sie über einen längeren Zeitraum nicht genutzt wird. Durch den Betrieb von WLANs dürfen etablierte Sicherheitsinfrastrukturen (und insbesondere Firewalls) nicht umgangen werden können.</p>
+<p>Sollen WLAN-Clients (z. B. Smartphones) selbst Hotspot-ähnliche Funktionen zur Verfügung stellen, müssen die Benutzer sicherstellen, dass voreingestellte SSIDs, kryptographische Schlüssel und Passwörter durch sie geändert wurden, bevor die Hotspot-Funktionen aktiviert werden. Das Passwort (WPA2-Schlüssel) sollte so gewählt sein, dass es nur schwer erraten werden kann.</p>
+</li>
+<li>
+<h4>NET.2.1.M7&nbsp;Aufbau eines Distribution Systems[Planer]</h4>
+<p>Ein Distribution System verbindet die Access Points untereinander und bindet die weitere Infrastruktur ein. Es gibt zwei Arten von Distribution Systemen:</p>
+<ul><li>kabelgebundene Distribution Systeme (alle Access Points werden untereinander und mit der weiteren Infrastruktur verkabelt)</li><li>Wireless Distribution Systeme (eine direkte Verkabelung zwischen den Access Points ist nicht notwendig)</li></ul>
+<p>Sind hohe Verfügbarkeitsanforderungen zu erfüllen, sollte kein Wireless Distribution System eingerichtet werden. In einem Wireless Distribution System müssen Repeater sowohl mit den WLAN-Clients als auch mit dem Access Point kommunizieren. Hierdurch reduziert sich die Übertragungsrate um die Hälfte. Diese drastische Reduzierung der Übertragungsrate lässt sich nur umgehen, indem Clients und Repeater auf einer anderen Frequenz miteinander kommunizieren als Repeater und Access Point/WLAN-Router. Theoretisch lässt sich ein Wireless Distribution System mit bis zu 254 Repeatern in einem Netz betreiben, wenn die Repeater nicht in Reihe, sondern im Stern angebunden sind, um Signalüberschneidungen zu vermeiden.</p>
+<p>Bevor ein kabelgebundenes Distribution System aufgebaut wird, sollte entschieden werden, ob eine eigenständige physische Switch-Infrastruktur für die WLANs aufgebaut werden soll, eine virtualisierte Switch-Infrastruktur oder ob alternativ eine logische Segmentierung durch Virtual Local Area Networks (VLANs) ausreichend ist. Hierbei sind insbesondere Sicherheitsaspekte zu beachten.</p>
+</li>
+<li>
+<h4>NET.2.1.M8&nbsp;Verhaltensregeln bei WLAN-Sicherheitsvorfällen</h4>
+<p>Falls sich das WLAN in nicht vorgesehener Weise verhält (z. B. WLAN ist längere Zeit nicht verfügbar, Zugriff auf Netzressourcen ist nicht möglich, Netzperformance bricht dauerhaft ein), kann dies durch einen Sicherheitsvorfall verursacht worden sein. Dieser kann durch einen Angreifer, Fehlkonfigurationen oder Systemfehler herbeigeführt worden sein.</p>
+<p>Der IT-Betrieb sollte die folgenden Maßnahmen umsetzen:</p>
+<ul><li>Die Benutzer müssen den IT-Betrieb über geeignete Eskalationsstufen erreichen können. </li><li>Am Übergabepunkt der WLAN-Kommunikation ins interne LAN sollte bei einem Angriff auf das WLAN die Kommunikation selektiv pro SSID, Access Point oder sogar für die komplette WLAN-Infrastruktur gesperrt werden.</li><li>Bei einem Sicherheitsvorfall oder einem Diebstahl sollte der IT-Betrieb passende Sicherheitsmaßnahmen einleiten können. Idealerweise greifen sie auf abgestimmte und dokumentierte Prozeduren zurück. Mögliche Aktionen sind z. B.:
+<ul><li>Abschaltung von Access Points</li><li>Herunterfahren von Servern </li><li>Überprüfung der Konfigurationen der Access Points</li><li>Sicherung aller Dateien, die Aufschluss über die Art und Ursache des aufgetretenen Problems geben könnten (z. B. ob tatsächlich ein Angriff erfolgt ist und auf welche Weise der Angreifer eindringen konnte), d. h. insbesondere Sicherung aller relevanten Protokolldateien.</li><li>Gegebenenfalls Wiedereinspielen der Original-Konfigurationsdaten </li><li>Benachrichtigung der Benutzer mit der Bitte, ihre Arbeitsbereiche auf Unregelmäßigkeiten zu prüfen.</li></ul>
+</li></ul>
+<p>Falls Access Points gestohlen worden sind, müssen gezielte Sicherheitsmaßnahmen ergriffen werden, wie z. B.:</p>
+<ul><li>Änderung aller eingesetzten kryptographischen Schlüssel, also z. B. der PSKs im Falle der Verwendung von WPA2-PSK</li><li>Konfigurationsänderung auf RADIUS-Servern, um den entwendeten Access Point (IP, Name, RADIUS-Client, Shared Secret, IPSec) zu sperren.</li></ul>
+<p>Sind WLAN-Clients entwendet worden und wird eine zertifikatsbasierte Authentisierung verwendet, müssen auch die Client-Zertifikate gesperrt werden.</p>
+<p>Die möglichen Konsequenzen sicherheitskritischer Ereignisse müssen untersucht werden. Letztlich sind alle erforderlichen Maßnahmen zu ergreifen, um eine missbräuchliche Verwendung von entwendeten Geräten zum Zugriff auf das Netz der Institution auszuschließen.</p>
+</li>
+</ul>
+<a name="7681_2.2"></a>
+<h3>2.2 Standard-Maßnahmen</h3>
+<p>Gemeinsam mit den Basis-Maßnahmen entsprechen die folgenden Maßnahmen dem Stand der Technik im Bereich "WLAN-Betrieb".</p>
+<ul>
+<li>
+<h4>NET.2.1.M9&nbsp;Sichere Anbindung von WLANs an ein LAN[Planer]</h4>
+<p>Die WLAN-Komponenten müssen an den Übergängen zwischen WLANs und LAN abgesichert werden, beispielsweise durch einen Paketfilter. Um unnötigen Broadcast und Multicast Traffic zu vermeiden, sollte für jede vergebene SSID ein korrespondierendes VLAN etabliert sein. Weitere Anforderungen, die zu beachten sind, finden sich im Baustein NET.1.1 <span style="font-style: italic">Netz-Architektur und -design</span>.</p>
+<p>Sollen WLANs sicher an ein LAN angebunden werden, kann zwischen einer Controller-basierten und einer Controller-losen Administration von Access Points unterschieden werden. Angemessene Absicherungsmaßnahmen für die jeweilige Variante werden nachfolgend aufgezeigt.</p>
+<p><span style="font-weight: bold">Controller-basierte Verwaltung der Access Points</span></p>
+<p>Für eine Controller-basierte Verwaltung der WLAN-Infrastruktur werden in der folgenden Tabelle angemessene Absicherungsmaßnahmen für die Anbindung des Access Points an das LAN benannt.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>Gewünschte Access-Point-Funktionen</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Zentrale Authentisierung der Benutzer</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Zentrale Auskopplung der Nutzdaten (Central Switching) am WLAN-Controller</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Lokale Auskopplung der Nutzdaten (Local Switching) direkt an dem Switch, der die Anbindung zum Access Point realisiert</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Roaming-Funktionen</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Gast-/Hotspot-Zugänge</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr></tbody></table>
+<p>Tabelle 5: Empfohlene Access-Point-Funktionen je Szenario</p>
+<p>Ein pragmatischer Ansatz für eine lokale Auskopplung der Nutzdaten kann in Teilen für Szenario 3 gewählt werden, sofern der berechtigte Zugang zum WLAN mittels IEEE 802.1X und EAP-TLS überprüft wird und die Access Points und Endgeräte den Standard IEEE 802.11ac vollumfänglich unterstützen. Die Kommunikation zwischen den Access Points und den WLAN-Controllern muss auch kryptographisch abgesichert sein. Um mögliche Risiken des Verlusts der Vertraulichkeit und Integrität der über Funk übertragenen Informationen zu kompensieren, wird eine zusätzliche Overlay-Verschlüsselung empfohlen.</p>
+<p>Bei den Szenarien 1 und 2 geht die Benutzerkommunikation direkt vom Access Point über den Switch in die internen Netze über. Ein pragmatischer Ansatz ist deshalb nicht möglich. Lediglich freigegebene und in die etablierten Prozesse aufgenommene Access Points der Institution dürfen an das Netz angebunden sein. Dies sollte mittels IEEE 802.1X sichergestellt werden. </p>
+<p>Alle Access Points beziehen ihre Betriebssoftware direkt vom zugeordneten WLAN-Controller. Die Betriebssoftware eines Access Points wird über einen kryptographisch abgesicherten Kanal aktualisiert. Wird die Betriebssoftware auf Basis von Klartext-Protokollen ausgetauscht, sollte im Anschluss die Integrität der Software anhand von Signaturen verifiziert werden.</p>
+<p>Die WLAN-typischen Kommunikationsenden für bereitgestellte Gastzugänge müssen in einer Demilitarized Zone (DMZ) enden. Zugriffe aus dem Gast-WLAN sind wie Zugriffe aus dem Internet zu behandeln. Sie dürfen nur über ein Sicherheitsgateway zugelassen werden.</p>
+<p><span style="font-weight: bold">Controller-lose Verwaltung der Access Points</span></p>
+<p>Ein pragmatischer Ansatz ist bei einer Controller-losen Verwaltung der Access Points meist nicht möglich, da die Benutzerkommunikation direkt vom Access Point über den Switch in die internen Netze übergeht.</p>
+<p>Um Roaming-Funktionen bereitzustellen, werden zwischen den einzelnen Access Points autarke Netze aufgespannt, meist im Default-VLAN. Ob die Anforderungen für den Betrieb der Access Points mit den Sicherheitsanforderungen vereinbar sind, kann mit den folgenden Fragen überprüft werden:</p>
+<ul><li>Ist die Kommunikation der Access Points untereinander ausreichend kryptographisch abgesichert?</li><li>Ist die Gruppe der Mitarbeiter mit Zugang zu Spiegelports an den Switches bekannt und begrenzt?</li><li>Ist ein nicht genutzter Switch-Port aus dem Default-VLAN entbunden?</li><li>Ist eine Hardware-Authentisierung am Switch-Port eingerichtet?</li><li>Sind die Roaming-Funktionen durch Bridging- und Tunneling-Methoden realisiert?</li><li>Endet die Gast-Zugangskommunikation über einen kryptographischen Tunnel in der DMZ?</li></ul>
+<p>Auch für Access Points, die ohne Controller administriert werden, gilt, dass lediglich freigegebene und in die etablierten Prozesse aufgenommene Access Points der Institution an das Netz angebunden sein dürfen. Mittels IEEE 802.1X sollte sichergestellt werden, dass diese Anforderung erfüllt ist. Der berechtigte Zugang von Endgeräten zum WLAN sollte ebenfalls mittels IEEE 802.1X und EAP-TLS überprüft werden. </p>
+<p>Alle Access Points beziehen ihre Betriebssoftware direkt vom zugeordneten WLAN-Managementsystem (WNMS). Die Betriebssoftware eines Access Points sollte über einen kryptographisch abgesicherten Kanal aktualisiert werden. Wird die Betriebssoftware auf Basis von Klartext-Protokollen ausgetauscht, sollte im Anschluss die Integrität der Software anhand von Signaturen verifiziert werden.</p>
+<p>Die eingesetzten Access Points und eingebundenen WLAN-Clients sollten den Standard IEEE 802.11ac vollumfänglich unterstützen. Die Access-Point-zu-Access-Point-Kommunikation muss auf Basis von Internet Protocol Security (IPsec) oder TLS in einem gekapselten Tunnel stattfinden.</p>
+</li>
+<li>
+<h4>NET.2.1.M10&nbsp;Erstellung einer Sicherheitsrichtlinie für den Betrieb von WLANs</h4>
+<p>Für den Einsatz von WLAN-Komponenten in Institutionen sollte eine geeignete Sicherheitsrichtlinie erstellt werden. Diese WLAN-spezifische Sicherheitsrichtlinie sollte konform zum generellen Sicherheitskonzept und den allgemeinen Sicherheitsrichtlinien der Institution sein. Sie sollte regelmäßig auf Aktualität überprüft und gegebenenfalls angepasst werden. </p>
+<p>Eine WLAN-Sicherheitsrichtlinie sollte unter anderem folgende Punkte umfassen:</p>
+<ul><li>Es sollte beschrieben sein, wer in der Institution WLAN-Komponenten installieren, konfigurieren und benutzen darf. </li><li>Für alle WLAN-Komponenten sollten Sicherheitsmaßnahmen und eine Standard-Konfiguration festgelegt werden. </li><li>Bei einem Verdacht auf Sicherheitsprobleme muss ein Sicherheitsverantwortlicher hierüber informiert werden, damit dieser weitere Schritte unternehmen kann (siehe auch DER.2.1 Behandlung von Sicherheitsvorfällen).</li></ul>
+<p>Der IT-Betrieb sollte über die Gefährdungen, denen WLAN-Komponenten ausgesetzt sind und die zu beachtenden Sicherheitsmaßnahmen informiert bzw. geschult werden.</p>
+<p>Die korrekte Umsetzung der in der WLAN-Sicherheitsrichtlinie beschriebenen Sicherheitsmaßnahmen sollte regelmäßig kontrolliert werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M11&nbsp;Geeignete Auswahl von WLAN-Komponenten</h4>
+<p>Wichtige Kriterien für die Auswahl von WLAN-Komponenten sind Sicherheit, Datenschutz und Kompatibilität. Kompatibilitätsprobleme können bei der Vielzahl verschiedener WLAN-Komponenten nicht ausgeschlossen werden. Um Kompatibilitätsprobleme zu vermeiden, müssen alle Komponenten von der Wi-Fi Alliance zertifiziert sein und die IEEE 802.11 Standards unterstützen. Alle WLAN-Komponenten dürfen nur von den Regulierungsgremien des Landes freigegebene Frequenzbänder verwenden. Jeder Anbieter von WLAN-Komponenten muss hierüber in den Datenblättern zu seinem Produkt kostenfrei Auskunft erteilen.</p>
+<p>Im Rahmen der Beschaffung von Access Points und korrespondierenden Managementsystemen sollte Folgendes geprüft werden:</p>
+<ul><li>Wie viele WLAN-Kanäle können verwaltet werden?</li><li>Ist die SSID einstellbar?</li><li>Welche kryptographischen Verfahren sind implementiert?</li><li>Können für die Authentisierung die gewünschten Modi eingestellt werden?</li><li>Welche EAP-Methoden werden unterstützt?</li><li>Kann die Administration auf kryptographisch abgesicherte Kommunikationswege beschränkt werden? Können Klartextprotokolle abgeschaltet werden?</li><li>Ist Netflow in Version 9 (RFC 3954) zur Informationsflusskontrolle nutzbar?</li><li>Sind Mechanismen zur Zugriffssteuerung vorhanden?</li><li>Sind Mechanismen für eine applikationsbasierte Umsetzung von Quality of Service integriert?</li></ul>
+<p>Einige WLAN-Komponenten können drahtlos direkt über das WLAN konfiguriert werden. Ist diese Funktion integraler Bestandteil der Komponenten, sollte sie abschaltbar sein, um Risiken zu minimieren. Um in der Institution etablierte Rollen- und Berechtigungskonzepte umzusetzen, darf ein Administrationszugriff auf WLAN-Komponenten nur für autorisierte Personen möglich sein.</p>
+<p>Im Rahmen der Beschaffung sollte auch geprüft werden, ob alle WLAN-Komponenten mit den etablierten Netz-, Sicherheits-, Authentisierungs-, Monitoring- und Protokollierungsinfrastrukturen korrekt zusammenarbeiten. Hierzu zählt z. B. Folgendes:</p>
+<ul><li>Die im WLAN genutzten Authentisierungsmethoden müssen von den Betriebssystemen und der Hardware der Clients, den Access Points, den Netzmanagementsystemen und den Authentisierungsservern unterstützt werden.</li><li>Falls im WLAN die Authentisierung nach IEEE 802.1X erfolgt, müssen die Access Points die Authentisierungsmethoden der EAP-Familie unterstützen und die mitgeteilten Informationen innerhalb von IEEE 802.1X korrekt verarbeiten.</li><li>Zusätzlich ist zu prüfen, ob die Authentisierungsanfragen mittels sicherer Abfragemethoden an eine zentrale Benutzerdatenbank durchgereicht werden können.</li></ul>
+<p>Ist geplant, eine größere WLAN-Infrastruktur zu etablieren, sollte durch eine entsprechende Teststellung geprüft werden, ob die definierten und dokumentierten Anforderungen eingehalten werden, bevor die Infrastruktur endgültig beschafft wird.</p>
+</li>
+<li>
+<h4>NET.2.1.M12&nbsp;Einsatz einer geeigneten WLAN-Management-Lösung</h4>
+<p>Der Leistungsumfang der eingesetzten WLAN-Managementlösung sollte mindestens die folgenden Aspekte erfüllen:</p>
+<ul><li>Dokumentation der Firmware-Stände der Access Points und der WLAN-Clients, </li><li>Dokumentation der Konfigurationen, </li><li>Historienverwaltung von Konfigurationsänderungen, </li><li>Auswertung und Bewertung von Alarmen,</li><li>Auswertung von Statistiken zur Fehlersuche, </li><li>Auslösung von Maßnahmen bei einem vermuteten Sicherheitsvorfall, </li><li>Anpassung von Schwellwerten zur Alarmauslösung an eine geänderte WLAN-Nutzung,</li><li>Protokollierung und deren sinnvollen Aufbereitung für die Auswertung und </li><li>versenden der Protokolldaten an ein zentrales Logging-System zur nachgelagerten Auswertung.</li></ul>
+<p>Beim WLAN-Konfigurationsmanagement sind im Hinblick auf die Sicherheit einer Installation die zentrale Administration der Sicherheitseinstellungen und die Bereitstellung abgesicherter Installations- und Managementwege von entscheidender Bedeutung. Unter Sicherheitsaspekten ist darüber hinaus dringend zu empfehlen, dass WLAN-Managementsysteme dabei unterstützen, die Luftschnittstelle zu überwachen und die dabei gewonnenen Messergebnisse und Funktionen zu interpretieren. Zu diesen Messergebnissen und Funktionen gehören Rogue Access Point Detection, Wireless Intrusion Detection System (WIDS) sowie Wireless Intrusion Prevention System (WIPS). Die beiden nachfolgenden Tabellen benennen für die drei fiktiven Szenarien die Mindestparameter zur Erkennung von Manipulationen und Angriffen.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>Mindestparameter zur Erkennung von Manipulationen und Angriffen</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Clients mit ungültigem MAC OUI</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Deauthentication Broadcast</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Deassociation Broadcast</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen der missbräuchlichen Nutzung gültiger SSIDs für Ad-hoc-Netze</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Malformed Frame (Large Duration)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Malformed Frame (HT-IE)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Malformed Frame (Association Request)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Malformed Frame (Authentisierung)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Access-Point-Identitätswechseln</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen des Missbrauchs von gültigen SSIDs</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Wireless Bridges</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von 802.11 40MHz-Intoleranzeinstellungen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen des aktiven 802.11n Greenfield-Modus</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Access-Point-Flood-Attacken</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Client-Flood-Attacken</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von CTS-Rate-Anomalien</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von RTS-Rate-Anomalien</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von ungültigen Adress-Kombinationen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Overflow IE</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Overflow EAPOL Key</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines falschen Beacon-Channel</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr></tbody></table>
+<p>Tabelle 6: Erkennung von Manipulationen und Angriffen durch ein WIDS an der Infrastruktur</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von fälschlicherweise akzeptierten Verbindungen an gültigen WLAN-Stationen</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Disconnect-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Omerta-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von FATA-Jack-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen eines Block-ACK-DOS</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Hotspot-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Power-Save-DOS-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von nicht verschlüsselnden, jedoch von der Institution freigegebenen Clients</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von EAP-Rate-Anomalien</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Rate-Anomalien</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von TKIP-Replay-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von ASLEAP-Angriffen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Erkennen von Wireless Packet Injections mittels Air Jack</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr></tbody></table>
+<p>Tabelle 7: Erkennung von Manipulationen und Angriffen durch ein WIDS auf dem Client</p>
+<p>Mittels einer Controller-basierten Lösung können Richtlinien zentral verwaltet und der WLAN-Traffic kann auf dem WLAN-Controller terminiert werden. Hierdurch kann z. B. der eventuell vorhandene Gästeverkehr zur DMZ oder Firewall weitergeleitet werden. Bei einer Controller-losen Umgebung müssen die Access Points und nachgelagerte Systeme mittels VPN diese Funktion übernehmen.</p>
+<p>Ein weiterer Aspekt der Controller-basierten Lösung ist, dass das Failover- sowie das Failback-Verhalten einfach koordiniert werden können. Der IT-Betrieb muss sicherstellen, dass bei Ausfall eines Access Points der Netzverkehr nicht zu stark beeinträchtigt wird. In einem Controller-basierten Modell dient der Controller als Single Point of Coordination für alle Access Points. Fällt einer der Access Points aus, reagiert der Controller, um so die Latenzen so kurz wie möglich zu halten. Dies wird erreicht, indem er die zentral gespeicherten Session-Informationen eines WLAN-Benutzers sofort an einen verfügbaren Access Point weitergibt. Bei Controller-losen Infrastrukturen muss dies durch dem Routing-Protokoll ähnliche Mechanismen innerhalb des lokalen Netzes implementiert werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M13&nbsp;Regelmäßige Sicherheitschecks in WLANs</h4>
+<p>Um WLANs sicher betreiben zu können, ist es besonders wichtig, die Sicherheitsvorgaben umzusetzen und die Verfügbarkeit regelmäßig zu überprüfen. Die Messungen der Performance müssen in die vorhandene Monitoring- und Protokollierungsinfrastruktur integriert sein. Im einfachsten Fall kann eine WLAN-Analyse über einen WLAN-Client erfolgen, der mit entsprechender Spezial-Software ausgestattet ist. Diese Art der Überwachung ist jedoch nur für Szenario 1 zu empfehlen. Besser und stetiger kann die WLAN-Infrastruktur kontrolliert werden, wenn die hierfür notwendigen Überwachungsfunktionen mit in die Access Points integriert sind. Mit Hilfe von in den Access Points integrierten Detektoren können folgende Überwachungsaktionen automatisiert durchgeführt werden:</p>
+<ul><li>Fremdgeräte (insbesondere fremde Access Points) können erkannt werden.</li><li>Wireless Site Surveys können mit dem Ziel durchgeführt werden, Informationen zu Abdeckung, Datenraten, Übertragungskapazität, Applikationsbitrate, Bitübertragungsrate pro WLAN-Benutzer, Quality of Service (QoS) usw. zu erhalten.</li><li>Die Konfiguration von WLAN-Netzelementen kann überwacht werden.</li></ul>
+<p>Der IT-Betrieb sollte die folgenden Aufgaben planen und festschreiben, um eine angemessene Alarm- und Fehlerbehandlung sicherzustellen:</p>
+<ul><li>Alarme sollten ausgewertet und bewertet werden.</li><li>Statistiken sollten zur Fehlersuche ausgewertet werden. </li><li>Bei einem vermuteten Sicherheitsvorfall sollten abgestimmte Maßnahmen ausgelöst werden.</li><li>Bei einer geänderten WLAN-Nutzung sollten die Schwellwerte zur Alarmauslösung angepasst werden.</li></ul>
+<p>Im Zuge eines Sicherheitschecks kann ein WLAN auch mit Hilfe eines Penetrationstests auf Schwachstellen untersucht werden. Dabei ist für alle getroffenen Sicherheitsmaßnahmen genau zu prüfen, ob diese den Angriffen gewachsen sind, gegen die sie wirken sollen. In Tabelle 8 sind Empfehlungen für Zeitintervalle abgebildet, um interne und externe Penetrationstests durchzuführen.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Zeitintervall für interne Penetrationstests</td>
+<td rowspan='1' colspan='1'>jährlich</td>
+<td rowspan='1' colspan='1'>halbjährlich</td>
+<td rowspan='1' colspan='1'>vierteljährlich</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Zeitintervall für externe Penetrationstests</td>
+<td rowspan='1' colspan='1'>-</td>
+<td rowspan='1' colspan='1'>alle ein bis zwei Jahre</td>
+<td rowspan='1' colspan='1'>jährlich</td>
+</tr></tbody></table>
+<p>Tabelle 8: Empfohlene Zeitintervalle für regelmäßige Penetrationstests</p>
+</li>
+<li>
+<h4>NET.2.1.M14&nbsp;Regelmäßige Audits der WLAN-Komponenten</h4>
+<p>Bei allen Komponenten der WLAN-Infrastruktur (Access Points, Distribution System, WLAN-Management-Lösung etc.) sollte regelmäßig überprüft werden, ob alle festgelegten Sicherheitsmaßnahmen umgesetzt und korrekt konfiguriert sind. Das WLAN-Managementsystem sollte je nach bereitgestelltem Funktionsumfang nicht nur die aktuellen, sondern auch zurückliegende Konfigurationen der Access Points verwalten. Öffentlich aufgestellte Access Points sollten regelmäßig stichprobenartig darauf geprüft werden, ob es gewaltsame Öffnungs- oder Manipulationsversuche gab. Sollten Unregelmäßigkeiten oder Schwachstellen erkannt werden, sollten diese dokumentiert werden. Abweichungen sollte nachgegangen werden.</p>
+</li>
+</ul>
+<a name="7681_2.3"></a>
+<h3>2.3 Maßnahmen für erhöhten Schutzbedarf</h3>
+<p>Im Folgenden sind Maßnahmenvorschläge aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und bei erhöhtem Schutzbedarf in Betracht gezogen werden sollten. Die jeweils in Klammern angegebenen Buchstaben zeigen an, welche Grundwerte durch die Maßnahme vorrangig geschützt werden (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit).</p>
+<ul>
+<li>
+<h4>NET.2.1.M15&nbsp;Verwendung eines VPN zur Absicherung von WLANs(CI)</h4>
+<p>Um die Kommunikation über die WLAN-Infrastruktur zusätzlich abzusichern und so sicherzustellen, dass die Übertragung schutzbedarfsgerecht vollständig abgesichert ist, sollte ein VPN eingesetzt werden. Weiterführende Informationen zum Thema VPN können dem Baustein NET.3.3 <span style="font-style: italic">VPN</span> bzw. den zugehörigen Umsetzungshinweisen entnommen werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M16&nbsp;Zusätzliche Absicherung bei der Anbindung von WLANs an ein LAN(CIA)</h4>
+<p>Wird eine WLAN-Infrastruktur an ein LAN angebunden, sollte der Übergang zwischen WLAN- und LAN-Infrastruktur entsprechend dem höheren Schutzbedarf, beispielsweise durch ein Intrusion Detection System bzw. Intrusion Prevention System (IDS/IPS) abgesichert sein. Weiterführende Informationen zum Thema IDS/IPS können dem Baustein NET.3.4 <span style="font-style: italic">IDS/IPS</span> bzw. den zugehörigen Umsetzungshinweisen entnommen werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M17&nbsp;Absicherung der Kommunikation zwischen Access Points(C)</h4>
+<p>Zwischen den Access Points sollte über die Funkschnittstelle und das LAN verschlüsselt kommuniziert werden, um die Vertraulichkeit der übermittelten Informationen zu gewährleisten.</p>
+<p><span style="font-weight: bold">Kommunikation über die Funkschnittstelle</span></p>
+<p>Um die Kommunikation über die Funkschnittstelle abzusichern, sind die Maßnahmen NET.2.1.M3 <span style="font-style: italic">Auswahl geeigneter Kryptoverfahren für WLAN</span> und NET.2.1.M5 <span style="font-style: italic">Sichere Basis-Konfiguration der Access Points</span> anzuwenden.</p>
+<p><span style="font-weight: bold">Kommunikation zwischen Access Point und WLAN-Managementsystem</span></p>
+<p>Aufgrund des erhöhten Schutzbedarfs wird davon ausgegangen, dass die Kommunikation zwischen einem Access Point und dem WLAN-Managementsystem nicht cloudbasiert erfolgt. In der folgenden Tabelle sind Protokolle zu finden, die dazu eingesetzt werden können, um die Kommunikation abzusichern. Der zu erfüllende Schutzbedarf wird dabei berücksichtigt.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Beispiel 1</th>
+<th rowspan='1' colspan='1'>Beispiel 2</th>
+<th rowspan='1' colspan='1'>Beispiel 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Protokoll</td>
+<td rowspan='1' colspan='1'>CAPWAP + DTLS</td>
+<td rowspan='1' colspan='1'>IPSec</td>
+<td rowspan='1' colspan='1'>TLS v1.2</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Authentisierung</td>
+<td rowspan='1' colspan='1'>Zertifikat oder Passwort (mit mindestens 16 Zeichen)</td>
+<td rowspan='1' colspan='1'>Zertifikat oder Passwort (mit mindestens 16 Zeichen)</td>
+<td rowspan='1' colspan='1'>Zertifikate (idealerweise im TPM)</td>
+</tr></tbody></table>
+<p>Tabelle 9: Kommunikation zwischen Access Point und WLAN-Managementsystem</p>
+<p><span style="font-weight: bold">Kommunikation von Access Point zu Access Point</span></p>
+<p>Eine Kommunikation von Access Point zu Access Point ist in der Controller-basierten WLAN-Infrastruktur nicht direkt möglich, sondern erfolgt immer über den zentralen WLAN-Controller. Die möglichen Protokolle und zugehörigen Authentisierungsmethoden wurden bereits in Tabelle 9 aufgezeigt. Die folgende Tabelle führt deshalb nur die Protokolle und zugehörigen Authentisierungsmethoden für eine Controller-lose WLAN-Infrastruktur auf.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Beispiel 1</th>
+<th rowspan='1' colspan='1'>Beispiel 2</th>
+<th rowspan='1' colspan='1'>Beispiel 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Protokoll</td>
+<td rowspan='1' colspan='1'>GRE (im Default-VLAN)</td>
+<td rowspan='1' colspan='1'>GRE-IPSec</td>
+<td rowspan='1' colspan='1'>TLS v1.2</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Authentisierung</td>
+<td rowspan='1' colspan='1'>keine</td>
+<td rowspan='1' colspan='1'>Zertifikat</td>
+<td rowspan='1' colspan='1'>Zertifikate</td>
+</tr></tbody></table>
+<p>Tabelle 10: Kommunikation von Access Point zu Access Point</p>
+<p>Das aufgezeigte GRE-Protokoll in Beispiel 1 bietet selbst keine Verschlüsselung und schützt nicht ausreichend hinsichtlich der Vertraulichkeit und Integrität für Roaming- und WLAN-Managementinformationen. Es dient an dieser Stelle nur der Sensibilisierung bei der Auswahl der WLAN-Produkte und sollte nicht verwendet werden.</p>
+</li>
+<li>
+<h4>NET.2.1.M18&nbsp;Einsatz von Wireless Intrusion Detection / Wireless Intrusion Prevention Systemen(CIA)</h4>
+<p>Um Sicherheitsvorfälle und Schwachstellen zeitnah zu identifizieren und entsprechende Gegenmaßnahmen direkt einleiten zu können, sollten WIDS/ WIPS eingesetzt werden.</p>
+</li>
+</ul>
+<a name="7681_3"></a>
+<h2>3 Weiterführende Informationen</h2>
+<a name="7681_3.1"></a>
+<h3>3.1 Wissenswertes</h3>
+<p>
+<p>WLANs können in zwei verschiedenen Architekturen betrieben werden. Im Ad-hoc-Modus kommunizieren zwei oder mehr mobile Endgeräte (also Clients), die mit WLAN-Funktionalität ausgestattet sind, direkt miteinander. In den meisten Fällen wird ein WLAN im Infrastruktur-Modus betrieben, d. h. die Kommunikation der Clients erfolgt über zentrale Access Points. Über die Access Points erfolgt auch die Verbindung in kabelgebundene LAN-Segmente.</p>
+<p>Der Infrastruktur-Modus lässt mehrere Einsatzvarianten zu:</p>
+<ul><li>Mittels mehrerer Access Points können überlappende Funkzellen installiert werden, sodass beim Übergang eines Clients in die nächste Funkzelle die Funkverbindung aufrecht erhalten werden kann (&#34;Roaming&#34;). Zwei Access Points können als Brücke (Bridge) zwischen zwei leitungsgebundenen LANs eingesetzt werden. Ebenso ist der Einsatz eines Access Points als Relaisstation (Repeater) möglich, um die Reichweite zu erhöhen </li><li>Werden entsprechende Komponenten (Richtantennen) an den Access Points verwendet, können WLANs auch dazu eingesetzt werden, um Liegenschaften zu vernetzen. Hier können laut Herstellerangaben Reichweiten im Kilometerbereich erreicht werden. Die Access Points können dabei als Relaisstation oder Brücke betrieben werden.</li></ul>
+<p>Im Standard IEEE 802.11 werden die Bezeichnungen Independent Basic Service Set (IBSS) für Funk-Netze im Ad-hoc-Modus und Basic Service Set (BSS) für Konstellationen im Infrastruktur-Modus mit einem Access Point verwendet. Mehrere gekoppelte BSS werden als Extended Service Set (ESS) bezeichnet, das koppelnde Netz wird Distribution System (DS) genannt.</p>
+<p>Im 2,4 GHz-Frequenzbereich stehen in Deutschland 13 Frequenzkanäle mit einem Frequenzabstand von 5 MHz für die Funkübertragung zur Verfügung. Bei einer Kanalbandbreite von ca. 22 MHz können jedoch nur maximal 3 Kanäle gleichzeitig überlappungsfrei genutzt werden. Im Frequenzbereich von 5,15 bis 5,35 GHz und bei 5,47 bis 5,725 GHz sind in Deutschland insgesamt 19 Kanäle in einem Abstand von 20 MHz unter Auflagen freigegeben worden. Bei einer Kanalbandbreite von 20 MHz werden direkt benachbarte Kanäle hier nicht gestört. Im 5 GHz Frequenzbereich arbeiten auch militärische und zivile Radar- und Navigationsanwendungen, und es dürfen hier nur Systeme eingesetzt werden, die eine dynamische Frequenzwahl und eine Anpassung der Sendeleistung unterstützen.</p>
+<p>Die in IEEE 802.11 definierten Mechanismen dienen ausschließlich dazu, die Funkstrecke zwischen den Clients und Access Points zu sichern. </p>
+<p>Als zusätzlicher Schutz der Authentisierung kann das Extensible Authentication Protocol (EAP) gemäß Standard IEEE 802.1X verwendet werden. EAP wird im RFC 3748 genau beschrieben. Die Benutzer melden sich hier bei einer Authentisierungsinstanz an, z. B. an einem RADIUS-Server, und dieser prüft die Zugangsberechtigung, bevor der Sitzungsschlüssel ausgetauscht wird. EAP unterstützt eine Reihe von Authentisierungsmethoden, so dass auch Zertifikate und Zwei-Faktor-Authentisierungen genutzt werden können.</p>
+</p>
+<a name="7681_3.2"></a>
+<h3>3.2 Literatur</h3>
+<p>Weiterführende Informationen zu Gefährdungen und Sicherheitsmaßnahmen im Bereich "WLAN-Betrieb" finden sich unter anderem in folgenden Veröffentlichungen:</p>
+<ul>
+<li>[BSIDKS] Drahtlose Kommunikationssysteme und ihre Sicherheitsaspekte<br>
+<p>Bundesamt für Sicherheit in der Informationstechnik (BSI), 2009 <a href="https://www.bsi.bund.de/DE/Publikationen/Broschueren/Drahtloskom/drahtloskom.html">https://www.bsi.bund.de/DE/Publikationen/Broschueren/Drahtloskom/drahtloskom.html</a></p>
+</li>
+<li>[IEEE] Institute of Electrical and Electronics Engineers (IEEE)<br>
+<p>IEEE, (zuletzt abgerufen am 05.10.2017)<br><a href="https://www.ieee.org/index.html">https://www.ieee.org/index.html</a></p>
+</li>
+<li>[ISIWLAN] BSI-Standard zur Internet-Sicherheit (ISi-Reihe)<br>
+<p>Sichere Anbindung von lokalen Netzen an das Internet (Isi-LANA), Bundesamt für Sicherheit in der Informationstechnik (BSI), 2014 <br><a href="https://www.bsi.bund.de/DE/Themen/StandardsKriterien/ISi-Reihe/ISi-LANA/lana_node.html">https://www.bsi.bund.de/DE/Themen/StandardsKriterien/ISi-Reihe/ISi-LANA/lana_node.html</a></p>
+</li>
+<li>[KB2977292] Microsoft security advisory<br>
+<p>Sicherheitsupdate für Windows 7 für x64-basierte Systeme, (zuletzt abgerufen am 05.10.2017)<br><a href="https://www.microsoft.com/de-de/download/details.aspx?id=44350">https://www.microsoft.com/de-de/download/details.aspx?id=44350</a></p>
+</li>
+<li>[NIST800153] NIST Special Publication 800-153<br>
+<p>Guidelines for Securing Wireless Local Area Networks (WLANs), NIST, 02.2012 http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-153.pdf</p>
+</li>
+<li>[NIST80097] NIST Special Publication 800-97<br>
+<p>Establishing Wireless Robust Security Networks, A Guide to IEEE 802.11, NIST, 02.2007<br><a href="http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-97.pdf">http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-97.pdf</a></p>
+</li>
+<li>[RSWLAN] Mehr Rechtssicherheit bei WLAN<br>
+<p>BMWi, (zuletzt abgerufen am 05.10.2017)<br><a href="https://www.bmwi.de/Redaktion/DE/Artikel/Digitale-Welt/wlan.html">https://www.bmwi.de/Redaktion/DE/Artikel/Digitale-Welt/wlan.html</a></p>
+</li>
+<li>[TR03103] Technische Richtlinie Sicheres Wireless LAN<br>
+<p>Bundesamt für Sicherheit in der Informationstechnik (BSI), 2005 <a href="https://www.bsi.bund.de/DE/Publikationen/TechnischeRichtlinien/tr03103/index_htm.html">https://www.bsi.bund.de/DE/Publikationen/TechnischeRichtlinien/tr03103/index_htm.html</a></p>
+</li>
+<li>[WIFIA] Wi-Fi Allianz<br>
+<p>The worldwide netword of companies, (zuletzt abgerufen am 05.10.2017)<br><a href="http://www.wi-fi.org/">http://www.wi-fi.org/</a></p>
+</li>
+</ul>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

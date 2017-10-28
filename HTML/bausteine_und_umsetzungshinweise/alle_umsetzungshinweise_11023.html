@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+Umsetzungshinweise zum Baustein CON.3 Datensicherungskonzept
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_11023.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_11023.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine und Umsetzungshinweise
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine und Umsetzungshinweise</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine und Umsetzungshinweise</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">
+Umsetzungshinweise zum Baustein CON.3 Datensicherungskonzept
+</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>
+Umsetzungshinweise zum Baustein CON.3 Datensicherungskonzept
+</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#11023_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11023_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11023_1.2">
+<span class="toctext">1.2 Lebenszyklus</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11023_2">
+<span class="toctext">2 Maßnahmen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11023_2.1">
+<span class="toctext">2.1 Basis-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11023_2.2">
+<span class="toctext">2.2 Standard-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11023_2.3">
+<span class="toctext">2.3 Maßnahmen für erhöhten Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11023_3">
+<span class="toctext">3 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11023_3.1">
+<span class="toctext">3.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11023_3.2">
+<span class="toctext">3.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="11023_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="11023_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Unternehmen und Behörden speichern immer mehr Daten und sind gleichzeitig immer stärker auf sie angewiesen. Gehen Daten dann verloren, z. B. durch defekte Hardware oder Malware, können gravierende Schäden entstehen. Durch regelmäßige Datensicherungen lassen sich solche Auswirkungen jedoch minimieren: Eine Datensicherung soll gewährleisten, dass durch einen redundanten Datenbestand der IT-Betrieb kurzfristig wiederaufgenommen werden kann, wenn Teile des operativen Datenbestandes verloren gehen.</p>
+</p>
+<a name="11023_1.2"></a>
+<h3>1.2 Lebenszyklus</h3>
+<p>
+<p><span style="font-weight: bold">Planung und Konzeption</span></p>
+<p>Um eine effektive Datensicherung einzurichten, müssen zuerst mögliche Einflussfaktoren identifiziert (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) und danach eine geeignete Verfahrensweise festgelegt werden (siehe CON.3.M2 <span style="font-style: italic">Festlegung der Verfahrensweise für die Datensicherung</span>). Darauf aufbauend müssen die Verantwortlichen ein Minimaldatensicherungskonzept (siehe CON.3.M4 <span style="font-style: italic">Erstellung eines Minimaldatensicherungskonzeptes</span>) und ein Datensicherungskonzept (siehe CON.3.M6 <span style="font-style: italic">Entwicklung eines Datensicherungskonzepts</span>) entwickeln. </p>
+<p><span style="font-weight: bold">Beschaffung</span></p>
+<p>Datensicherungen werden meistens mithilfe von Backup-Programmen durchgeführt. Allerdings sind nicht alle Programme für jede Institution geeignet. Deswegen muss die Sicherungssoftware sorgfältig ausgesucht werden (siehe CON.3.M7 <span style="font-style: italic">Beschaffung eines geeigneten Datensicherungssystems</span>). </p>
+<p><span style="font-weight: bold">Umsetzung</span></p>
+<p>Alle Mitarbeiter müssen über die Datensicherungen informiert werden und sollten wissen, welche Aufgaben sie selbst dabei zu erfüllen haben (siehe CON.3.M10 <span style="font-style: italic">Verpflichtung der Mitarbeiter zur Datensicherung</span>). Ebenso sollte eine Sicherungskopie der eingesetzten Software erstellt werden (siehe CON.3.M11 <span style="font-style: italic">Sicherungskopie der eingesetzten Software</span>). </p>
+<p>Alle Datensicherungen sind geeignet zu dokumentieren (siehe CON.3.M6 <span style="font-style: italic">Entwicklung eines Datensicherungskonzepts</span>). </p>
+<p><span style="font-weight: bold">Betrieb</span></p>
+<p>Die im Datensicherungskonzept vorgegebenen Schritte und Verfahrensweise müssen regelmäßig durchgeführt werden (siehe CON.3.M5 <span style="font-style: italic">Regelmäßige Datensicherung</span>). </p>
+<p>Datensicherungen enthalten meistens sehr viele schützenswerte Information über die Institution. Deshalb muss dafür gesorgt werden, dass die Backup-Datenträger geschützt aufbewahrt sind (siehe CON.3.M12 <span style="font-style: italic">Geeignete Aufbewahrung der Backup-Datenträger</span>).</p>
+<p><span style="font-weight: bold">Notfallvorsorge</span></p>
+<p>Datensicherungen müssen im Notfall auch funktionieren, d. h. die gesicherten Daten müssen sich problemlos und schnell wieder einspielen lassen. Um das sicherzustellen, müssen regelmäßige Tests durchgeführt werden (siehe CON.3.A8 <span style="font-style: italic">Funktionstests und Überprüfung der Wiederherstellbarkeit</span>).</p>
+</p>
+<a name="11023_2"></a>
+<h2>2 Maßnahmen</h2>
+<p>Im Folgenden sind spezifische Umsetzungshinweise im Bereich "Datensicherungskonzept" aufgeführt.</p>
+<a name="11023_2.1"></a>
+<h3>2.1 Basis-Maßnahmen</h3>
+<p>Die folgenden Maßnahmen sollten vorrangig umgesetzt werden:</p>
+<ul>
+<li>
+<h4>CON.3.M1&nbsp;Erhebung der Einflussfaktoren der Datensicherung[Fachverantwortliche, IT-Betrieb]</h4>
+<p>Für jedes IT-System, eventuell sogar für einzelne IT-Anwendungen mit besonderer Bedeutung, müssen die nachfolgenden Einflussfaktoren ermittelt werden. Dazu können die Systemadministratoren und die Verantwortlichen der einzelnen IT-Anwendungen befragt werden. Die Ergebnisse sind nachvollziehbar zu dokumentieren. Im einzelnen muss ermittelt werden:</p>
+<ul><li>Spezifikation der zu sichernden Daten: Ermittelt werden sollte der Datenbestand des IT-Systems (der IT-Anwendung), der für die Fachaufgaben erforderlich ist. Dazu gehören die Anwendungs- und Betriebssoftware, die Systemdaten (z. B. Initialisierungsdateien, Makrodefinitionen, Konfigurationsdaten, Textbausteine, Passwortdateien, Zugriffsrechtedateien), die Anwendungsdaten selbst und Protokolldaten (z.B. Login-Protokollierung, Protokolle über Sicherheitsverletzungen, Datenübertragungsprotokolle).</li><li>Verfügbarkeitsanforderungen der IT-Anwendungen an die Daten: Für die im ersten Schritt spezifizierten Daten müssen nun die Verfügbarkeitsanforderungen festgelegt werden. Ein erprobtes Maß dazu ist die Angabe der maximal tolerierbaren Ausfallzeit. Sie gibt an, über welchen Zeitraum die Fachaufgabe ohne diese Daten weitergeführt werden kann, ohne dass auf Datensicherungsbestände zurückgegriffen werden muss. </li><li>Rekonstruktionsaufwand der Daten ohne Datensicherung: Um ein unter wirtschaftlichen Gesichtspunkten angemessenes Datensicherungskonzept zu entwickeln (siehe CON.3.M6 Entwicklung eines Datensicherungskonzepts), ist es notwendig zu wissen, ob und mit welchem Aufwand zerstörte Datenbestände rekonstruiert werden können, wenn eine Datensicherung nicht verfügbar ist. Untersucht werden sollte, aus welchen Quellen die Daten rekonstruiert werden können und wie lange das dauern würde. Beispiele hierfür sind die Aktenlage, Ausdrucke, Befragungen und Erhebungen.</li><li>Datenvolumen: Für die Auswahl des Speichermediums ist ein entscheidender Faktor das gespeicherte und zu sichernde Datenvolumen. </li><li>Änderungsvolumen: Um die Häufigkeit der Datensicherung und das adäquate Sicherungsverfahren bestimmen zu können, muss bekannt sein, wie viele Daten sich in einem bestimmten Zeitabschnitt ändern. Notwendig sind Angaben, ob bestehende Dateien inhaltlich geändert oder ob neue Dateien erzeugt werden.</li><li>Änderungszeitpunkte der Daten: Es gibt IT-Anwendungen, bei denen sich Datenänderungen nur zu bestimmten Terminen ergeben, wie zum Beispiel der Abrechnungslauf zur Lohnbuchhaltung zum Monatsende. In solchen Fällen ist eine Datensicherung unverzüglich nach einem solchen Termin sinnvoll. Daher sollte für die zu sichernden Daten angegeben werden, ob sie sich täglich, wöchentlich oder zu bestimmten Terminen ändern.</li><li>Fristen: Für die Daten ist zu klären, ob bestimmte Fristen einzuhalten sind. Hierbei kann es sich um Aufbewahrungsfristen oder auch um Löschfristen im Zusammenhang mit personenbezogenen Daten handeln. Diese Fristen sind bei der Datensicherung zu berücksichtigen.</li><li>Vertraulichkeitsbedarf der Daten: Der Vertraulichkeitsbedarf einer Datei überträgt sich bei einer Datensicherung auf die Sicherungskopie.</li><li>Integritätsbedarf der Daten: Für Datensicherungen muss sichergestellt sein, dass die Daten integer gespeichert wurden und während der Aufbewahrungszeit nicht verändert werden. Das ist um so wichtiger, je höher der Integritätsbedarf der Nutzdaten ist. Daher ist für die Datensicherungen anzugeben, wie hoch der Integritätsbedarf ist.</li><li>Kenntnisse und Fähigkeiten der IT-Benutzer: Um entscheiden zu können, wer die Datensicherung durchführt, der IT-Benutzer selbst oder speziell beauftragte Mitarbeiter bzw. die Systemadministratoren, ist ausschlaggebend, über welche Kenntnisse und Fähigkeiten der IT-Benutzer verfügt und welche Werkzeuge ihm zur Verfügung gestellt werden können. Falls die zeitliche Belastung bei der Durchführung einer Datensicherung für IT-Benutzer zu hoch ist, sollte dies angegeben werden.</li></ul>
+</li>
+<li>
+<h4>CON.3.M2&nbsp;Festlegung der Verfahrensweise für die Datensicherung[Fachverantwortliche, IT-Betrieb]</h4>
+<p>Wie eine Datensicherung durchzuführen ist, wird hauptsächlich von den in CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span> erhobenen Einflussfaktoren bestimmt. Für jedes IT-System und für jede Datenart muss die Verfahrensweise der Datensicherung festgelegt werden. Bei Bedarf ist sogar noch eine Unterscheidung für einzelne IT-Anwendungen des jeweiligen IT-Systems vorzunehmen.</p>
+<p>Folgende Punkte sind bei der Festlegung einer Verfahrensweise für die Datensicherung zu betrachten:</p>
+<ul><li>Art der Datensicherung,</li><li>Häufigkeit und Zeitpunkt der Datensicherung,</li><li>Anzahl der Generationen,</li><li>Vorgehensweise und Speichermedium,</li><li>Verantwortlichkeit für die Datensicherung,</li><li>Aufbewahrungsort,</li><li>Anforderungen an das Datensicherungsarchiv,</li><li>Transportmodalitäten und</li><li>Aufbewahrungsmodalität.</li></ul>
+<p>In der nachfolgenden Tabelle werden die Abhängigkeiten zwischen den genannten Punkten und den Einflussfaktoren (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) dargestellt und anschließend erläutert:</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Art der<br>Datensicherung</th>
+<th rowspan='1' colspan='1'>Häufigkeit und Zeitpunkte der Datens.</th>
+<th rowspan='1' colspan='1'>Anzahl der Generationen</th>
+<th rowspan='1' colspan='1'>Vorgehensweise und Speichermedium</th>
+<th rowspan='1' colspan='1'>Verantwortlichkeit für<br>Datens.</th>
+<th rowspan='1' colspan='1'>Aufbewahrungsort</th>
+<th rowspan='1' colspan='1'>Anforderungen an DS-Archiv</th>
+<th rowspan='1' colspan='1'>Transportmodalitäten</th>
+<th rowspan='1' colspan='1'>Aufbewahrungsmodalität</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Verfügbarkeitsanforderungen</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Rekonstruktionsaufwand ohne Datens.</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Datenvolumen</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Änderungsvolumen</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Änderungszeitpunkte der Daten</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Fristen</td>
+<td rowspan='1' colspan='1'> </td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Vertraulichkeitsbedarf der Daten</td>
+<td rowspan='1' colspan='1'> </td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Integritätsbedarf der Daten</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'> (X)</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Kenntnisse der <br>IT-Benutzer</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>  X</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+</tr></tbody></table>
+<p>Tabelle: Datensicherung</p>
+<p><span style="font-weight: bold">Art der Datensicherung</span></p>
+<p>Folgende Datensicherungsarten gibt es:</p>
+<ul><li>Volldatensicherung: Bei der Volldatensicherung werden sämtliche zu sichernden Dateien zu einem bestimmten Zeitpunkt auf einen zusätzlichen Datenträger gespeichert. Es wird dabei nicht berücksichtigt, ob die Dateien sich seit der letzten Datensicherung geändert haben oder nicht. Daher benötigt eine Volldatensicherung viel Speicher. Der Vorteil ist, dass die Daten vollständig für den Sicherungszeitpunkt vorliegen und die Restaurierung von Dateien einfach und schnell möglich ist, da nur die betroffenen Dateien aus der letzten Volldatensicherung extrahiert werden müssen. Werden Volldatensicherungen selten durchgeführt, so kann sich durch umfangreiche nachträgliche Änderungen innerhalb einer Datei ein hoher Nacherfassungsaufwand ergeben.</li><li>Inkrementelle Datensicherung: Bei der inkrementellen Datensicherung werden im Gegensatz zur Volldatensicherung nur die Dateien gesichert, die sich gegenüber der letzten Datensicherung (Volldatensicherung oder inkrementelle Sicherung) geändert haben. Das spart Speicherplatz und verkürzt die erforderliche Zeit für die Datensicherung. Die inkrementelle Datensicherung basiert immer auf einer Volldatensicherung. In periodischen Zeitabständen werden Volldatensicherungen erzeugt, in der Zeit dazwischen werden eine oder mehrere inkrementelle Datensicherungen vollzogen. Bei der Restaurierung wird die letzte Volldatensicherung als Grundlage genommen, die um die in der Zwischenzeit geänderten Dateien aus den inkrementellen Sicherungen ergänzt wird.</li><li>Differenzielle Datensicherung: Bei der differenziellen Datensicherung werden jedes Mal die Dateien gesichert, die sich gegenüber der letzten Volldatensicherung geändert haben. Eine differenzielle Datensicherung benötigt mehr Speicherplatz als eine inkrementelle, Dateien lassen sich aber einfacher und schneller restaurieren. Für die Restaurierung der Daten reicht die letzte Volldatensicherung sowie die aktuellste differenzielle, nicht wie bei der inkrementellen, wo unter Umständen mehrere Datensicherungen nacheinander eingelesen werden müssen.</li><li>Spiegelung: Bei einer Datenspiegelung wird permanent eine exakte Kopie der Daten in einem anderen Verzeichnis oder Medium erstellt. Dies geschieht in der Regel transparent für den Benutzer, beispielsweise durch ein RAID-System. Eine Spiegelung alleine ersetzt keine Datensicherung, da Inkonsistenzen, Dateifehler oder Löschungen von Dateien sich sofort auf die gespiegelte Version auswirkt. Werden beispielsweise die originalen Datenbestände durch Ransomware verschlüsselt, wirkt sich dies direkt auf die gespiegelte Kopie aus.</li></ul>
+<p>Eine spezielle Form der genannten Datensicherungsstrategien ist die Image-Datensicherung. Hier werden nicht die einzelnen Dateien eines Festplattenstapels gesichert, sondern die physikalischen Sektoren der Festplatte. Es handelt sich dabei um eine Vollsicherung, die sehr schnell auf eine gleichartige Festplatte restauriert werden kann.</p>
+<p>Eine weitere Form ist das Hierarchische Speicher-Management (HSM). Hierbei geht es in erster Linie darum, vorhandenen Speicher möglichst wirtschaftlich zu nutzen. Dateien werden abhängig von der Häufigkeit, mit der auf sie zugegriffen wird, auf schnellen Online-Speichern (Festplatten) gehalten, auf Nearline-Speicher (automatische Datenträger-Wechselsysteme) ausgelagert oder auf Offline-Speichern (Magnetbänder) archiviert. Gleichzeitig bieten diese HSM-Systeme auch automatische Datensicherungsroutinen kombiniert aus inkrementeller Datensicherung und Volldatensicherung.</p>
+<p>Eine redundante Datenspeicherung bieten RAID-Systeme an (Redundant Array of Inexpensive Disks). Das RAID-Konzept beschreibt die Verbindung von mehreren Festplatten unter dem Kommando eines sogenannten Array-Controllers. Es gibt verschiedene RAID-Level, wovon RAID-Level 1 die Datenspiegelung beschreibt. RAID-Systeme ersetzen jedoch keine Datensicherung! Sie helfen nicht bei Diebstahl oder Brand, daher müssen auch die auf RAID-Systemen gespeicherten Daten auf zusätzliche Medien gesichert werden und diese Medien auch in anderen Brandabschnitten untergebracht werden.</p>
+<p>Für die Entscheidung, welche Datensicherungsstrategie angewendet werden soll, sind die folgenden Einflussfaktoren (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) zu berücksichtigen, um eine für die Anforderungen geeignete und gleichzeitig wirtschaftliche Form zu finden:</p>
+<ul><li>Verfügbarkeitsanforderungen: Sind die Verfügbarkeitsanforderungen sehr hoch, so ist eine Datenspiegelung in Erwägung zu ziehen. Sind die Verfügbarkeitsanforderungen hoch, so sollte einer Volldatensicherung statt einer inkrementellen Datensicherung durchgeführt werden.</li><li>Datenvolumen und Änderungsvolumen: Entspricht das Änderungsvolumen annähernd dem Datenvolumen (z. B. bei der Nutzung einer Datenbank), so verringert sich die Speicherplatzersparnis der inkrementellen Datensicherung so stark, dass eine Vollsicherung erwogen werden kann. Ist jedoch das Änderungsvolumen erheblich kleiner als das Datenvolumen, so spart die inkrementelle Datensicherung Speicherplatz.</li><li>Änderungszeitpunkte der Daten: Einen geringen Einfluss auf die Datensicherungsstrategie können die Änderungszeitpunkte der Daten haben. Gibt es Zeitpunkte, an denen anwendungsbezogen der Komplettdatenbestand gesichert werden muss (z. B. nach buchhalterischen Wochen-, Monats- oder Jahresabschlüsse), so kommt zu diesen Zeitpunkten nur eine Vollsicherung infrage. </li><li>Kenntnisse der IT-Benutzer: Eine Datenspiegelung setzt entsprechende Kenntnisse des Systemadministrators voraus, erfordert jedoch vom Benutzer keinerlei Kenntnisse. Eine Volldatensicherung lässt sich auch von einem IT-Benutzer mit geringen Systemkenntnissen durchführen. Demgegenüber erfordert eine inkrementelle Datensicherung schon mehr Systemkenntnisse und Erfahrungen im Umgang mit Datensicherungen.</li></ul>
+<p><span style="font-weight: bold">Häufigkeit und Zeitpunkte der Datensicherung</span></p>
+<p>Tritt ein Datenverlust ein, sind alle Daten bis zur letzten Sicherung verloren. Je aktueller die letzte Datensicherung ist, desto weniger Datenverlust muss die Institution verkraften. Gleichzeitig muss beachtet werden, dass der Zeitpunkt der Datensicherung nicht nur periodisch (z.B. täglich, wöchentlich, werktags) gewählt werden kann, sondern dass auch ereignisabhängige Datensicherungen (z. B. nach x Transaktionen, nach Ausführung eines bestimmten Programms, nach Systemänderungen) notwendig sein können.</p>
+<p>Bei der Auswahl der Häufigkeit und der Zeitpunkte der Datensicherung sind folgende Einflussfaktoren (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) zu beachten: </p>
+<ul><li>Verfügbarkeitsanforderungen, Wiederherstellungsaufwand ohne Datensicherung und Änderungsvolumen: Der zeitliche Abstand der Datensicherungen ist so zu wählen, dass die Restaurierungs- und Nacherfassungszeit (Rekonstruktionsaufwand der geänderten Daten, für die keine Datensicherung vorhanden ist) der in diesem Zeitraum geänderten Daten (Änderungsvolumen) kleiner als die maximal tolerierbare Ausfallzeit ist. </li><li>Änderungszeitpunkte der Daten: Gibt es Zeitpunkte, an denen sich die Daten in großem Umfang ändern (z. B. Programmlauf für Gehaltszahlung oder Versionswechsel der Software) oder an denen der Komplettdatenbestand vorliegen muss, so bietet es sich an, unmittelbar danach eine Volldatensicherung durchzuführen. Dazu sind neben den periodischen die ereignisabhängigen Datensicherungszeitpunkte festzulegen. </li></ul>
+<p><span style="font-weight: bold">Anzahl der Generationen</span></p>
+<p>Einerseits werden Datensicherungen in kurzen Zeitabständen wiederholt, um eine Kopie eines möglichst aktuellen Datenbestandes verfügbar zu haben, andererseits muss die Datensicherung gewährleisten, dass gesicherte Daten möglichst lange aufbewahrt werden. Eine Volldatensicherung wird als Generation bezeichnet. Die Anzahl der aufzubewahrenden Generationen und der zeitliche Abstand, der zwischen den Generationen liegen muss, sollte festgelegt werden. Diese Anforderungen lassen sich an folgenden Beispielen erläutern:</p>
+<ul><li>Wird eine Datei absichtlich oder unabsichtlich gelöscht, so ist diese Datei in allen späteren Datensicherungen nicht mehr verfügbar. Stellt sich heraus, dass diese gelöschte Datei dennoch benötigt wird, so muss zur Wiederherstellung auf eine ältere Datensicherung zurückgegriffen werden, die zeitlich vor dem Löschen erstellt wurde. Ist eine solche Generation nicht mehr vorhanden, so muss die Datei neu erfasst werden.</li><li>Tritt ein Integritätsverlust in einer Datei auf, z. B. durch Malware, ist es wahrscheinlich, dass dies nicht direkt, sondern erst zeitlich versetzt bemerkt wird. Um die Integrität der Datei wiederherstellen zu können, muss dann auf eine Generation zurückgegriffen werden, die vor dem Integritätsverlust erstellt wurde.</li><li>Es kann nicht ausgeschlossen werden, dass eine Datensicherung fehlerhaft oder unvollständig erstellt wurde. Deswegen ist es oft hilfreich, wenn auf eine weitere Generation zurückgegriffen werden kann.</li></ul>
+<p>Um diese Vorteile des Generationenprinzips aufrechterhalten zu können, muss jedoch eine Randbedingung eingehalten werden: der zeitliche Abstand der Generationen darf ein Mindestmaß nicht unterschreiten. Beispiel: In einem automatisierten Datensicherungsverfahren kommt es zu wiederholten Abbrüchen des Datensicherungslaufs. Hierdurch würden nacheinander sämtliche Generationen überschrieben werden. Verhindert werden kann dies, indem vor Überschreiben einer Generation das Mindestalter überprüft und nur dann überschrieben wird, wenn dieses Alter überschritten ist.</p>
+<p>Charakterisieren lässt sich ein Generationsprinzip durch zwei Größen: das Mindestalter der ältesten Generation und die Anzahl der verfügbaren Generationen. Dabei gilt:</p>
+<ul><li>je höher das Mindestalter der ältesten Generation ist, je größer ist die Wahrscheinlichkeit, dass zu einer Datei mit Integritätsverlust (eine gelöschte Datei, die im Nachhinein als notwendig erkannt wird, ist ebenfalls darunter zu fassen) noch eine Vorläuferversion vorhanden ist,</li><li>je größer die Anzahl der verfügbaren Generationen ist, umso aktueller ist die angeforderte Vorläuferversion.</li></ul>
+<p>Die Anzahl der Generationen hängt jedoch direkt mit den Kosten der Datensicherung zusammen, weil Datenträger in ausreichender Zahl vorhanden sein müssen. Da für jede Generation ein eigener Datenträger benutzt werden sollte, muss die Anzahl der Generationen auf ein wirtschaftlich sinnvolles Maß beschränkt werden.</p>
+<p>Für die Wahl der Parameter des Generationsprinzips ergeben sich folgende Einflüsse (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>):</p>
+<ul><li>Verfügbarkeitsanforderungen und Integritätsbedarf der Daten: Je höher die Verfügbarkeitsanforderungen oder der Integritätsbedarf der Daten ist, umso mehr Generationen müssen vorhanden sein, um im Fall des Integritätsverlustes die Wiederherstellungszeit zu minimieren.</li><li>Wenn der Verlust einer Datei oder eine Integritätsverletzung möglicherweise erst sehr spät bemerkt werden kann, sind zusätzliche Quartals- oder Jahressicherungsdatenbestände empfehlenswert.</li></ul>
+<ul><li>Wiederherstellungsaufwand ohne Datensicherung: Sind die Daten zwar umfangreich, aber auch ohne Datensicherung rekonstruierbar, so kann das als eine weitere Pseudo-Generation ins Kalkül gezogen werden. </li></ul>
+<ul><li>Datenvolumen: Je höher das Datenvolumen ist, desto mehr Speicherplatz wird gebraucht und desto höher sind auch die Kosten einer Generation. Ein hohes Datenvolumen kann deshalb die Anzahl der Generationen aus wirtschaftlichen Gründen beschränken.</li></ul>
+<ul><li>Änderungsvolumen: Je höher das Änderungsvolumen ist, umso kürzer sollten die Zeitabstände zwischen den Generationen sein, um eine möglichst zeitnahe Version der betreffenden Datei zu haben und den Wiederherstellungsaufwand gering zu halten.</li></ul>
+<p><span style="font-weight: bold">Vorgehensweise und Speichermedium</span></p>
+<p>Nachdem die Art der Datensicherung, die Häufigkeit und das Generationenprinzip festgelegt wurden, ist nun die Vorgehensweise und das angemessene Speichermedium auszuwählen. </p>
+<p>Um das Datenvolumen auf dem Speichermedium zu minimieren, können Datenkompressionsalgorithmen angewandt werden. Teilweise kann das Datenvolumen damit sehr stark reduziert werden. Es ist dabei jedoch sicherzustellen, dass die gewählten Parameter und Algorithmen dokumentiert und für die Wiederherstellung der Daten (Dekompression) vorgehalten werden.</p>
+<p>Für die <span style="font-weight: bold">Vorgehensweise</span> gibt es zwei Parameter, die festgelegt werden müssen: den Automatisierungsgrad und die Zentralisierung (Speicherort).</p>
+<p>Beim Automatisierungsgrad ist zwischen manuell und automatisch zu unterscheiden:</p>
+<ul><li>Manuelle Datensicherung bedeutet, dass die Datensicherung händisch angestoßen wird. Vorteilhaft kann sein, dass der Ausführende individuell den Termin der Datensicherung dem Arbeitsablauf anpassen kann. Nachteil ist, dass die Datensicherung von der Motivation und Disziplin des Mitarbeiters abhängt. Durch Krankheit oder sonstige Abwesenheitsgründe können so eventuell Datensicherungen ausfallen.</li><li>Automatische Datensicherungen werden programmgesteuert zu bestimmten Terminen angestoßen. Vorteilhaft ist, dass die Datensicherung zuverlässig durchgeführt wird, sofern der Terminplan vollständig und aktuell ist. Nachteilig kann sein, dass der Terminplan aktuellen Änderungen angepasst werden muss oder wichtige Änderungen nicht unmittelbar gesichert werden.</li></ul>
+<p>Bezüglich der Zentralisierung sind zentral und dezentral durchgeführte Datensicherungen zu unterscheiden:</p>
+<ul><li>Zentrale Datensicherungen zeichnen sich dadurch aus, dass der Speicherort und die Datensicherung am zentralen IT-System durchgeführt werden. Diese Verfahrensweise hat den Vorteil, dass nur ein Mitarbeiter intensiv geschult werden muss und die Benutzer von dieser Arbeit entlastet werden. Vorteilhaft ist weiterhin, dass durch das höhere zentrale Datenaufkommen kostengünstigere Speichermedien verwendet werden können. Nachteilig ist, dass eventuell vertrauliche Daten übertragen und von nicht Befugten eingesehen werden könnten.</li><li>Dezentrale Datensicherungen werden von den Benutzern selbst durchgeführt, ohne dass die Daten auf ein zentrales IT-System übertragen werden müssen. Vorteilhaft ist, dass der Benutzer die Kontrolle über die Daten und die Backup-Datenträger behält, insbesondere wenn es sich um vertrauliche Daten handelt. Nachteilig ist, dass die konsequente Datensicherung damit von der Zuverlässigkeit der Benutzer abhängt und dass dezentrale Lösungen den Benutzern Zeitaufwand abfordern.</li></ul>
+<p>Nach der Entscheidung, ob die Datensicherung manuell oder automatisch, zentral oder dezentral durchgeführt wird, muss nun der geeignete Datenträger bzw. das geeignete Speichermedium für die Datensicherung gefunden werden. Dazu können folgende Parameter betrachtet werden:</p>
+<ul><li>Datenträger-Anforderungszeit: Wie lang darf es dauern, bis ein Backup-Datenträger für eine Wiederherstellung bereitstehen muss? Roboter-Systeme können das innerhalb von Minuten, ausgelagerte Bänder müssen unter Umständen erst aufwendig transportiert und aufgelegt werden.</li><li>Zugriffszeit, Transferrate: Wie lang eine Datensicherung dauert und wie schnell sich Daten wiederherstellen lassen, hängt von der mittleren Zugriffszeit des Datenträgers und von der Transferrate ab. Festplatten erlauben einen Zugriff auf bestimmte Dateien im Millisekunden-Bereich, ein Magnetband muss erst zur entsprechenden Stelle gespult werden und bei einem Cloud-Speicher hängt die Transferrate direkt von der Internet-Anbindung ab. </li><li>Speicherkapazität: Das Speichermedium muss über ausreichende Speicherkapazitäten verfügen. Dabei müssen auch zukünftige Datenmengen mit eingeplant werden. </li><li>Kosten: Die Kosten für die Datensicherung müssen in einem angemessenen Verhältnis zum Sicherungszweck stehen. Hierbei ist auch die Lebensdauer der Datenträger zu berücksichtigen.</li></ul>
+<p>Die folgenden Einflussgrößen (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) müssen dabei beachtet werden:</p>
+<ul><li>Verfügbarkeitsanforderungen: Je höher die Verfügbarkeitsanforderungen sind, desto schneller muss auf die Datenträger als Speichermedium der Datensicherung zugegriffen werden können und desto schneller müssen die benötigten Daten vom Datenträger wieder einspielbar sein.</li><li>Es muss sichergestellt sein, dass die Speichermedien auch bei Ausfall eines Lesegerätes zur Wiederherstellung genutzt werden können. Die Kompatibilität und Funktion eines Ersatzgerätes sind zu gewährleisten. </li><li>Daten- und Änderungsvolumen: Mit zunehmenden Datenvolumen werden oft preisgünstige Speichermedien benutzt. </li><li>Fristen: Müssen Löschfristen eingehalten werden (z. B. bei personenbezogenen Daten), muss das ausgewählte Speichermedium die Löschung ermöglichen. Speichermedien, die nicht oder nur mit großem Aufwand löschbar sind (z. B. WORM), sollten in diesem Fall vermieden werden.</li><li>Vertraulichkeitsbedarf und Integritätsbedarf der Daten: Ist der Vertraulichkeits- oder Integritätsbedarf der zu sichernden Daten hoch, so überträgt sich dieser Schutzbedarf auch auf die zur Datensicherung eingesetzten Datenträger. Ist eine Verschlüsselung der Datensicherung nicht möglich, kann über die Auswahl von Datenträgern nachgedacht werden, die aufgrund ihrer kompakten Bauart in Datensicherungsschränken oder Tresoren untergebracht werden können.</li><li>Kenntnisse der IT-Benutzer: Die Kenntnisse und datenverarbeitungsspezifischen Fähigkeiten der IT-Benutzer entscheiden darüber, ob eine Verfahrensweise gewählt werden kann, in der der Benutzer selbst manuell für die Datensicherung tätig wird, ob andere ausgebildete Personen die Datensicherung dezentral durchführen oder ob eine automatisierte Datensicherung praktikabler ist. </li></ul>
+<p><span style="font-weight: bold">Verantwortlichkeit für die Datensicherung</span></p>
+<p>Für die Entscheidung, wer für die Datensicherung verantwortlich ist, kommen drei Personengruppen infrage: Zunächst kann es der Benutzer selbst sein (typischerweise bei dezentralen und nicht vernetzten IT-Systemen), der Systemverwalter oder ein für die Datensicherung speziell ausgebildeter Administrator. Wird die Datensicherung nicht vom Benutzer durchgeführt, sind die Verantwortlichen auf Verschwiegenheit bezüglich der Dateninhalte zu verpflichten. Eventuell sollten die Daten auch verschlüsselt werden.</p>
+<p>Darüber hinaus sind die Entscheidungsträger zu benennen, die eine Wiederherstellung veranlassen können. Zu klären ist weiterhin, wer berechtigt ist, auf Datensicherungsträger zuzugreifen, insbesondere wenn sie in Datensicherungsarchiven ausgelagert sind. Es muss sichergestellt sein, dass nur Berechtigte Zutritt erhalten. Abschließend ist zu definieren, wer berechtigt ist, eine Wiederherstellung des Gesamtdatenbestandes oder ausgewählter, einzelner Dateien operativ durchzuführen.</p>
+<p>Bei der Festlegung der Verantwortlichkeit ist insbesondere der Vertraulichkeits-, Integritätsbedarf der Daten und die Vertrauenswürdigkeit der zuständigen Mitarbeiter zu betrachten. Es muss sichergestellt werden, dass der Verantwortliche erreichbar ist und ein Vertreter benannt und eingearbeitet wird.</p>
+<p>Als Einflussfaktor (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) ist zu beachten:</p>
+<ul><li>Kenntnisse der IT-Benutzer: Die Kenntnisse und datenverarbeitungsspezifischen Fähigkeiten der IT-Benutzer entscheiden darüber, ob die Datensicherung eigenverantwortlich je IT-Benutzer durchgeführt werden sollte. Sind die Kenntnisse der IT-Benutzer nicht ausreichend, ist die Verantwortung dem Systemadministrator oder einer speziell ausgebildeten Person zu übertragen.</li></ul>
+<p><span style="font-weight: bold">Aufbewahrungsort</span></p>
+<p>Grundsätzlich sollten Datensicherungsmedien und Originaldatenträger in unterschiedlichen Brandabschnitten aufbewahrt werden (siehe CON.3.M12 <span style="font-style: italic">Geeignete Aufbewahrung der Backup-Datenträger</span>). Je weiter entfernt jedoch die Datenträger lagern, desto länger können die Transportwege und damit die Transportzeiten sein, und desto länger dauert die Wiederherstellung. Als Einflussfaktoren (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) sind daher zu betrachten:</p>
+<ul><li>Verfügbarkeitsanforderungen: Je höher die Verfügbarkeitsanforderungen sind, umso schneller müssen die Datenträger der Datensicherung verfügbar sein. Werden die Datenträger extern ausgelagert, so ist bei sehr hohen Verfügbarkeitsanforderungen zu erwägen, Kopien der Datensicherung zusätzlich in unmittelbarer Nähe vorzuhalten.</li><li>Vertraulichkeits- und Integritätsbedarf der Daten: Je höher dieser Bedarf ist, umso besser muss verhindert werden, dass an den Datenträgern manipuliert werden kann. Die notwendige Zutrittskontrolle lässt sich durch entsprechende infrastrukturelle und organisatorische Maßnahmen erreichen.</li><li>Datenvolumen: Mit steigendem Datenvolumen ist die Sicherheit des Aufbewahrungsortes zunehmend wichtig.</li></ul>
+<p><span style="font-weight: bold">Anforderungen an das Datensicherungsarchiv</span></p>
+<p>Datensicherungen besitzen einen mindestens ebenso hohen Schutzbedarf bezüglich Vertraulichkeit und Integrität wie die gesicherten Daten selbst. Bei der Aufbewahrung in einem zentralen Datensicherungsarchiv sind daher entsprechend wirksame Sicherheitsmaßnahmen notwendig, z. B. eine Zutrittskontrolle.</p>
+<p>Zusätzlich muss durch organisatorische und personelle Maßnahmen (Datenträgerverwaltung) sichergestellt werden, dass der schnelle und gezielte Zugriff auf benötigte Datenträger möglich ist. Hierzu ist der Baustein OPS.1.2.2 <span style="font-style: italic">Archivierung </span>zu beachten.</p>
+<p>Folgende Einflussfaktoren (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>) müssen beachtet werden:</p>
+<ul><li>Verfügbarkeitsanforderungen: Je höher die Verfügbarkeitsanforderungen sind, umso schneller muss der gezielte Zugriff auf benötigte Datenträger möglich sein. Wenn eine manuelle Bestandsführung den Verfügbarkeitsanforderungen nicht genügt, können automatisierte Zugriffsverfahren eingesetzt werden.</li><li>Datenvolumen: Das Datenvolumen bestimmt letztendlich die Art und die Anzahl der aufzubewahrenden Datenträger bzw. die Größe des Online-Speichers. Für entsprechend große Datenvolumen ist eine ausreichende Aufbewahrungskapazität im Datenträgerarchiv vorzusehen.</li><li>Fristen: Sind Löschungsfristen einzuhalten, muss die Organisation des Datensicherungsarchivs sicherstellen, dass die Daten zu den vorgegebenen Zeitpunkten gelöscht werden. Der Vorgang ist zu dokumentieren. </li><li>Vertraulichkeits- und Integritätsbedarf der Daten: Je höher dieser Bedarf ist, umso sorgfältiger muss verhindert werden, dass an den Datenträgern manipuliert werden kann. Die notwendige Zutrittskontrolle lässt sich durch entsprechende infrastrukturelle und organisatorische Maßnahmen erreichen.</li></ul>
+<p><span style="font-weight: bold">Transportmodalitäten</span></p>
+<p>Während einer Datensicherung werden Daten transportiert. Sei es, dass sie über ein Netz oder eine Leitung übertragen werden, sei es, dass Datenträger zum Datenträgerarchiv transportiert werden. Dabei gilt es folgendes zu beachten:</p>
+<ul><li>Verfügbarkeitsanforderungen: Je höher die Verfügbarkeitsanforderungen sind, desto schneller müssen die Daten zur Wiederherstellung verfügbar sein. Das ist bei der Auswahl des Datenübertragungsmediums bzw. bei Auswahl des Datenträger-Transportweges zu berücksichtigen.</li><li>Datenvolumen: Wenn zur Wiederherstellung die Daten über ein Netz übertragen werden, muss die Übertragungskapazität des Netzes beachtet werden. Es muss gewährleistet sein, dass das Datenvolumen innerhalb der erforderlichen Zeit (Verfügbarkeitsanforderung) übertragen werden kann.</li><li>Änderungszeitpunkte der Daten: Werden Datensicherungen über ein Netz durchgeführt (insbesondere zu ausgewählten Terminen), kann aufgrund des zu übertragenden Datenvolumens ein Kapazitätsengpass entstehen. Daher ist zum Zeitpunkt der Datensicherung eine ausreichende Datenübertragungskapazität sicherzustellen.</li><li>Vertraulichkeits- und Integritätsbedarf der Daten: Je höher dieser Bedarf ist, umso sorgfältiger muss verhindert werden, dass die Daten auf dem Transport abgehört, unbefugt kopiert oder manipuliert werden. Bei Datenübertragungen ist schließlich eine Verschlüsselung oder ein kryptografischer Manipulationsschutz zu bedenken. Beim physischen Transport sind sichere Behältnisse und Wege zu benutzen und eventuell auch Nutzen und Aufwand einer Verschlüsselung abzuwägen.</li></ul>
+<p><span style="font-weight: bold">Aufbewahrungsmodalität</span></p>
+<p>Im Rahmen des Datensicherungskonzeptes (siehe CON.3.M6 <span style="font-style: italic">Entwicklung eines Datensicherungskonzepts</span>) sollte mit betrachtet werden, ob für bestimmte Daten Aufbewahrungs- oder Löschfristen einzuhalten sind.</p>
+<ul><li>Fristen: Falls Aufbewahrungsfristen einzuhalten sind, sollten die Daten archiviert werden (siehe OPS.1.2.2 Archivierung). Falls Löschfristen einzuhalten sind, müssen der organisatorische Ablauf festgelegt und die technischen Voraussetzungen geschaffen werden, damit die Daten zu den vorgegebenen Zeitpunkten gelöscht werden können.</li></ul>
+</li>
+<li>
+<h4>CON.3.M3&nbsp;Ermittlung von rechtlichen Einflussfaktoren auf die Datensicherung</h4>
+<p>Für die Datensicherung müssen eine Reihe von rechtlichen Einflussfaktoren beachtet werden, z. B. Datenschutzgesetze. So bestehen für die Aufbewahrung bestimmter Informationen verschiedene rechtliche Vorgaben. Werden diese nicht eingehalten, kann das zivil- oder strafrechtliche Konsequenzen haben. Daher sollten sich die Verantwortlichen informieren, welche rechtlichen Vorgaben zu beachten sind.</p>
+<p>Hieraus ergeben sich Anforderungen, die im Datensicherungskonzept berücksichtigt werden müssen. </p>
+</li>
+<li>
+<h4>CON.3.M4&nbsp;Erstellung eines Minimaldatensicherungskonzeptes</h4>
+<p>Für eine Institution ist festzulegen, welche Minimalforderungen zur Datensicherung eingehalten werden müssen. Sie dient als Grundlage für ein Datensicherungskonzept und gilt generell für alle IT-Systeme und besonders auch für neue IT-Systeme, für die noch kein Datensicherungskonzept erarbeitet wurde.</p>
+<p>Ein Minimaldatensicherungskonzept kann wie folgt aussehen: </p>
+<ul><li>Software: Es ist sämtliche erworbene oder selbst erstellte Software einmalig mittels einer Vollsicherung zu sichern.</li><li>Systemdaten: Alle Systemdaten sind mindestens einmal monatlich mit einer Generation zu sichern.</li><li>Anwendungsdaten: Alle Anwendungsdaten sind mindestens wöchentlich mittels einer Vollsicherung im Drei-Generationen-Prinzip zu sichern.</li><li>Protokolldaten: Sämtliche Protokolldaten sind mindestens einmal monatlich mittels einer Vollsicherung im Drei-Generationen-Prinzip zu sichern.</li><li>Durchführung: Eingesetzt Hard- und Software, verwendete Parameter, Vorgehensweise der Datensicherung bzw. Wiederherstellung.</li></ul>
+</li>
+<li>
+<h4>CON.3.M5&nbsp;Regelmäßige Datensicherung[IT-Betrieb]</h4>
+<p>Nach den Vorarbeiten und der Grundkonzeption müssen mit der gewählten Vorgehensweise regelmäßige Datensicherungen durchgeführt werden. </p>
+<p>Es müssen mindestens die Daten regelmäßig gesichert werden, die nicht aus anderen Informationen abgeleitet werden können. Dokumentationen, Programm- und Programmablaufbeschreibungen sind vorzuhalten.</p>
+<p>Empfehlenswert ist die Erstellung eines Datensicherungskonzepts (siehe CON.3.M6 <span style="font-style: italic">Entwicklung eines Datensicherungskonzepts</span>).</p>
+<p>Abhängig von der Menge und Wichtigkeit der laufend neu gespeicherten Daten und vom möglichen Schaden bei Verlust dieser Daten ist folgendes festzulegen: </p>
+<ul><li>ZeitintervallBeispiele: täglich, wöchentlich, monatlich</li><li>ZeitpunktBeispiele: nachts, freitags abends</li><li>Anzahl der aufzubewahrenden GenerationenBeispiel: Bei täglicher Komplettsicherung werden die letzten sieben Sicherungen aufbewahrt, außerdem die Freitag-Abend-Sicherungen der letzten zwei Monate.</li><li>Umfang der zu sichernden DatenAm einfachsten ist es, Partitionen bzw. Verzeichnisse festzulegen, die bei der regelmäßigen Datensicherung berücksichtigt werden. Eine geeignete Differenzierung kann die Übersichtlichkeit vergrößern sowie Aufwand und Kosten sparen helfen.Beispiel: selbst erstellte Dateien und individuelle Konfigurationsdateien</li><li>Speichermedien (abhängig von der Datenmenge)Beispiele: DVDs, USB-Speicher oder Festplatten</li><li>Vorherige Löschung der Datenträger vor Wiederverwendung (z. B. bei Festplatten)</li><li>Zuständigkeit für die Durchführung (Administrator, Benutzer)</li><li>Zuständigkeit für die Überwachung der Sicherung, insbesondere bei automatischer Durchführung (Fehlermeldungen, verbleibender Platz auf den Speichermedien)</li><li>Dokumentation der erstellten Sicherungen (Datum, Art der Durchführung der Sicherung sowie gewählte Parameter, Beschriftung der Datenträger)</li></ul>
+<p>Wegen des großen Aufwands können Komplettsicherungen in der Regel höchstens einmal täglich durchgeführt werden. Die seit der letzten Sicherung erstellten Daten können nicht wieder eingespielt werden. Daher und zur Senkung der Kosten sollten zwischen den Komplettsicherungen regelmäßig differenzielle oder inkrementelle Sicherungen durchgeführt werden. Hinweise zu den verschiedenen Arten von Datensicherungen finden sich in CON.3.M2 <span style="font-style: italic">Festlegung der Verfahrensweise für die Datensicherung</span>. </p>
+<p>Eine differenzielle oder inkrementelle Sicherung kann häufiger erfolgen, zum Beispiel sofort nach Erstellung wichtiger Dateien oder mehrmals täglich. Die Vereinbarkeit mit dem laufenden Betrieb ist sicherzustellen. </p>
+<p>Für eingesetzte Software ist separat zu entscheiden, ob sie von der regelmäßigen Datensicherung erfasst werden muss. Dies hängt beispielsweise davon ab, wie aufwändig eine Neuinstallation und das Einspielen von Patches und Updates ist. Unter Umständen ist es ausreichend, Sicherungskopien von den Originaldatenträgern anzufertigen (siehe CON.3.M11 <span style="font-style: italic">Sicherungskopie der eingesetzten Software</span>).</p>
+<p>Alle Benutzer sollten über die Regelungen zur Datensicherung informiert sein (siehe CON.3.M10 <span style="font-style: italic">Verpflichtung der Mitarbeiter zur Datensicherung</span>).</p>
+<p>Falls bei vernetzten Rechnern nur die Server-Platten gesichert werden, ist sicherzustellen, dass die zu sichernden Daten regelmäßig von den Benutzern oder automatisch dorthin überspielt werden. Bei größeren Änderungen an IT-Systemen oder im Informationsverbund muss der Datensicherungsprozess entsprechend angepasst werden.</p>
+<p>Vertrauliche Daten sollten vor der Sicherung möglichst verschlüsselt werden, wobei darauf zu achten ist, dass eine Entschlüsselung auch nach einem längeren Zeitraum möglich sein muss (siehe CON.3.M13 <span style="font-style: italic">Einsatz kryptografischer Verfahren bei der Datensicherung</span>). </p>
+<p>Der Ausdruck von Daten auf Papier ist keine angemessene Art der Datensicherung.</p>
+</li>
+</ul>
+<a name="11023_2.2"></a>
+<h3>2.2 Standard-Maßnahmen</h3>
+<p>Gemeinsam mit den Basis-Maßnahmen entsprechen die folgenden Maßnahmen dem Stand der Technik im Bereich "Datensicherungskonzept".</p>
+<ul>
+<li>
+<h4>CON.3.M6&nbsp;Entwicklung eines Datensicherungskonzepts[Fachverantwortliche, Leiter IT]</h4>
+<p>Die Verfahrensweise der Datensicherung wird von einer großen Zahl von Einflussfaktoren bestimmt: Das IT-System, das Datenvolumen, die Änderungsfrequenz der Daten und die Verfügbarkeitsanforderungen sind einige dieser Faktoren. Im Datensicherungskonzept gilt es, eine Lösung zu finden, die diese Faktoren berücksichtigt und gleichzeitig unter Kostengesichtspunkten wirtschaftlich vertretbar ist.</p>
+<p>Die technischen Möglichkeiten, Datensicherungen durchzuführen, sind vielfältig. Jedoch wird die Auswahl immer von den genannten Faktoren bestimmt. Daher gilt es zunächst, die Einflussgrößen der IT-Systeme und der damit realisierten IT-Anwendungen zu bestimmen und nachvollziehbar zu dokumentieren (siehe CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung)</span>. Anschließend muss die geeignete Verfahrensweise entwickelt und dokumentiert werden (siehe CON.3.M2 <span style="font-style: italic">Festlegung der Verfahrensweise für die Datensicherung</span>). Zum Abschluss muss durch die Institutionsleitung die Durchführung angeordnet werden. Auch muss das Datensicherungskonzept regelmäßige Funktionstest für Datensicherung vorsehen (siehe CON.3.M9 <span style="font-style: italic">Funktionstests und Überprüfung der Wiederherstellbarkeit</span>)</p>
+<p>Die Ergebnisse sollten aktualisierbar und erweiterbar in einem Datensicherungskonzept niedergelegt werden. Ein möglicher Aufbau eines Datensicherungskonzepts ist im nachfolgenden Inhaltsverzeichnis beispielhaft aufgezeigt:</p>
+<p><span style="font-weight: bold">Inhaltsverzeichnis Datensicherungskonzept</span></p>
+<p><span style="font-weight: bold">1. Definitionen</span></p>
+<ul><li>Anwendungsdaten, Systemdaten, Software, Protokolldaten</li><li>Vollsicherung, inkrementelle Datensicherung</li></ul>
+<p><span style="font-weight: bold">2. Gefährdungslage </span>(<span style="font-weight: bold">zur Motivation</span>)</p>
+<ul><li>Abhängigkeit der Institution vom Datenbestand</li><li>Typische Gefährdungen wie ungeschulte Benutzer, gemeinsam genutzte Datenbestände, Computer-Viren, Hacker, Stromausfall, Festplattenfehler</li><li>Institutionsrelevante Schadensursachen</li><li>Schadensfälle im eigenen Haus</li></ul>
+<p><span style="font-weight: bold">3. Einflussfaktoren je IT-System</span></p>
+<ul><li>Spezifikation der zu sichernden Daten</li><li>Verfügbarkeitsanforderungen der IT-Anwendungen an die Daten</li><li>Rekonstruktionsaufwand der Daten ohne Datensicherung</li><li>Datenvolumen</li><li>Änderungsvolumen</li><li>Änderungszeitpunkte der Daten</li><li>Fristen</li><li>Vertraulichkeitsbedarf der Daten</li><li>Integritätsbedarf der Daten</li><li>Kenntnisse und datenverarbeitungsspezifische Fähigkeiten der IT-Benutzer</li></ul>
+<p><span style="font-weight: bold">4. Datensicherungsplan je IT-System</span></p>
+<p><span style="font-weight: bold">4.1 Festlegungen je Datenart und 4.2 Festlegung der Vorgehensweise bei der Datenwiederherstellung</span></p>
+<ul><li>Art der Datensicherung</li><li>Häufigkeit und Zeitpunkt der Datensicherung</li><li>Anzahl der Generationen</li><li>Datensicherungsmedium</li><li>Verantwortlichkeit für die Datensicherung</li><li>Aufbewahrungsort der Backup-Datenträger</li><li>Anforderungen an das Datensicherungsarchiv</li><li>Transportmodalitäten</li><li>Wiederherstellungszeiten bei vorhandener Datensicherung</li><li>Randbedingungen für das Datensicherungsarchiv<br>
+<ul><li>Vertragsgestaltung (bei externen Archiven)</li><li>Refresh-Zyklen der Datensicherung</li><li>Bestandsverzeichnis</li><li>Löschen von Datensicherungen</li><li>Vernichtung von unbrauchbaren Datenträgern</li><li>Vorhalten von arbeitsfähigen Lesegeräten</li></ul>
+</li></ul>
+<p>5. Minimaldatensicherungskonzept</p>
+<p>6. Verpflichtung der Mitarbeiter zur Datensicherung</p>
+<p>7. Sporadische Restaurierungsübungen</p>
+<p>Einzelne Punkte dieses Datensicherungskonzepts werden in den Maßnahmen CON.3.M1 <span style="font-style: italic">Erhebung der Einflussfaktoren der Datensicherung</span>, CON.3.M2 <span style="font-style: italic">Festlegung der Verfahrensweise für die Datensicherung</span>, CON.3.M8 <span style="font-style: italic">Funktionstests und Überprüfung der Wiederherstellbarkeit</span> und CON.3.M10 <span style="font-style: italic">Verpflichtung der Mitarbeiter zur Datensicherung</span> näher ausgeführt.</p>
+</li>
+<li>
+<h4>CON.3.M7&nbsp;Beschaffung eines geeigneten Datensicherungssystems[IT-Betrieb, Leiter IT]</h4>
+<p>Bei der Beschaffung eines Datensicherungssystems sollte nicht allein auf seine Leistungsfähigkeit geachtet werden, sondern auch auf die Bedienbarkeit und insbesondere auf seine Toleranz gegenüber Benutzerfehlern.</p>
+<p>Die Sicherungssoftware sollte folgende Anforderungen erfüllen:</p>
+<ul><li>Die Datensicherungssoftware sollte ein falsches oder ein beschädigtes Medium im Sicherungslaufwerk erkennen können.</li><li>Sie sollte mit der vorhandenen Hardware problemlos zusammenarbeiten.</li><li>Es sollte möglich sein, Sicherungen automatisch zu vorwählbaren Zeiten bzw. in einstellbaren Intervallen durchführen zu lassen, ohne dass hierzu manuelle Eingriffe (außer dem eventuell notwendigen Bereitstellen von Sicherungsdatenträgern) erforderlich wären.</li><li>Es sollte möglich sein, einen oder mehrere ausgewählte Benutzer automatisch über das Sicherungsergebnis und eventuelle Fehlermeldungen per E-Mail oder ähnliche Mechanismen zu informieren. Die Durchführung von Datensicherungen inklusive des Sicherungsergebnisses und möglicher Fehlermeldungen sollten in einer Protokolldatei abgespeichert werden.</li><li>Die Sicherungssoftware sollte die Sicherung des Backup-Mediums durch ein Passwort oder noch besser durch Verschlüsselung unterstützen. Weiterhin sollte sie in der Lage sein, die gesicherten Daten in komprimierter Form abzuspeichern.</li><li>Durch Vorgabe geeigneter Include- und Exclude-Listen bei der Datei- und Verzeichnisauswahl sollte genau spezifiziert werden können, welche Daten zu sichern sind und welche nicht. Es sollte möglich sein, diese Listen zu Sicherungsprofilen zusammenzufassen, abzuspeichern und für spätere Sicherungsläufe wieder zu benutzen.</li><li>Es sollte möglich sein, die zu sichernden Daten abhängig vom Erstellungsdatum bzw. ihrer letzten Modifikation auszuwählen.</li><li>Die Sicherungssoftware sollte logische und physische Vollkopien sowie inkrementelle Kopien (Änderungssicherungen) erzeugen können. </li><li>Die zu sichernden Daten sollten auch auf Netzlaufwerken oder in Online-Datenspeichern abgespeichert werden können.</li><li>Die Sicherungssoftware sollte in der Lage sein, nach der Sicherung einen automatischen Vergleich der gesicherten Daten mit dem Original durchzuführen und nach der Wiederherstellung von Daten einen entsprechenden Vergleich zwischen den rekonstruierten Daten und dem Inhalt des Sicherungsdatenträgers durchzuführen.</li><li>Bei der Wiederherstellung von Dateien sollte es möglich sein auszuwählen, ob die Dateien am ursprünglichen Ort oder auf einer anderen Platte bzw. in einem anderen Verzeichnis wiederhergestellt werden. Ebenso sollte es möglich sein, das Verhalten der Software für den Fall zu steuern, dass am Zielort schon eine Datei gleichen Namens vorhanden ist. Dabei sollte man wählen können, ob diese Datei immer, nie oder nur in dem Fall, dass sie älter als die zu rekonstruierende Datei ist, überschrieben wird, oder dass in diesem Fall eine explizite Anfrage erfolgt.</li></ul>
+<p>Falls mit dem eingesetzten Programm die Datensicherung durch Passwort geschützt werden kann, sollte diese Option genutzt werden. Das Passwort ist dann gesichert zu hinterlegen.</p>
+<p>Bei den meisten Betriebssystemen werden Programme für Datensicherungen mitgeliefert. Nicht alle erfüllen allerdings die Ansprüche an Produkte für professionelle und komfortable Datensicherungen. Sind jedoch keine anderen Produkte verfügbar, so sollten die systemzugehörigen Programme verwendet werden.</p>
+</li>
+<li>
+<h4>CON.3.M8&nbsp;Funktionstests und Überprüfung der Wiederherstellbarkeit[IT-Betrieb]</h4>
+<p>Wenn ein Datenbestand nicht wieder hergestellt werden kann, kann dies viele Ursachen haben. Es können technische Defekte vorliegen, falsche Parameter oder schlicht überalterte Medien. Auch wenn Regeln nicht eingehalten oder die Datenträger nicht richtig verwaltet werden, kann dies zu irreparablen Fehlern führen.</p>
+<p>Um dem vorzubeugen und Fehler frühzeitig zu entdecken, muss regelmäßig geprüft werden, ob sich die gesicherten Daten problemlos und in angemessener Zeit zurückspielen lassen. Sollten Defekte oder andere Probleme auftreten, müssen diese so schnell wie möglich repariert werden. </p>
+<p>Ebenso sollten die Verantwortlichen regelmäßig testen, ob die Datensicherung auch wie gewünscht funktioniert. Falls möglich, sollten die Programme so eingestellt werden, dass bei einem Fehler (z. B. volles Datensicherungsmedium) der zuständige Mitarbeiter automatisch informiert wird. </p>
+<p>Weiterhin muss nach einem Patch oder Update für das Datensicherungsprogramm überprüft werden, ob die Software noch korrekt funktioniert und z. B. keine Einstellungsparameter überschrieben wurden. </p>
+</li>
+<li>
+<h4>CON.3.M9&nbsp;Voraussetzungen für die Online-Datensicherung[IT-Betrieb, Leiter IT]</h4>
+<p>Die Erstellung einer Datensicherung mithilfe eines Online-Speicher-Dienstes wird in der Regel über eine entsprechende Anwendung auf dem Client eines Benutzers oder auf einem Server der Institution initiiert. Auch möglich ist z. B. ein hybrides Modell durch eine Appliance: Hier werden die Daten lokal auf der Appliance und zusätzlich in einem Online-Speicher-Dienst vorgehalten. In allen Fällen werden die zu sichernden Daten über das Internet von einem Rechner innerhalb der Institution auf einen Server des Online-Speicher-Anbieters übertragen. </p>
+<p>Je nach Anbieter kann der Umgang mit den übertragenen Daten dabei variieren. Ein Großteil der Anbieter unterstützt beispielsweise die Speicherung und Wiederherstellung unterschiedlicher Versionen einer zu übertragenden Datei. Bietet der Online-Speicher-Anbieter hingegen keine Versionierung von Dateien an, wird die ältere Datei ohne zusätzliche Rückfrage überschrieben und ist damit nicht mehr für eine Rücksicherung verfügbar. In diesem Fall erfüllt der Online-Speicher jedoch nicht die Anforderungen, die an eine Datensicherung im Unternehmens- oder Behördenumfeld gestellt werden. Institutionen sollten daher insbesondere auf die vorhandene Versionierung der Daten achten, um dem unerwünschten Löschen älterer Datenversionen vorzubeugen.</p>
+<p>Grundsätzlich sollten immer die Fragen im Vordergrund stehen, welchen Schutzbedarf die gesicherten Daten haben, welchen gesetzlichen Verpflichtungen hinsichtlich der geschäftsrelevanten Daten eine Institution unterliegt und wie es sich auswirkt, wenn Daten verloren gehen oder durch Unbefugte verändert werden.</p>
+<p>Viele Anbieter von Online-Speicher-Diensten sind sich durchaus bewusst, dass Institutionen großen Wert auf die Verfügbarkeit ihrer Daten legen und halten die Daten ihrer Kunden redundant vor. Institutionen sollten darauf achten, dass der Anbieter die Daten an unterschiedlichen Standorten bzw. in räumlich voneinander getrennten Rechenzentren speichert. Kommt es zu Problemen in einem Rechenzentrum, stehen die Daten in diesem Fall dennoch weiterhin in einem anderen Rechenzentrum zur Verfügung.</p>
+<p>Unternehmen und Behörden sollten nicht nur Wert auf die sichere Speicherung ihrer Daten legen, sondern darüber hinaus auch die Umsetzung der Zugriffsmöglichkeiten auf die angelegten Benutzerkonten hinterfragen. Im Unternehmens- und Behördenumfeld sind gezielte Angriffe vorstellbar, deren Absicht darin liegt, eine Sperrung des Benutzerkontos herbeizuführen und auf diesem Weg den Zugriff auf das Backup der Daten zu verhindern. Eine solche Denial-of-Service-Attacke bedient sich dabei in der Regel unterschiedlicher Schwachstellen wie beispielsweise einer Kombination aus der automatischen Sperrung eines Benutzerkontos bei fehlgeschlagenen Anmeldeversuchen und einer nicht validierten E-Mail-Adresse. Als Schutzmaßnahme kann das Time-Out-Prinzip einem solchen gezielten Denial-of-Service-Angriff entgegenwirken. Dabei wird das Benutzerkonto nicht vollständig gesperrt, sondern lediglich ein erneuter Anmeldeversuch für einen vorgegebenen Zeitraum unterbunden.</p>
+<p>Nicht nur Vollständigkeit und Verfügbarkeit ihrer gesicherten Daten interessieren Institutionen, vielmehr legen sie, unter anderem zur Vermeidung rechtlicher Konsequenzen oder eines Imageverlustes, auch großen Wert auf deren Vertraulichkeit und Integrität. Institutionen sollten daher Verschlüsselungsverfahren einsetzen, um das Sicherheitsniveau bei der Übermittlung und der Datenspeicherung bei externen Dienstleistern zu erhöhen.</p>
+<p>Viele Anbieter von Online-Speicher-Lösungen werben mit der erhöhten Sicherheit durch Verschlüsselung. Hier muss jedoch genauer analysiert werden, wie die Verschlüsselung konkret umgesetzt ist. In der Regel erfolgt nämlich lediglich die eigentliche Übertragung der Daten verschlüsselt, etwa über den Aufbau einer https-Verbindung (Hyper Text Transfer Protocol Secure). Vor und nach dem Transport liegen die Daten jedoch unverschlüsselt im Klartext vor. Einige Anbieter stellen ihren Kunden, unabhängig vom Transportweg der Daten, zusätzliche Verschlüsselungsmethoden zur Verfügung. Allerdings kann die Institution dabei oft nicht ausschließen, dass sich ein Innentäter, also ein Mitarbeiter des Online-Speicher-Anbieters, die entsprechenden Schlüssel verschafft und damit auch auf die verschlüsselten Informationen zugreifen, diese verfälschen oder veröffentlichen kann. Erlangt ein Angreifer Zugriff auf die Daten, indem er die Authentisierung kompromittiert, dann ist die Verschlüsselung beim Anbieter ebenfalls wirkungslos.</p>
+<p>Sehen Institutionen ihre Daten also als besonders schützenswert an, sollten sie diese bereits auf ihren eigenen Systemen und damit vor dem eigentlichen Datentransfer verschlüsseln.</p>
+<p>Das Bedürfnis nach einer sicheren Methode zur Nutzung von Online-Speicher-Lösungen, gerade im Behörden- oder Unternehmensumfeld, wird vom Markt jedoch zunehmend aufgegriffen. So hat sich mittlerweile eine Reihe von Verschlüsselungslösungen etabliert, die größtenteils speziell auf die Zusammenarbeit mit Online-Speicher-Diensten abgestimmt sind. Die Programme überprüfen bereits bei der Installation, ob ein passender Ordner eines Online-Speichers existiert, und erzeugen anschließend einen entsprechenden Unterordner, in dem die verschlüsselten Dateien abgelegt werden. Institutionen, die zusätzliche Verschlüsselungssoftware einsetzen, sollten darauf achten, dass für die Anwendung ein ausreichend starkes Passwort oder anderer Zugriffsschutz gewählt wird. Zudem sollte eine Kopie der eingesetzten Softwarelösung und der zugehörigen kryptografischen Schlüssel an einem sicheren Ort hinterlegt werden, um im Falle eines vollständigen Datenverlustes innerhalb der Institution noch auf die verschlüsselten Datensicherungen des Online-Speichers zugreifen zu können. Zu diesem Zweck kann die Verschlüsselungssoftware unverschlüsselt beim Online-Speicher-Dienst gesichert werden, der Schlüssel muss selbstverständlich anders gesichert werden. Auf diesem Weg ist die Institution unabhängig davon, ob die Verschlüsselungssoftware auch nach einem längeren Zeitraum noch in einer kompatiblen Version zur Verfügung steht.</p>
+<p>Institutionen sollten sich zudem davon überzeugen, dass die Wiederherstellung der gespeicherten Daten vom Online-Speicher fehlerfrei funktioniert, und sollten dies darüber hinaus regelmäßig testen (siehe CON.3.A8 <span style="font-style: italic">Funktionstests und Überprüfung der Wiederherstellbarkeit</span>).</p>
+</li>
+<li>
+<h4>CON.3.M10&nbsp;Verpflichtung der Mitarbeiter zur Datensicherung</h4>
+<p>Alle Benutzer sollten über die Regelungen zur Datensicherung informiert sein, um gegebenenfalls auf Unzulänglichkeiten (zum Beispiel zu geringes Zeitintervall für ihren Bedarf) hinweisen oder individuelle Ergänzungen vornehmen zu können (zum Beispiel zwischenzeitliche Spiegelung wichtiger Daten auf der eigenen Platte). </p>
+<p>Auch die Information der Benutzer darüber, wie lange die Daten wieder einspielbar sind, ist wichtig. Werden zum Beispiel bei wöchentlicher Komplettsicherung nur zwei Generationen aufbewahrt, bleiben abhängig vom Zeitpunkt des Verlustes nur zwei bis drei Wochen Zeit, um die Daten wieder einzuspielen.</p>
+<p>Mitarbeiter, die Aufgaben bei der Erstellung von Datensicherungen wahrnehmen sollen, sollten darüber informiert und darauf verpflichtet werden, dabei das Datensicherungskonzept bzw. das Minimaldatensicherungskonzept sorgfältig einzuhalten. Das ist vor allem dort wichtig, wo zentral durchgeführte Datensicherungen nicht greifen, also z. B. bei nicht-vernetzten oder mobilen Endgeräten. Die Mitarbeiter sollten regelmäßig an die Datensicherung erinnert und dazu motiviert werden. </p>
+</li>
+<li>
+<h4>CON.3.M11&nbsp;Sicherungskopie der eingesetzten Software[IT-Betrieb]</h4>
+<p>Bei Problemen mit IT-Systemen ist es oft nötig, die eingesetzten Betriebssysteme und Anwendungen zeitnah neu installieren zu können. Hierfür müssen alle Dateien, die zur Installation benötigt werden, vorliegen. Daher ist es erforderlich, Kopien anzufertigen und an geeigneter Stelle zu archivieren.</p>
+<p>Wird die Software auf Datenträgern (z. B. DVDs oder USB-Sticks) ausgeliefert, sollte von den Originaldatenträgern bzw. von der Originalsoftware bei Eigenentwicklungen eine Sicherungskopie erstellt werden, von der die Software wieder eingespielt werden kann. Die Originaldatenträger und die Sicherungskopien sind getrennt voneinander aufzubewahren.</p>
+<p>Insbesondere Anwendungen werden oft nicht auf Datenträgern ausgeliefert, sondern nur als separate Installationsdateien, als Bestandteil einer Paket- oder Softwareverwaltung oder als Quelltextpakete. Auch diese Installationsquellen sollten an einem geeigneten Ort hinterlegt werden.</p>
+<p>Um kostenpflichtige Betriebssysteme oder Anwendungen zu installieren, müssen oft Lizenznummern während der Installation eingegeben werden. Deshalb ist es nötig, dass neben den Installationsquellen auch die Lizenznummern geeignet hinterlegt werden. Ein unerlaubter Zugriff auf die Installationsmedien und die Lizenznummern muss ausgeschlossen sein.</p>
+<p>Wurde die Software aus Quelltexten übersetzt, so sollte die Dokumentation sämtliche beim Übersetzen verwendeten Optionen (insbesondere die Optionen, mit denen ein etwaiges Skript <span style="font-style: italic">configure</span> aufgerufen wurde) enthalten. Wurde die Software aus einem Binärpaket installiert, so sollten alle Schritte dokumentiert werden, mit denen die Installation später nachvollzogen werden kann.</p>
+<p>Jede Änderung an einer Konfigurationsdatei sollte dokumentiert werden. Es empfiehlt sich, eine Versionsverwaltung einzusetzen. Zusätzlich müssen alle Konfigurationsdateien regelmäßig gesichert werden.</p>
+</li>
+<li>
+<h4>CON.3.M12&nbsp;Geeignete Aufbewahrung der Backup-Datenträger[IT-Betrieb]</h4>
+<p>Backup-Datenträger unterliegen besonderen Anforderungen hinsichtlich ihrer Aufbewahrung:</p>
+<ul><li>Der Zugriff auf diese Datenträger darf nur befugten Personen möglich sein.</li><li>Ein ausreichend schneller Zugriff muss im Bedarfsfall gewährleistet sein.</li><li>Der Aufbewahrungsort muss auch die klimatischen Bedingungen für eine längerfristige Aufbewahrung von Datenträgern gewährleisten.</li><li>Für den Notfall müssen die Backup-Datenträger räumlich getrennt vom gesicherten IT-System aufbewahrt werden, wenn möglich in einem anderen Brandabschnitt.</li></ul>
+</li>
+</ul>
+<a name="11023_2.3"></a>
+<h3>2.3 Maßnahmen für erhöhten Schutzbedarf</h3>
+<p>Im Folgenden sind Maßnahmenvorschläge aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und bei erhöhtem Schutzbedarf in Betracht gezogen werden sollten. Die jeweils in Klammern angegebenen Buchstaben zeigen an, welche Grundwerte durch die Maßnahme vorrangig geschützt werden (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit).</p>
+<ul>
+<li>
+<h4>CON.3.M13&nbsp;Einsatz kryptografischer Verfahren bei der Datensicherung[IT-Betrieb]</h4>
+<p>Der Vertraulichkeitsbedarf einer Datei überträgt sich bei einer Datensicherung auf die Sicherungskopie. Daher sollte bei erhöhtem Schutzbedarf die Sicherung verschlüsselt werden.</p>
+<p>Für die Datensicherungen müssen geeignete Verschlüsselungsverfahren ausgewählt werden. Das entscheidende Merkmal eines Verschlüsselungsverfahrens ist die Güte des Algorithmus sowie der Schlüsselauswahl. Da die Sicherheitseignung der Verschlüsselungsverfahren durch die technische Entwicklung von Hard- und Software sowie Fortschritte in der Kryptografie beschränkt wird, müssen sie regelmäßig nach dem Stand der Technik aktualisiert werden.</p>
+<p>Auch muss sichergestellt sein, dass die Schlüssel geeignet verwaltet werden.</p>
+<p>Weitere Hinweise zu kryptografischen Verfahren finden sich im Baustein CON.1 <span style="font-style: italic">Kryptokonzept</span>.</p>
+</li>
+</ul>
+<a name="11023_3"></a>
+<h2>3 Weiterführende Informationen</h2>
+<a name="11023_3.1"></a>
+<h3>3.1 Wissenswertes</h3>
+<p>
+<p>Hier werden ergänzende Informationen aufgeführt, die im Rahmen der Maßnahmen keinen Platz finden, aber dennoch beachtenswert sind. Derzeit liegen für diesen Baustein keine entsprechenden Informationen vor. Sachdienliche Hinweise nimmt die IT-Grundschutz-Hotline gerne unter grundschutz@bsi.bund.de entgegen.</p>
+</p>
+<a name="11023_3.2"></a>
+<h3>3.2 Literatur</h3>
+<p>Weiterführende Informationen zu Gefährdungen und Sicherheitsmaßnahmen im Bereich "Datensicherungskonzept" finden sich unter anderem in folgenden Veröffentlichungen:</p>
+<ul>
+<li>[27001] ISO/IEC 27001:2013<br>
+<p>Information technology- Security techniques- Information security management system- Requirements, ISO, 2013<br><a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en">https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en</a></p>
+</li>
+<li>[BKBU] Leitfaden Backup / Recovery / Disaster Recovery<br>
+<p>Bitkom, 2016<br><a href="https://www.bitkom.org/noindex/Publikationen/2017/Leitfaden/170125-LF-Backup-Recovery.pdf">https://www.bitkom.org/noindex/Publikationen/2017/Leitfaden/170125-LF-Backup-Recovery.pdf</a></p>
+</li>
+<li>[ISF] The Standard of Good Practice<br>
+<p>Information Security Forum (ISF), 06.2016</p>
+</li>
+<li>[NIST80053] Security and Privacy Controls for Federal Information Systems and Organizations<br>
+<p>Special Publication 800-53, Revision 4, NIST, 04.2013 <a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf</a></p>
+</li>
+</ul>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

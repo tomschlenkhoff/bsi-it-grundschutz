@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+Umsetzungshinweise zum Baustein SYS.3.2.2 Mobile Device Management (MDM)
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_7360.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_7360.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine und Umsetzungshinweise
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine und Umsetzungshinweise</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine und Umsetzungshinweise</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">
+Umsetzungshinweise zum Baustein SYS.3.2.2 Mobile Device Management (MDM)
+</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>
+Umsetzungshinweise zum Baustein SYS.3.2.2 Mobile Device Management (MDM)
+</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#7360_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7360_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7360_1.2">
+<span class="toctext">1.2 Lebenszyklus</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7360_2">
+<span class="toctext">2 Maßnahmen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7360_2.1">
+<span class="toctext">2.1 Basis-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7360_2.2">
+<span class="toctext">2.2 Standard-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7360_2.3">
+<span class="toctext">2.3 Maßnahmen für erhöhten Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7360_3">
+<span class="toctext">3 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7360_3.1">
+<span class="toctext">3.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7360_3.2">
+<span class="toctext">3.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="7360_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="7360_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>In einer ständig stärker digitalisierten Arbeitsumgebung stellen Institutionen ergänzend oder sogar ablösend zum Notebook ihren Mitarbeitern durch mobile Endgeräte (Mobile Devices) weitergehende Möglichkeiten zum mobilen Arbeiten zur Verfügung. Damit einher geht meist, dass die Mitarbeiter sich auch von unterwegs permanenten Zugriff auf interne und externe Informationsquellen wünschen und die Geräte auch zur Entspannung und Weiterbildung benutzen wollen.</p>
+<p>Ob sich eine Institution mit den Chancen und Risiken mobiler Endgeräte auseinandersetzen möchte, ist heutzutage nicht mehr relevant. Denn mit hoher Priorität muss die Frage beantwortet werden, ob diese Auseinandersetzung nicht schon erfolgt ist oder wann das geschieht. Sollte sich eine Institution grundsätzlich gegen mobile Endgeräte entscheiden, so sind zumindest die Risiken zu beachten, die durch Verwendung von und Interaktion mit privaten Geräten entstehen könnten.</p>
+<p>Mobile Endgeräte sind in Beschaffung, Betrieb und Benutzung grundlegend anders als ein Arbeitsplatz-PC oder Server. Um solche Geräte sicher betreiben zu können, ist es unumgänglich diese Unterschiede zu verstehen und dieses Verständnis in die Entscheidungen über Prozesse und Verfahren mit einfließen zu lassen.</p>
+<p>So können beispielsweise Arbeitsplatz-PCs und Server gekauft und danach mit einem beliebigen Betriebssystem ausgestattet werden. Die Administratoren können somit die Geräte vollständig anpassen. Das ist bei mobilen Endgeräten anders. Hier wird die Hardware zusammen mit einem Betriebssystem erworben, und bis auf wenige Ausnahmen funktioniert nur das vom Hersteller gelieferte Betriebssystem auf diesen Geräten. Somit kann die Institution die mobilen Endgeräte nicht wie gewohnt kontrollieren. Selbst wenn ein Mobile-Device-Management-(MDM)-System eingesetzt wird, hat letztlich immer auch der Hersteller eine gewisse Kontrolle über das Gerät, da er das Betriebssystem kontrolliert.</p>
+<p>Ebenfalls neu für die Betriebsprozesse ist, dass nicht mehr der Anwender allein über die Durchführung von Updates bestimmen kann, da der Hersteller des Geräts diesen Prozess kontrolliert. Bei Android-basierten Geräten ist häufig auch der Mobilfunkanbieter in diesen Prozess eingebunden, da er die Updates des Herstellers oft noch anpasst und erst danach an seine Kunden weitergibt.</p>
+<p>Der Mobilfunkanbieter ist für den Betrieb der mobilen Endgeräte ein wichtiger Partner. Er kontrolliert nicht nur die Datenverbindung zu den Geräten, sondern je nach Vertrag oder Endgerät konfiguriert er sie auch. Jedes mobile Endgerät mit einer SIM-Karte ist somit durch den Mobilfunkanbieter potenziell ferngesteuert.</p>
+<p>Für die Abbildung der unterschiedlichen Umsetzungsempfehlungen wird in diesem Dokument auf die folgenden drei fiktiven Szenarien zurückgegriffen.</p>
+<p><span style="font-weight: bold">1. Szenario</span></p>
+<ul><li>Die Benutzer telefonieren hauptsächlich mit ihren Geräten und versenden E-Mails.</li></ul>
+<ul><li>Die Benutzer können nicht auf interne Kollaborations- und Dokumentenmanagementsysteme zugreifen.</li><li>Die Informationen sind nicht als vertraulich klassifiziert.</li></ul>
+<p><span style="font-weight: bold">2. Szenario</span> </p>
+<ul><li>Die Benutzer telefonieren mit ihren Geräten, versenden E-Mails und bearbeiten geschäftliche Dokumente.</li><li>Die Benutzer können auf interne Kollaborations- und Dokumentenmanagementsysteme zugreifen.</li><li>Teilweise sind die Informationen als vertraulich klassifiziert.</li></ul>
+<p><span style="font-weight: bold">3. Szenario</span></p>
+<ul><li>Die Benutzer telefonieren mit ihren Geräten, versenden E-Mails und bearbeiten geschäftliche Dokumente.</li><li>Die Benutzer können auf interne Kollaborations- und Dokumentenmanagementsysteme, Finanzdaten oder kritische Systeme der Institution zugreifen.</li><li>Teilweise sind die Informationen als streng vertraulich klassifiziert.</li></ul>
+</p>
+<a name="7360_1.2"></a>
+<h3>1.2 Lebenszyklus</h3>
+<p>
+<p><span style="font-weight: bold">Planung und Konzeption</span></p>
+<p>In der Planungs- und Konzeptionsphase sollen alle eventuellen Nutzungsszenarien, z. B. Einbindung in eine Kollaborations-Lösung, Zugriff auf Warenwirtschaftssysteme sowie der maximal umzusetzende Schutzbedarf, in die Auswahl der zentralen Managementlösung einfließen (siehe SYS.3.2.2.M1 Festlegung einer Strategie für das Mobile Device Management). Müssen private und geschäftliche Bereiche strikt getrennt werden, empfiehlt es sich gegenüberzustellen, ob dies mittels Betriebssystemmechanismen wie Managed Apps und Managed Open-in, durch eine Containerlösung oder auch durch virtualisierte Benutzerumgebungen erreichbar ist. Ebenso sollte in dieser Phase überprüft werden, wie die mobilen Endgeräte benutzerbezogen in die Informations- und Kommunikationsinfrastruktur integriert werden können. Aus den Ergebnissen lassen sich neue Anforderungen an die bisherigen Netzsegmentierungen, die Sicherheitsgateway-Infrastrukturen und deren Funktionen ableiten.</p>
+<p>In der Planungs- und Konzeptionsphase muss die Institution entscheiden, welches Betriebsmodell oder welche Kombination aus den beiden Modellen realisiert werden soll: <span style="font-style: italic">a</span><span style="font-style: italic">n die Mitarbeiter a</span><span style="font-style: italic">usgegebene Geräte</span> oder <span style="font-style: italic">Bring Your Own Device (BYOD). </span>Auf dieser Grundlage werden die Sicherheitsvorgaben für mobile Endgeräte technisch und organisatorisch umgesetzt.</p>
+<p>Eine weitere sehr wichtige Frage ist, inwieweit die Benutzer eigene Apps auf ihrem mobilen Endgerät installieren dürfen oder müssen, ob die Mitarbeiter selbst zusätzliche Apps für die private Nutzung hinzufügen dürfen und ob sie einen Teil der Administration selbst übernehmen.</p>
+<p>Auf Basis des Schutzbedarfes der Informationen (vergleiche auch die drei fiktiven Szenarien) und den Möglichkeiten des IT-Betriebs sollte eine MDM-Lösung gewählt werden (siehe SYS.3.2.2.M3 Auswahl eines MDM-Produkts), die sicherstellt, dass die Daten der Institution gemäß den intern dokumentierten Vorgaben gesichert sind.</p>
+<p>Das Betriebsmodell der zukünftigen MDM-Lösung ist abhängig vom Schutzbedarf der mobilen Geräte auszuwählen. Ein eigener Betrieb, bei dem die Server der MDM-Lösung in den eigenen Räumlichkeiten aufgestellt sind und somit inklusive der enthaltenen Daten unter der eigenen Kontrolle der Institution stehen, ist bei allen Lösungen möglich. Fast alle MDM-Anbieter bieten ihre Lösungen auch als Cloud-Variante an, bei der die Software auf den Servern des jeweiligen Anbieters betrieben wird und der Kunde einen Webzugang erhält, mit dem er die Anwendungen und verknüpften mobilen Endgeräte verwalten kann.</p>
+<p><span style="font-weight: bold">Beschaffung</span></p>
+<p>Bei der Beschaffung einer MDM-Lösung sowie bei der Auswahl von mobilen Endgeräten und des Mobilfunkproviders sollten neben den wirtschaftlichen Gesichtspunkten auch sicherheitstechnische Aspekte einfließen. Hier ist vieles möglich, beispielsweise ein Full-Service-Angebot mit einem Mobilfunkanbieter, das Geräte, Mobilfunkvertrag und Mobile Device Management umfasst, oder der schlichte Kauf der Geräte und ein vollständig selbst administrierter Betrieb.</p>
+<p>Die Angebote der Mobilfunkanbieter sind für die Sicherheit der Geräte insofern interessant, als es hier möglich ist, die Geräte in einer geschlossenen Benutzergruppe zu betreiben. Die mobilen Endgeräte erhalten dann über Mobilfunk keinen regulären Internetzugriff, sondern werden vom Mobilfunkanbieter in einem Netz zusammengefasst, in dem nur die Geräte der Institution sind.</p>
+<p>Sofern Mitarbeiter mobile Endgeräte von der Institution erhalten, sollten diese zentral beschafft werden und interne Sicherheitsvorgaben ausreichend erfüllen.</p>
+<p><span style="font-weight: bold">Umsetzung</span></p>
+<p>Je nachdem was im Konzept festgelegt ist, muss den Mitarbeitern ein Self-Service-Kiosk zur selbständigen Einrichtung der Endgeräte zugänglich sein, oder die Administratoren der Institution konfigurieren die mobilen Endgeräte vollständig für die Mitarbeiter.</p>
+<p>In Kapitel 2 werden Maßnahmenempfehlungen anhand der drei einleitend definierten Szenarien aufgezeigt. Unabhängig davon, mit welcher Methode die Konfigurationsprofile auf die verwalteten Endgeräte ausgerollt werden, muss sichergestellt sein, dass die Benutzer nicht ohne Autorisierung die Absicherungsprofile löschen können.</p>
+<p><span style="font-weight: bold">Betrieb</span></p>
+<p>Damit mobile Endgeräte ordnungsgemäß und zuverlässig benutzt werden können, muss die eingesetzte MDM-Lösung technische Sicherheitsvorgaben an die Geräte übergeben (siehe SYS.3.2.2.M4 Verteilung der Grundkonfiguration auf mobile Endgeräte). Die wichtigsten Aufgaben für die Verantwortlichen sind regelmäßige sicherheitsrelevante Wartungsmaßnahmen durchzuführen sowie Benutzerkonten und Berechtigungen sicher zu administrieren. Zusätzlich sollten die Systeme der MDM-Lösung gezielt überwacht werden, um Verfügbarkeitsprobleme und Sicherheitsvorfälle schnell erkennen zu können.</p>
+<p>Wie für alle IT-Systeme ist auch für die Server der MDM-Lösung ein funktionierendes Änderungsmanagement ein zentrales Element, um die Systemsicherheit zu erhalten.</p>
+<p><span style="font-weight: bold">Aussonderung</span></p>
+<p>Die MDM-Lösung darf nicht ohne vorherige Ankündigung abgeschaltet werden. Wenn sie außer Betrieb genommen werden soll, müssen die betroffenen Benutzer rechtzeitig informiert werden.</p>
+<p>Bei der Aussonderung des Servers der MDM-Lösung ist außerdem darauf zu achten, dass keine schützenswerten Informationen mehr auf den Festplatten vorhanden sind. Dazu genügt es nicht, die Festplatten einfach neu zu formatieren, sondern sie müssen mindestens einmal vollständig überschrieben werden. Bei Flashspeichern können die internen Speicherblöcke bauartbedingt nicht direkt adressiert werden. Das bedeutet, um die Daten zu löschen, müssen die zurücksetzenden Funktionen des Controllers genutzt werden. Sollten auf dem Server der MDM-Lösung Informationen mit hohem Schutzbedarf verarbeitet oder gespeichert worden sein, ist wahrscheinlich die Zerstörung des Flashspeichers nach DIN 66399 &#34;Vernichten von Datenträgern&#34; die sichere Methode.</p>
+<p>Die Aussonderung eines Servers oder der kompletten MDM-Lösung muss dokumentiert werden. Bestandsverzeichnisse und Netzpläne sind zu aktualisieren. Sofern sich durch die Aussonderung der Informationsverbund strukturell ändert, sollte auch das Sicherheitskonzept entsprechend angepasst werden.</p>
+<p><span style="font-weight: bold">Notfallvorsorge</span></p>
+<p>Wie für alle anderen zentralen IT-Systeme muss auch für eine MDM-Lösung eine geeignete Notfallplanung erstellt werden. Ein zentrales Element der Notfallvorsorge ist die Datensicherung, die auch relevante Bereiche des Betriebssystems und Sicherheitsmanagements einbeziehen sollte. Bei erhöhten Anforderungen an die Verfügbarkeit der MDM-Lösung kann zusätzlich über Redundanzen vorgesorgt werden. </p>
+<p>Im Zuge der Notfallvorsorge sollten bei einer Cloud-Lösung mit den Vertragspartnern entsprechende Vereinbarungen hinsichtlich der eingesetzten MDM-Lösung getroffen werden.</p>
+</p>
+<a name="7360_2"></a>
+<h2>2 Maßnahmen</h2>
+<p>Im Folgenden sind spezifische Umsetzungshinweise im Bereich "Mobile Device Management (MDM)" aufgeführt.</p>
+<a name="7360_2.1"></a>
+<h3>2.1 Basis-Maßnahmen</h3>
+<p>Die folgenden Maßnahmen sollten vorrangig umgesetzt werden:</p>
+<ul>
+<li>
+<h4>SYS.3.2.2.M1&nbsp;Festlegung einer Strategie für das Mobile Device Management</h4>
+<p>Grundlage aller weiteren Schritte ist die Definition einer Strategie, die anhand der zu verarbeitenden Informationen und deren Schutzbedarf festlegt, wie Mitarbeiter mobile Endgeräte benutzen dürfen und wie die Geräte in die internen Strukturen der Institution integriert sind. Eine solche Strategie sollte mindestens die folgenden Punkte beinhalten. </p>
+<p><span style="font-weight: bold">Darf das MDM als Cloud-Dienst betrieben werden?</span></p>
+<p>Wenn Cloud-Dienste eingesetzt werden, sind immer dann rechtliche Aspekte zu beachten, wenn personenbezogene Daten im Sinne des Bundesdatenschutzgesetzes (BDSG, § 3 Absatz 1) übergeben werden. Eine solche Auftragsdatenverarbeitung ist, abhängig vom tatsächlichen Speicherort der Daten, nur unter bestimmten Voraussetzungen möglich (§ 11 BDSG) und zudem an einen schriftlichen Auftrag gebunden. Halten sich Institutionen nicht daran, verstoßen sie gegen bestehendes Recht. Dadurch schädigen sie nicht nur ihren Ruf, sondern können sich auch Schadenersatzansprüchen oder Bußgeldern gegenübersehen.</p>
+<p>Sind die datenschutzrechtlichen Anforderungen durch den Dienstleister und die Institution erfüllbar, sollte geprüft werden, ob bei einer Cloud-Lösung auch die internen betriebswirtschaftlichen und sicherheitsrelevanten Anforderungen erfüllt werden können. Hierbei ist u. a. der Standort des MDM-Anbieters zu berücksichtigen.</p>
+<p><span style="font-weight: bold">Soll das MDM durch die Institution selbst betrieben werden?</span></p>
+<p>Um diese Frage beantworten zu können, empfiehlt es sich im ersten Schritt, über die wirtschaftlichen, sicherheitstechnischen und datenschutzrechtlichen Anforderungen den eigenen Bedarf zu ermitteln. Ebenfalls mit hoher Priorität muss die Frage beantwortet werden, wie kritisch es für die Institution ist, wenn das MDM teilweise oder komplett ausfällt. Wäre ein solcher Notfall beherrschbar? Können Sicherheitsvorfälle erkannt und kann ihnen professionell begegnet werden?</p>
+<p>Im nächsten Schritt sollte entschieden werden, ob ein interner Verzeichnisdienst integriert werden soll und welche Anforderungen erfüllt sein müssen.</p>
+<p><span style="font-weight: bold">Welche Compliance-Anforderungen müssen durchgesetzt werden?</span></p>
+<p>Sollen Verstöße gegen interne Regelungen der Institution erkannt und dagegen automatisiert Aktionen ausgeführt werden, müssen Compliance-Anforderungen auf den mobilen Endgeräten der Institution durchgesetzt werden. Die Reaktion auf Compliance-Verstöße kann unterschiedlich ausfallen, da diese abhängig vom Schutzbedarf der Informationen und der Implementierungsvariante (<span style="font-style: italic">Geräte der Institution</span> oder <span style="font-style: italic">BYOD</span>) ist. Wurde der Bedarf ermittelt, sollte in der Strategie eine entsprechende technische Umsetzung, mit der Compliance-Anforderungen eingehalten werden, für die Beschaffung und Konzeption formuliert werden.</p>
+<p><span style="font-weight: bold">Welche mobilen Geräte und welche Betriebssysteme muss das MDM unterstützen?</span></p>
+<p>Um eine hohe Produktivität zu erzielen und den sicherheitsbewussten Umgang der Benutzer zu unterstützen, empfiehlt es sich, auf die bereits vorhandenen Erfahrungen der Mitarbeiter mit mobilen Endgeräten der Institution zurückzugreifen. Die folgenden Fragen sollen die Verantwortlichen dabei unterstützen, den Bedarf für die Strategie festzulegen: </p>
+<ul><li>Sollen die Benutzer von mobilen Endgeräten mit dem bevorzugten Gerät auf Informationen der Institution zugreifen können? Soll das unabhängig davon erfolgen können, unter welchem Betriebssystem es betrieben wird?</li><li>Sollen die Benutzer im eigenen App-Store der Institution Anwendungen suchen und eigenständig installieren dürfen, mit denen sie auf vertrauliche Informationen zugreifen können?</li><li>Sollen private und geschäftliche Informationen der Institution auf dem mobilen Endgerät getrennt und auch verwaltet werden? Soll das erfolgen, ohne die bereits vorhandenen Erfahrungen der Mitarbeiter mit mobilen Endgeräten der Institution zu beeinträchtigen?</li><li>Sollen hoch effektive Sicherheitsmaßnahmen implementiert werden, die für den Benutzer des mobilen Endgerätes unsichtbar sind?</li><li>Sollen die Benutzer bei der Einhaltung der Anforderungen der Institution durch frei wählbare mobile Endgeräte und der damit einhergehenden besseren Akzeptanz von implementierten technischen Absicherungsmaßnahmen unterstützt werden?</li><li>Wie hoch ist der Administrationsaufwand, wenn Betriebssysteme von unterschiedlichen Herstellern in diversen Versionen unterstützt werden?</li></ul>
+<p><span style="font-weight: bold">Muss die MDM-Lösung mandantenfähig sein?</span></p>
+<p>Eine mandantenfähige MDM-Lösung wird wahrscheinlich nicht für kleinere Umgebungen mit wenigen Benutzern notwendig sein. Ab einer größeren Anzahl von Benutzern kann aus unterschiedlichen Gründen jedoch schnell der Wunsch nach getrennten Mandanten entstehen. Ob eine mandantenfähige MDM-Lösung notwendig ist, hängt davon ab, wie umfangreich komplexe Berechtigungsstrukturen innerhalb der Lösung abgebildet werden können. Für den Benutzer eines mobilen Endgeräts ist ohne diese Möglichkeit eventuell die beste MDM-Lösung wertlos, da jede eingereichte Berechtigung sich automatisch auf alle vererbt und somit dem Maximumprinzip folgt. Wenn Organisationsstrukturen abgebildet werden sollen, ist das ein eindeutiges Indiz für den Bedarf einer mandantenfähigen MDM-Lösung. Damit sie zukunftsfähig ist, sollte die Lösung dann in der gehosteten Variante ebenso wie in der Cloud-Variante funktionieren.</p>
+<p>Eine mandantenfähige Lösung kann sich auch empfehlen, wenn Zugänge auf das Backend der MDM-Lösung für unterschiedliche Interessengruppen bereitgestellt werden sollen, z. B. für verantwortliche Administratoren, Auditoren, die interne Revision oder für das Controlling.</p>
+<p><span style="font-weight: bold">Müssen Cloud-Dienste eingebunden werden?</span></p>
+<p>Bei der Nutzung von Online-Speicherdiensten (z. B. Cloud-Dienste von Microsoft, Google oder Apple, Dropbox und ähnliche) kann zwischen verschiedenen Varianten unterschieden werden. Das Online-Backup, bei dem Daten einmalig oder in regelmäßigen Abständen über das Internet gespeichert werden, um nach einem Datenverlust wieder abgerufen werden zu können, stellt dabei die einfachste Form der Nutzung dar. Bei der sogenannten Online-Festplatte sind je nach Dienstleister neben der reinen Datenspeicherung auch zusätzliche Funktionen verfügbar. Beispielsweise können Daten und Dokumente mit Mitarbeitern oder Geschäftspartnern geteilt oder gemeinsam bearbeitet sowie über verschiedene Endgeräte synchronisiert werden.</p>
+<p>Kann nicht auf die Daten der Institution zugegriffen werden, weil der Onlinespeicher-Dienst aufgrund eines Ausfalls des Dienstleisters oder der Verbindung zum Dienst nicht verfügbar ist, kann das die Geschäftsprozesse stören oder sie können komplett ausfallen. Wichtig sind hierbei insbesondere die Schutzbedarfsanforderungen an die betroffenen Informationen. Sofern die Prozesse hochverfügbar sein müssen, drohen bei längeren Ausfallzeiten des Onlinedienstes finanzielle Verluste oder auch Imageschäden. Neben der Verfügbarkeit des Onlinespeichers und der darin abgelegten Informationen hat vor allem die Vertraulichkeit der Informationen einen hohen Stellenwert. Gelingt es Angreifern auf vertrauliche Informationen der Institution zuzugreifen und diese z. B. einem breiteren Personenkreis zugänglich zu machen, drohen Imageverlust sowie rechtliche Konsequenzen und finanzielle Einbußen.</p>
+<p>Wenn Informationen über das Netz übertragen, bearbeitet oder abschließend gespeichert werden, können Integritätsprobleme auftreten, die bis hin zum Totalverlust führen können. Das gilt auch für verschlüsselte Daten. Solche Probleme wirken sich ähnlich aus wie der Verlust der Vertraulichkeit.</p>
+<p>Werden bei Vertragsende die Informationen der Institution durch den Anbieter des Onlinespeichers nicht ordnungsgemäß gelöscht, besteht die Gefahr, dass Unbefugte auf diese Informationen zugreifen können.</p>
+<p><span style="font-weight: bold">Müssen Dokumentenmanagementsysteme eingebunden werden?</span></p>
+<p>Die Frage, ob Dokumentenmanagementsysteme eingebunden werden sollen, hängt eng zusammen mit der Anforderung an die Mandantenfähigkeit der MDM-Lösung. Für die Strategie bedeutet das, dass die MDM-Lösung Informationen an andere Enterprise-Systeme übergeben können muss, z. B. über Web-Services. Hier ist darauf zu achten, dass dies skalierbar und unabhängig von der Anzahl der anderen eingebundenen Systeme möglich ist.</p>
+<p><span style="font-weight: bold">Müssen zusätzlich zu den mobilen Endgeräten auch Peripherie-Geräte eingebunden und verwaltet werden?</span></p>
+<p>Wenn mobile Endgeräte eingeführt werden, müssen durch die Verantwortlichen auch die datenschutzrechtlichen, sicherheitstechnischen und betrieblichen Anforderungen für die Einbindung von Peripherie-Geräten definiert werden. Beispielsweise ist es oft alles andere als einfach, eine Strategie zum mobilen Drucken innerhalb der Institution zu implementieren und dabei die unterschiedlichen Einsatzorte von mobilen Endgeräten zu berücksichtigen. Ursache hierfür ist, dass innerhalb der meisten Institutionen eine breite Palette von Hardware, Software und Serviceangeboten je nach Drucker und zugrunde liegender Druckerinfrastruktur berücksichtigt werden muss.</p>
+<p>Im Betriebssystem integrierte Lösungen zu benutzen, wird umso schwieriger, je mehr mobile Plattformen zu unterstützen sind. Sollen z. B. bereits bestehende Netzdrucker über die mobilen Endgeräte erreichbar sein, müssen meist Partner-Lösungen der MDM-Anbieter integriert oder cloudbasierte Lösungen benutzt werden. Die Evaluierung, welche Lösung die Sicherheitsstrategie der Institution am besten unterstützt, sollte ein fester Bestandteil der Planungs- und Konzeptionsphase sein. Wird das an dieser Stelle vergessen, ist damit zu rechnen, dass die Benutzer von mobilen Endgeräten sich „Workarounds“ aufbauen, die die etablierten Sicherheitsmaßnahmen umgehen.</p>
+<p><span style="font-weight: bold">Welche Betriebsmodell soll für mobile Endgeräte in Betracht kommen?</span></p>
+<p>Eine der wichtigsten Fragen beim Einsatz von mobilen Endgeräten ist, welches Betriebsmodell eingeführt werden soll. Zwei Betriebsmodelle oder eine Kombination beider Modelle stehen zur Auswahl:</p>
+<ul><li>An die Mitarbeiter ausgegebene GeräteIn diesem Modell beschafft die Institution die Geräte selbst und stellt sie den Benutzern zur Verfügung, entweder als personalisierte Einzelgeräte oder als gemeinsam genutzte Endgeräte.</li><li>Bring Your Own Device (BYOD)Die Mitarbeiter der Institution nutzen bereits vorhandene private mobile Endgeräte, um auf Informationen der Institution zuzugreifen.</li></ul>
+<p>Ob BYOD innerhalb der Institution freigegeben werden kann, sollte anhand der nachfolgenden Fragen hinsichtlich eines akzeptablen Risikos beantwortet und bewertet werden.</p>
+<ul><li>Sind die rechtlichen Konflikte bei der dienstlichen Nutzung von privaten mobilen Endgeräten bezüglich des Softwarelizenzrechts geklärt oder ausgeräumt, z. B. dienstliche Nutzung privater Lizenzen oder private und dienstliche Nutzung von dienstlichen Lizenzen?</li><li>Sind im Rahmen des Notfallmanagements Maßnahmen hinsichtlich der Löschung des gesamten Datenbestands mit den Besitzern der mobilen Endgeräte vereinbart worden?</li><li>Sind die Verantwortlichen der IT-Abteilung in der Lage, jedes einzelne private Gerät daraufhin zu prüfen, ob es geeignet ist, im institutionellen Umfeld eingesetzt zu werden?</li><li>Sind Möglichkeiten evaluiert, wie interne Datenschutz- und Sicherheitsanforderungen ausreichend umgesetzt werden können?</li><li>Ist sichergestellt, dass bei Reparatur- und Wartungsarbeiten an privaten mobilen Endgeräten unberechtigte Dritte nicht auf Informationen der Institution zugreifen können?</li><li>Ist sichergestellt, dass nachdem ein Arbeitsverhältnis beendet wurde, der ehemalige Mitarbeiter nicht mehr auf Informationen der Institution zugreifen kann und alle dienstlichen Informationen auf dem mobilen Endgerät gelöscht werden können?</li><li>Ist sichergestellt, dass jederzeit genug Ressourcen für die Benutzerunterstützung vorhanden sind?</li></ul>
+<p>Sollte eine der Fragen nicht umsetzbar sein, also mit Nein beantwortet werden, ist vom Einsatz von BYOD mindestens für die eingangs aufgeführten Szenarien 2 und 3 abzuraten.</p>
+<p>Die Strategie für das Mobile Device Management muss schriftlich fixiert und vom ISB freigegeben werden. Sie sollte regelmäßig aktualisiert werden.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M2&nbsp;Festlegen erlaubter mobiler Endgeräte</h4>
+<p>Grundsätzlich müssen alle in einer Institution eingesetzten mobilen Endgeräte die Anforderungen der MDM-Strategie erfüllen. Das bedeutet, sie müssen alle technischen Sicherheitsmaßnahmen, die die Institution bereits implementiert hat oder in absehbarer Zeit bereitstellen möchte, unterstützen. Für die Beschaffung von mobilen Endgeräten, deren Displays und Batterien erfahrungsgemäß stark beansprucht werden, sollte ein Gerätelebenszyklus von etwa zwei Jahren veranschlagt werden. Wenn Geräte unterschiedlicher Hersteller und mit verschiedenen Betriebssystemen bereitgestellt werden, muss sichergestellt sein, dass nicht durch unterschiedliche Konfigurationsprofile die Sicherheit des Informationsverbundes und der verarbeiteten Informationen gefährdet wird.</p>
+<p>Das MDM darf nur den mobilen Endgeräten Zugriff auf interne Netze gewähren, die den Freigabe- und Absicherungsprozess durchlaufen haben. Es muss eine Übersicht der mobilen Endgeräte und Betriebssystemvarianten geben, die in der Institution zugelassen sind. </p>
+</li>
+<li>
+<h4>SYS.3.2.2.M3&nbsp;Auswahl einer MDM-Produkts</h4>
+<p>Es gibt eine Vielzahl von MDM-Produkten auf dem Markt. Es muss ein MDM-Produkt ausgewählt werden, dass die definierten Anforderungen der MDM-Strategie unterstützt. Es ist sicherzustellen, dass nur MDM-Software genutzt oder beschafft wird, die alle technischen und organisatorischen Sicherheitsmaßnahmen umsetzen kann und alle freigegebenen mobilen Endgeräte unterstützt.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M4&nbsp;Verteilung der Grundkonfiguration auf mobile Endgeräte</h4>
+<p>Die Verantwortlichen müssen sicherstellen, dass alle mobilen Endgeräte unabhängig vom Hersteller, Modell und dem eingeführten Betriebsmodell umgehend über das MDM die gewählten Konfigurationen erhalten, inklusive der Sicherheitseinstellungen. Um zu gewährleisten, dass alle Informationen der Institution auf dem Gerät durch die Absicherungsmaßnahmen geschützt sind, sollten sich alle mobilen Endgeräte im Werkszustand befinden.</p>
+<p>Die zu beachtenden Anforderungen und Empfehlungen für die Grundkonfiguration und Integration der mobilen Endgeräte können den Umsetzungshinweisen der folgenden Bausteine entnommen werden:</p>
+<ul><li>SYS.3.2.1 Smartphone/Tablet</li><li>SYS.3.2.3 iOS (for Enterprise)</li><li>SYS.3.2.4 Android</li><li>SYS.3.2.5 Windows</li><li>SYS.3.2.6 BlackBerry</li></ul>
+</li>
+<li>
+<h4>SYS.3.2.2.M5&nbsp;Sichere Grundkonfiguration für mobile Endgeräte</h4>
+<p>Die Grundkonfiguration der Geräte muss dem zu erfüllenden Schutzbedarf angemessen sein und wird meist in einem spezifischen Gerätebaustein definiert. Die zu beachtenden Anforderungen und Empfehlungen für die Grundkonfiguration und Integration der mobilen Endgeräte können den Umsetzungshinweisen der folgenden Bausteine entnommen werden:</p>
+<ul><li>SYS.3.2.1 Smartphone/Tablet</li><li>SYS.3.2.3 iOS (for Enterprise)</li><li>SYS.3.2.4 Android</li><li>SYS.3.2.5 Windows</li><li>SYS.3.2.6 BlackBerry</li></ul>
+<p>Unter Berücksichtigung der etablierten Prozesse für die Inbetriebnahme von mobilen Endgeräten und der Übergabe an die späteren Benutzer sollte sichergestellt sein, dass der MDM-Client bereits auf den Geräten vorhanden ist oder es den Benutzern möglich ist, ihn selbst zu installieren.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M6&nbsp;Protokollierung</h4>
+<p>Um eine Protokollierung in einem Informationsverbund zu realisieren, muss geplant werden, wie diese technisch und organisatorisch aufgebaut wird. Auch muss dazu ein Sicherheitskonzept erstellt werden. Ist bereits ein Sicherheitskonzept für die Protokollierung vorhanden, sollten die Anforderungen für das MDM dort integriert werden. Ebenfalls muss geregelt sein, wie die Zugriffsrechte auf Protokollierungsdienste und Protokolldaten des MDM vergeben werden.</p>
+<p>Wenn zentral protokolliert wird, ist zu überlegen, wie der zentrale Protokollierungsserver in die Netzinfrastruktur des Informationsverbundes integriert werden kann oder der Zugriff bei einer Cloud-Lösung erfolgen soll. In den folgenden Tabellen wird aufgezeigt, mit welchen Einstellungsempfehlungen die Protokollierung im MDM für die mobilen Endgeräte abgebildet werden könnte.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen des Gerätestandortes, der IP-Adresse und der GPS-Daten</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen beim Unenrollment</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei Netz-Zugangskontrolle (NAC/NAP)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Protokollieren des dynamischen Profilmanagements mit Bezug auf die Sicherheitsregelkonformität und dem Geofencing-Management</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Protokollieren der an das Gerät gebundenen Sicherheitseinstellungen</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen des Verbindungsverlustes zum mobilen Endgerät</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr></tbody></table>
+<p>Tabelle : Protokollierung im MDM - Bereich Sicherheit</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei nicht autorisierter Software und App-Installation</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen, wenn Benutzer Apps installieren</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr></tbody></table>
+<p>Tabelle : Protokollierung im MDM - Bereich App-Verwaltung</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen, wenn Benutzer Dateien und Dokumente bereitstellen</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr></tbody></table>
+<p>Tabelle : Protokollierung im MDM - Bereich Inhalteverwaltung</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei gescheiterten Löschaufforderungen an das mobile Endgerät</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei Verstoß gegen die automatischen Whitelist-Content-Filter</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr></tbody></table>
+<p>Tabelle : Protokollierung im MDM - Bereich Geräteeinschränkungen</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei einem Remote-Device-Lock, Remote-Unlock und Remote-Wipe</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei einem Selective-Wipe</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen bei Änderungen des Voice- und Data-Roaming</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen der Position des mobilen Endgeräts basierend auf den Informationen vom WLAN, der IP-Adresse und den GPS-Daten</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen des Gerätezustandes (z. B. Batterie, Speicher (RAM und ROM), CPU-Auslastung)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr></tbody></table>
+<p>Tabelle : Protokollierung im MDM – Fehlerbehebung und Überwachung</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen des App-Enrollments</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen und Benachrichtigen, wenn der Benutzer Apps bereitstellt.</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen der Registrierung von mobilen Endgeräten</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen des automatischen Enrollments von mobilen Endgeräten durch Registrierungsprogramme der Hersteller</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen der Integration in ein Identity-Management (z. B. Active Directory oder LDAP)</td>
+<td rowspan='1' colspan='1'>&nbsp;</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen des SMS- oder E-Mail-basierten Enrollments</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Überwachen der in Quarantäne befindlichen Geräte während des Enrollment-Prozesses</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+<td rowspan='1' colspan='1'>Ja</td>
+</tr></tbody></table>
+<p>Tabelle : Protokollierung im MDM – Mobile-Device-Enrollment</p>
+<p>Das MDM muss ebenfalls alle sicherheitsrelevanten Aktionen und Konfigurationsänderungen am MDM selbst protokollieren. Die Protokolldateien dürfen nicht von Unbefugten eingesehen werden und auch nicht verändert werden können. Bei der Protokollierung müssen gesetzliche und interne Regelungen eingehalten werden.</p>
+</li>
+</ul>
+<a name="7360_2.2"></a>
+<h3>2.2 Standard-Maßnahmen</h3>
+<p>Gemeinsam mit den Basis-Maßnahmen entsprechen die folgenden Maßnahmen dem Stand der Technik im Bereich "Mobile Device Management (MDM)".</p>
+<ul>
+<li>
+<h4>SYS.3.2.2.M7&nbsp;Auswahl und Freigabe von Apps</h4>
+<p>Der Mehrwert eines mobilen Endgeräts ist erst erkennbar, wenn es integraler Bestandteil der Infrastruktur der Institution wird und den Benutzern einen umfänglichen Zugang zu den Informationen ermöglicht. Das bedeutet, dass interne und/oder vertrauliche Informationen den Benutzern auch außerhalb der Institutionsinfrastruktur zur Verfügung gestellt werden. Im Rahmen des Freigabeprozesses für Apps sollten deshalb mindestens die folgenden Kriterien geprüft und als Basis für eine Ablehnung oder Freigabe dienen:</p>
+<ol><li>Wird durch die App unberechtigt auf Informationen des Benutzers zugegriffen?<br>
+<ul><li>Versucht die App unberechtigt, auf Geodaten wie den Standort des Geräts zuzugreifen?</li><li>Versucht die App unberechtigt, auf das Adressbuch oder Kalender zuzugreifen?</li><li>Versucht die App unberechtigt, auf die Zwischenablage des Geräts zuzugreifen?</li><li>Versucht die App unberechtigt, zu erkennen, welche Apps auf dem Gerät noch installiert sind?</li></ul>
+</li><li>Versucht die App unberechtigt, die Kommunikationsverbindungen umzuleiten?</li><li>Werden App-Anwendungsdaten außerhalb des deutschen bzw. europäischen Datenschutzraums gespeichert?</li><li>Werden App-Anwendungsdaten automatisiert oder ungefragt auf Servern außerhalb der Hoheit der Institution gespeichert?</li><li>Besteht durch nicht werbefreie Apps die Gefahr des Benutzer-Profilings?</li><li>Werden die Daten innerhalb einer App, die auf wesentliche Informationen oder Geschäftsprozesse der Institution zugreift, automatisch beim Entsperren des Geräts entschlüsselt oder gibt es eine zusätzliche Zugriffsbeschränkung (muss der Benutzer z. B. zusätzlich ein Passwort zum Entschlüsseln eingeben)?</li><li>Werden durch die App eigene Sharing-Dienste oder Netzschnittstellen angeboten?</li><li>Stellt der App-Entwickler regelmäßig Aktualisierungen bereit?</li><li>Setzt der App-Entwickler die aktuellsten Schnittstellen und Richtlinien des Betriebssystemherstellers um?</li></ol>
+<p>Alle freigegebenen Anwendungen (Apps) sollten in einem Standardkatalog den Benutzern intern zur Verfügung gestellt und somit veröffentlicht werden. Bietet der Hersteller eines mobilen Endgeräts für seine Plattform Volumenlizenzprogramme an, sollte dieses Programm in die Softwareverteilungsprozesse integriert werden.</p>
+<p>Unter Berücksichtigung der Ergebnisse des Freigabeprozesses können mittels der nachfolgenden Empfehlungen die Sicherheitsziele je Szenario unterstützt werden.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>&nbsp;</th>
+<th rowspan='1' colspan='1'>Szenario 1</th>
+<th rowspan='1' colspan='1'>Szenario 2</th>
+<th rowspan='1' colspan='1'>Szenario 3</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Installation von Apps über App-Stores erlauben</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>automatische App-Downloads zu Aktualisierungszwecken erlauben</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Entfernen von installierten Apps erlauben</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>In-App-Käufe von installierten Apps erlauben</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>ja</td>
+<td rowspan='1' colspan='1'>nein</td>
+</tr></tbody></table>
+<p>Tabelle : Einbindung des App-Store und Freigabe von Apps</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M8&nbsp;Festlegung erlaubter Informationen auf mobilen Endgeräten</h4>
+<p>Die Institution sollte festlegen, unter welchen Bedingungen die mobilen Endgeräte welche Informationen verarbeiten dürfen. Die Definition muss sich auf die Klassifikation bzw. Schutzbedarf der Informationen oder auf deren zugrunde liegende Prozesse beziehen und die Bedingungen zur Verarbeitung klar regeln, wie z. B. Verschlüsselung, Container oder freigegeben für die Cloud. Diese Definition ist als Grundlage für die Konfiguration der mobilen Endgeräte durch das MDM und für die eventuell benötigte Einbindung von zusätzlichen Sicherheitsinfrastrukturen heranzuziehen. Alle Regelungen sollten für die Benutzer dokumentiert und in einer geeigneten Form übergeben werden. Um Sicherheitsvorfälle automatisiert zu erkennen, sollten soweit möglich technische Maßnahmen implementiert werden, mit denen sich die aufgestellten internen Regeln durchsetzen lassen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M9&nbsp;Auswahl von Sicherheits-Apps</h4>
+<p>Der vielleicht wichtigste Aspekt bei der Auswahl von Sicherheits-Apps ist die Benutzerfreundlichkeit. So sollen die Benutzer sich schnell authentisieren und schnell auf Apps und Informationen der Institution über ein mobiles Endgerät zugreifen können. Alle Anwendungen, die die Sicherheit des Gerätes selbst oder der dort gespeicherten Informationen erhöhen, werden der Kategorie Sicherheits-Apps zugeordnet. Die wichtigste Sicherheits-App ist der Client des Mobile-Device-Management-Systems. Abhängig vom gewählten Betriebssystem und dem Sicherheitsframework des Herstellers gibt es weitere Apps dieser Kategorie, deren Funktion teilweise Bestandteil des MDM-Clients sein kann:</p>
+<ul><li>Apps zur Lokalisierung des Gerätes im Falle des Verlusts,</li><li>Antiviren-Apps,</li><li>Apps für die kryptografische Absicherung von einzelnen Daten oder Ordnern,</li><li>Apps für die Bereitstellung von Arbeitsumgebungen mittels einer Container-Isolierungstechnik sowie</li><li>Apps, die den Zugriff auf andere Apps zusätzlich regeln.</li></ul>
+<p>Auf Basis der gewählten Strategie muss die Auswahl von Sicherheits-Apps verbindlich formuliert und geregelt sein. Die Auswahl muss für jedes eingesetzte Betriebssystem der Geräte geeignete Apps aufführen. Das MDM muss die Installation dieser Apps erzwingen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M10&nbsp;Sichere Anbindung der mobilen Endgeräte an die Institution</h4>
+<p>Wird mobilfunkbasiert ein institutionsbezogener Zugangspunkt (Access Point Name, APN) benutzt, kann dieser die Grundlage dafür bilden, den erlaubten Gerätepool einzugrenzen. Alle mobilen Endgeräte der Institution, die diesen APN verwenden, erhalten vom Mobilfunkprovider einen mit der Institution abgestimmten IP-Adressenbereich. Um Sicherheitsvorfälle zu vermeiden, die durch zu kurze Passwörter für die Authentisierung verursacht werden, sollte ein komplexes Passwort (bis maximal 64 und mindestens 10 Stellen) mit dem Mobilfunkprovider vereinbart werden. Beim Einsatz eines institutionsbezogenen APN sollte zudem mit dem Protokoll CHAP authentisiert werden.</p>
+<p>Die sichere Anbindung der mobilen Endgeräte an die Institution sollte mit einem VPN erfolgen, da so die Vertraulichkeit und Integrität der zwischen den mobilen Endgeräte und dem IT-Netz der Institution übertragenen Informationen gewahrt wird. Für die Konfiguration der VPN-Verbindungen zu den Servern von beispielsweise <span style="font-style: italic">Aruba VIA</span>, <span style="font-style: italic">Check Point Mobile VPN</span>, <span style="font-style: italic">Cisco AnyConnect</span>, <span style="font-style: italic">F5 SSL</span>, <span style="font-style: italic">Juniper SSL</span>, <span style="font-style: italic">SonicWALL Mobile Connect</span>, <span style="font-style: italic">NCP</span>, <span style="font-style: italic">genua</span> oder <span style="font-style: italic">SINA</span> bieten die MDM-Anbieter häufig mit den VPN-Herstellern abgestimmte Einstellungen an. Jedoch müssen neben dem Konfigurationsprofil für die VPN-Verbindung oft noch zusätzlich die Apps der VPN-Server-Hersteller aus dem jeweiligen App-Store installiert werden. Im Dokument <span style="font-style: italic">Technische Richtlinie TR-02102</span> des BSI werden Empfehlungen für die Verwendung von IPSec und SSL/TLS ausgesprochen (siehe Kapitel 3.2 der TR).</p>
+<p>Bei der Implementierung eines VPN ist es unabhängig vom genutzten Algorithmus und Protokoll möglich, ein VPN permanent, nur bei Bedarf oder für einzelne verwaltete Apps zu konfigurieren.</p>
+<p><span style="font-weight: bold">Permanentes VPN</span></p>
+<p>Ein permanentes VPN ermöglicht es, alle Kommunikationsverbindungen zu kontrollieren. Die Verantwortlichen in der Institution können so den Datenverkehr zu und vom mobilen Endgerät vollständig überwachen und falls erforderlich filtern. Damit lassen sich die Informationen der Institution schützen und der Zugriff der Geräte auf das Internet kann entsprechend den internen Anforderungen reguliert werden.</p>
+<p><span style="font-weight: bold">VPN On-Demand</span></p>
+<p>Mit VPN On-Demand können mobile Endgeräte automatisch eine VPN-Verbindung in die Institution herstellen. Die hinterlegten Regelungen für das Erkennen des Bedarfs durch das mobile Endgerät erfolgen meist in zwei Etappen, der Netzerkennung und der Verbindungsevaluierung.</p>
+<p><span style="font-weight: bold">VPN auf App-Basis</span></p>
+<p>Ein VPN auf App-Basis wird je nach Betriebssystem und MDM-Hersteller unterschiedlich umgesetzt. Allen Lösungen gemeinsam ist, dass diese Apps verwaltbar sein müssen. Alle nicht verwalteten Apps dürfen den VPN-Tunnel in die Institution nicht benutzen. Ein weiteres Merkmal für verwaltete Apps ist, dass unterschiedliche VPN-Verbindungen konfiguriert werden können, um Informationen noch differenzierter zu schützen. Um ein VPN auf App-Basis zu realisieren, muss die verwaltete App über Standardnetz-APIs angesprochen werden können oder vom MDM-Hersteller durch einen zusätzlichen Layer gekapselt werden.</p>
+<p>Welche der beschriebenen VPN-Varianten eingesetzt wird, hängt vom Schutzbedarf, den genutzten Algorithmen und Authentisierungsmethoden sowie der vorhandenen DNS-Struktur ab.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M11&nbsp;Berechtigungsmanagement im MDM</h4>
+<p>Berechtigungen dürfen nur eingeschränkt und aufgabenbezogen nach dem Prinzip der geringsten Berechtigungen eingerichtet werden. Durch ein Identitäts- und Berechtigungsmanagement im MDM wird sichergestellt, dass Benutzern von mobilen Endgeräten und Administratoren nur die notwendigen Berechtigungen zugeordnet werden. Eine dokumentierte Vorgehensweise, um Berechtigungen zuzuweisen, zu verändern und wieder zu entziehen, ermöglicht es zu steuern, wie auf Informationen zugegriffen wird. Mit entsprechenden Hintergrundsystemen können außerdem stattgefundene Aktivitäten gespeichert und ausgewertet werden. Im Schadensfall oder aufgrund rechtlicher Anforderungen können so Aktivitäten ausgewertet und den hierfür Verantwortlichen zugeordnet werden.</p>
+<p>Zunächst ist zu ermitteln, wie die administrativen Aufgaben organisiert werden sollen, beispielsweise Support durch einen Helpdesk, eigenständige Benutzerregistrierung oder Gerätekonfigurationsmanagement. Die Verantwortlichen müssen die für den MDM-Einsatz ermittelten Funktionen dokumentieren. Im Anschluss ist die Funktionstrennung festzulegen und zu begründen, d. h. welche Funktionen nicht miteinander vereinbar sind und nicht mit dem hierfür eingerichteten Benutzerkonto gleichzeitig wahrgenommen werden dürfen. </p>
+<p>Um die benötigten Funktionstrennungen und Berechtigungen zu ermitteln, können folgende Beispielfragen herangezogen werden: </p>
+<ul><li>Wie viele Ebenen des Supports werden im Helpdesk benötigt?</li><li>Welche Benutzer mit welchen mobilen Endgeräten werden durch welche Gruppe von Administratoren verwaltet?</li><li>Wer entwickelt und verwaltet die institutionseigenen Apps?</li><li>Wer verwaltet die Richtlinien- und Konfigurationsprozesse?</li><li>Auf welche Informationen des mobilen Endgeräts oder der darauf befindlichen Informationen können die Administratoren zugreifen?</li><li>Müssen die interne Revision oder externe Auditoren immer auf die MDM-Lösung zugreifen können?</li><li>Muss das Sicherheitsmanagement immer auf die MDM-Lösung zugreifen können?</li></ul>
+<p>Vorgaben hierfür können aus den Aufgaben selbst oder aus gesetzlichen oder internen Anforderungen resultieren. Das etablierte Berechtigungsmanagement ist regelmäßig darauf zu kontrollieren, ob die zugeteilten Rechte noch den Aufgaben entsprechen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M12&nbsp;Abgesicherte MDM-Betriebsumgebung</h4>
+<p>Eine MDM-Lösung wird auf IT-Systemen betrieben, die entweder in der alleinigen Verantwortung der Institution sind oder die ein Outsourcing-Partner im Auftrag der Institution betreibt. In beiden Fällen ist die Institution dafür verantwortlich, die MDM-Komponenten abzusichern und Netzsegmente schutzbedarfsgerecht zuzuweisen. Auch müssen die Verantwortlichen dafür sorgen, dass die unterstützenden IT-Systeme für das MDM entsprechend dem ermittelten Schutzbedarf ausreichend abgesichert sind. Dabei muss beachtet werden, dass die Sicherheit der mobilen Endgeräte direkt von der Sicherheit des MDM abhängig ist. Um einen angemessenen Schutz zu gewährleisten, sollten die folgenden Anforderungen erfüllt sein:</p>
+<ul><li>das Betriebssystem der MDM-Lösung ist gehärtet,</li><li>die administrativen Zugriffe werden kontrolliert,</li><li>ein missbräuchlicher Zugriff wird erkannt und es werden entsprechende Gegenmaßnahmen eingeleitet,</li><li>die Absicherung der Client-Server Kommunikation entspricht dem benötigten Schutzbedarf,</li><li>die Anmeldeinformationen der Benutzer sind dem benötigten Schutzbedarf entsprechend abgesichert,</li><li>es ist ein kontinuierliches Vulnerability-Assessment etabliert,</li><li>die MDM-Lösung ist in die etablierten Aktualisierungs- und Änderungsmanagement-Prozesse vollständig integriert.</li></ul>
+</li>
+</ul>
+<a name="7360_2.3"></a>
+<h3>2.3 Maßnahmen für erhöhten Schutzbedarf</h3>
+<p>Im Folgenden sind Maßnahmenvorschläge aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und bei erhöhtem Schutzbedarf in Betracht gezogen werden sollten. Die jeweils in Klammern angegebenen Buchstaben zeigen an, welche Grundwerte durch die Maßnahme vorrangig geschützt werden (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit).</p>
+<ul>
+<li>
+<h4>SYS.3.2.2.M13&nbsp;Einschränkung der App-Installation mittels Whitelist(CIA)</h4>
+<p>Bei erhöhtem Schutzbedarf sollten die Benutzer der mobilen Endgeräte ausschließlich solche Apps installieren dürfen, die von der Administration und dem Sicherheitsmanagement der Institution untersucht und freigegeben wurden (siehe SYS.3.2.2.M7 <span style="font-style: italic">Auswahl und Freigabe von Apps</span>). Das MDM sollte die Installation anderer Apps verhindern oder alternativ unbefugt installierte Apps sofort wieder entfernen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M14&nbsp;Benutzung externer Reputation-Services für Apps(CI)</h4>
+<p>Ein Reputation-Service ist ein externer Dienst, der Apps nach bestimmten Kriterien untersucht und die Ergebnisse bereitstellt. Die Funktionsweise des Reputation-Services basiert meist auf den folgenden drei Phasen.</p>
+<p><span style="font-weight: bold">Katalogisieren der Apps</span></p>
+<p>Der App-Reputation-Service sammelt und katalogisiert Millionen von Apps aus den Stores der Hersteller, von Websites von Drittanbietern, von App-Sharing-Dienstleistungen sowie von strategischen Partnern der App-Reputation-Dienstleister.</p>
+<p><span style="font-weight: bold">Analyse der Apps</span></p>
+<p>Über einen mehrstufigen, üblicherweise größtenteils automatisierten Analyseprozess werden detaillierte Informationen zum Verhalten der Apps erhoben.</p>
+<p><span style="font-weight: bold">Klassifizierung und Bewertung der Apps</span></p>
+<p>Jede App wird klassifiziert und bewertet. Im Anschluss wird der ausgewerteten App durch den Reputation-Service-Anbieter eine Bewertung (Score) zugewiesen. Zur leichteren Beurteilung der App wird diese häufig einer der folgenden feingranularen Kategorien zugeordnet:</p>
+<ul><li>bösartig (Malicious),</li><li>unerwünscht (Unwanted),</li><li>verdächtig (Suspicious),</li><li>maßvoll (Moderate),</li><li>gutartig (Benign) oder</li><li>vertrauenswürdig (Trustworthy)</li></ul>
+<p>Wenn die Benutzer Apps installieren dürfen und die verantwortlichen Administratoren nicht selbst eine Whitelist mit erlaubten Apps erstellen können, ist es durch einen Reputation-Service möglich, Apps wenigstens auf Kategorienbasis einzuschränken. Dabei müssen sich die Verantwortlichen jedoch eng mit dem Sicherheitsmanagement der Institution abstimmen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M15&nbsp;Nutzung von PIM-Containern(CI)</h4>
+<p>Um zu verhindern, dass Spionage-Apps oder unberechtigte Dritte die Personal-Information-Manager-(PIM)-Daten (wie Exchange, Domino, Groupwise) auf dem mobilen Endgerät unbefugt einsehen oder verändern können, sollte ein PIM-Container eingesetzt werden. Ein solcher Container kapselt die PIM-Daten und Funktionen der zu schützenden Anwendung vor anderen Apps auf dem mobilen Endgerät. Der Container muss durch ein eigenes Passwort abgesichert werden und eine vom Betriebssystem unabhängige Verschlüsselung der Daten sowie eine Transportverschlüsselung beinhalten. Wenn ein PIM-Container eingesetzt wird, müssen die Verantwortlichen der Institution nach Möglichkeit sicherstellen, dass das Betriebssystem des mobilen Endgeräts keine Sicherheitslücken aufweist, die die benötigte Sicherheit beeinträchtigen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M16&nbsp;Nutzung von getrennten Arbeitsumgebungen(CI)</h4>
+<p>Einen besonders hohen Schutz der Informationen vor Gefahren, die durch die private Nutzung des Gerätes entstehen, bieten getrennte Arbeitsumgebungen. Wenn ein hoher Schutzbedarf besteht und die Benutzer unterschiedliche Apps verwenden, die mit den IT-Systemen der Institution auf unterschiedlichen Wegen kommunizieren müssen, sollte eine getrennte Arbeitsumgebung eingesetzt werden. Da diese Umgebungen oft über einen eigenen verschlüsselten Speicher und VPN-Kanal verfügen, bieten sie den Apps einen Bereich, in dem der Schutz der Daten von der Arbeitsumgebung bereitgestellt wird. So können auch eventuell unsichere Apps eingesetzt werden. Getrennte Arbeitsumgebungen sind besonders zu empfehlen, wenn Apps auf dem Gerät eine Interaktion mit anderen Apps benötigen, da jede Kommunikation zwischen den einzelnen Apps eventuell auch von anderen Apps ausgenutzt wird und so zum Einfallstor für Angreifer werden kann.</p>
+<p>Bei der Auswahl der getrennten Arbeitsumgebung ist auf entsprechende Zertifizierungen (z. B. Common Criteria oder FIPS 140-2) oder Qualitätszeichen wie „IT Security made in Germany“ zu achten. Auch sollte die Hardware des mobilen Endgerätes die benötigten Sicherheitsmaßnahmen selbst unterstützen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M17&nbsp;Kontrolle der Nutzung von mobilen Endgeräten(I)</h4>
+<p>Mit MDM-Lösungen lässt sich überwachen, wie mobile Endgeräte benutzt werden. Sie sollten nach verschiedenen zuvor definierten Kriterien überwacht werden, zum Beispiel: </p>
+<ul><li>Aktualität des Betriebssystems des mobilen Endgeräts,</li><li>Aktualität der installierten Anwendungen (Apps),</li><li>letzte Synchronisation mit dem MDM,</li><li>Einhalten von hinterlegten Data-Loss-Policies,</li><li>Nutzung von Cloud-Diensten,</li><li>Infektion mit Malware, unter Berücksichtigung des Betriebssystems des mobilen Endgeräts und dessen Sicherheitsframeworks, sowie</li><li>Zugriff auf den derzeitigen Aufenthaltsort.</li></ul>
+<p>Bei der Überwachung der Geräte und des Benutzerverhaltens müssen gesetzliche und interne Regelungen beachtet werden.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M18&nbsp;Besonders abgesicherte Betriebssysteme(CIA)</h4>
+<p>Auf dem Markt gibt es mehrere Anbieter von besonders abgesicherten mobilen Endgeräten, die teilweise zertifiziert sind für die Verarbeitung von Informationen mit hohem Schutzbedarf oder zugelassen sind für die Verarbeitung von amtlich geheimgehaltener Informationen (Geheimschutz), also als Verschlusssache eingestuft worden sind. Bei hohem Schutzbedarf sollte die Institution ein solches besonders abgesichertes mobiles Endgerät und auch ein damit korrespondierendes MDM einsetzen.</p>
+</li>
+<li>
+<h4>SYS.3.2.2.M19&nbsp;Geofencing(CI)</h4>
+<p>Geofencing ist ein Kunstwort aus den englischen Worten &#34;geographic&#34; und &#34;fence&#34; und bezeichnet das virtuelle Einzäunen eines geographischen klar umrissenen Gebietes. Über MDM-Systeme ist es mittels Geofencing-Richtlinien möglich, bestimmte Funktionen oder Apps auf mobilen Endgeräten nur an vorher definierten Orten zu erlauben oder auch zu verbieten. </p>
+<p>Bei höherem Schutzbedarf sollten mit Hilfe einer Schutzbedarfsanalyse Bereiche identifizieren werden, an denen diese zusätzlichen Sicherheitsmaßnahmen nötig sind. Anschließend sollten entsprechend Beschränkungen unter Beachtung gesetzlicher und interner Regelungen über Geofencing-Richtlinien konfiguriert werden.</p>
+<p>Die folgenden Beispiele zeigen Einsatzmöglichkeiten für Geofencing auf.</p>
+<p><span style="font-weight: bold">Beispiel 1</span></p>
+<p>In diesem Beispiel wird angenommen, dass die eingesetzten Geräte das Gelände der Institution nicht verlassen dürfen. Wenn sich die Geräte außerhalb eines definierten Bereichs befinden, wird an den Benutzer, an die verantwortlichen Administrationen sowie an das Sicherheitsmanagement ein Warnhinweis gesendet. Damit der Benutzer auch wieder zurück auf das erlaubte Gelände gehen kann, sollte eine zeitliche Verzögerung hinterlegt werden, bevor die Informationen auf dem Gerät gelöscht werden. Durch die aktive Benachrichtigung des Sicherheitsmanagements kann das Gerät den Sicherheitsvorfall erkennen und bei einem Diebstahl sicherstellen, dass relevante Informationen das Gelände der Institution nicht verlassen. Es kann die Information darüber hinaus nutzen, um zu entscheiden, ob Sensibilisierungsmaßnahmen erforderlich sind, damit die Vorschrift künftig besser beachtet wird. Geofencing könnte auch auf gesetzliche Territorien angewendet werden, um Informationen mit hohem Schutzbedarf abzusichern, z. B. den Bereich des Bundesdatenschutzgesetzes oder des europäischen Datenschutzraums.</p>
+<p><span style="font-weight: bold">Beispiel 2</span></p>
+<p>In einem als vertrauenswürdig festgelegten Bereich wird die automatische Sperre des Gerätes nicht aktiviert. Das bedeutet jedoch nicht, dass das Gerät automatisch entsperrt wird, sondern nur, dass es nach einer bestimmten Zeit der Nichtbenutzung nicht wieder gesperrt wird.</p>
+<p><span style="font-weight: bold">Beispiel 3</span></p>
+<p>In einem fest hinterlegten geografischen Bereich wird die Kamera des Endgeräts deaktiviert oder gesperrt, z. B. innerhalb des Firmengeländes oder an Plätzen mit vertraulichen Informationen.</p>
+</li>
+</ul>
+<a name="7360_3"></a>
+<h2>3 Weiterführende Informationen</h2>
+<a name="7360_3.1"></a>
+<h3>3.1 Wissenswertes</h3>
+<p>
+<p>Hier werden ergänzende Informationen aufgeführt, die im Rahmen der Maßnahmen keinen Platz finden, aber dennoch beachtenswert sind. Derzeit liegen für diesen Baustein keine entsprechenden Informationen vor. Sachdienliche Hinweise nimmt die IT-Grundschutz-Hotline gerne unter grundschutz@bsi.bund.de entgegen.</p>
+</p>
+<a name="7360_3.2"></a>
+<h3>3.2 Literatur</h3>
+<p>Weiterführende Informationen zu Gefährdungen und Sicherheitsmaßnahmen im Bereich "Mobile Device Management (MDM)" finden sich unter anderem in folgenden Veröffentlichungen:</p>
+<ul>
+<li>[BSICS052] Mobile Device Management BSI-CS 052<br>
+<p>BSI, Version 1.00, 03.2013<br><a href="https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_052.pdf">https://www.allianz-fuer-cybersicherheit.de/ACS/DE/_/downloads/BSI-CS_052.pdf</a></p>
+</li>
+<li>[BYOD] Überblickspapier Consumerisation und BYOD<br>
+<p>BSI, Version 1.2, 07.2013<br><a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Download/Ueberblickspapier_BYOD_pdf.pdf">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Download/Ueberblickspapier_BYOD_pdf.pdf</a></p>
+</li>
+<li>[CC] Common Criteria for Information Technology Security Evaluation (CC)<br>
+<p>erschienen in der Normenreihe ISO 15408: Information technology- Security techniques- Evaluation criteria for IT security, Version 3.1, (zuletzt abgerufen am 28.09.2017)<br><a href="www.commoncriteriaportal.org">www.commoncriteriaportal.org</a></p>
+</li>
+<li>[DIN66399] DIN 66399- Büro- und Datentechnik - Vernichten von Datenträgern<br>
+<p>Beuth Verlag</p>
+</li>
+<li>[FIPS1402] FIPS PUB 140-2: Security Requirements for Cryptographic Modules<br>
+<p>Federal Information Processing Standard (FIPS) Publication, National Institute of Standards and Technology (NIST), 2001<br><a href="http://csrc.nist.gov/groups/STM/cmvp/standards.html">http://csrc.nist.gov/groups/STM/cmvp/standards.html</a></p>
+</li>
+<li>[NIST18001D] SECURING ELECTRONIC HEALTH RECORDS ON MOBILE DEVICES<br>
+<p>SPECIAL PUBLICATION 1800-1d, NIST, 07.2015 <br><a href="https://nccoe.nist.gov/sites/default/files/nccoe/NIST_SP1800-1d_Draft_HIT_Mobile-StandardsControls.pdf">https://nccoe.nist.gov/sites/default/files/nccoe/NIST_SP1800-1d_Draft_HIT_Mobile-StandardsControls.pdf </a></p>
+</li>
+<li>[NIST800124] Guidelines for Managing the Security of Mobile Devices in the Enterprise<br>
+<p>Special Publication 800-124 Revision 1, NIST, 06.2013<br><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-124r1.pdf">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-124r1.pdf </a></p>
+</li>
+<li>[TR02102] Kryptographische Verfahren- Empfehlungen und Schlüssellängen<br>
+<p>BSI, (zuletzt abgerufen am 27.09.2017) <br><a href="https://www.bsi.bund.de/DE/Publikationen/TechnischeRichtlinien/tr02102/index_htm.html">https://www.bsi.bund.de/DE/Publikationen/TechnischeRichtlinien/tr02102/index_htm.html</a></p>
+</li>
+</ul>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

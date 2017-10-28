@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+Umsetzungshinweise zum Baustein SYS.1.2.2 Windows Server 2012
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_12480.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_umsetzungshinweise_12480.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine und Umsetzungshinweise
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine und Umsetzungshinweise</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine und Umsetzungshinweise</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">
+Umsetzungshinweise zum Baustein SYS.1.2.2 Windows Server 2012
+</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>
+Umsetzungshinweise zum Baustein SYS.1.2.2 Windows Server 2012
+</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#12480_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#12480_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12480_1.2">
+<span class="toctext">1.2 Lebenszyklus</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#12480_2">
+<span class="toctext">2 Maßnahmen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#12480_2.1">
+<span class="toctext">2.1 Basis-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12480_2.2">
+<span class="toctext">2.2 Standard-Maßnahmen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12480_2.3">
+<span class="toctext">2.3 Maßnahmen für erhöhten Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#12480_3">
+<span class="toctext">3 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#12480_3.1">
+<span class="toctext">3.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12480_3.2">
+<span class="toctext">3.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="12480_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="12480_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Mit Windows Server 2012 hat Microsoft im September 2012 ein Serverbetriebssystem auf den Markt gebracht, das in Bezug auf die Sicherheit diverse Verbesserungen gegenüber bisherigen Windows-Versionen (insbesondere auch Windows Server 2008 R2) mitbringt. Technisch wird dabei nicht auf dem Vorgänger aufgebaut, sondern auf der Codebasis des Client-Betriebssystems Windows 8. Mit dem Release Windows Server 2012 R2 von Oktober 2013 sind weitere Verbesserungen und Erweiterungen verfügbar, die Windows 2012 R2 zum Server-Pendant zu Windows 8.1 auf der Clientseite machen. </p>
+<p>Dieser Baustein beschäftigt sich mit der Absicherung von Windows Server 2012 und Windows Server 2012 R2 gleichermaßen, auf relevante Unterschiede und Besonderheiten wird jeweils geeignet hingewiesen. Dabei wird die Schreibweise „Windows Server 2012 (R2)“ verwendet, wenn beide Versionen gemeint sind. Das Ablaufdatum für den Mainstream Support bzw. den Extended Support („End-of-Life“, EOL) ist in beiden Fällen der 09.01.2018 bzw. der 10.01.2023.</p>
+</p>
+<a name="12480_1.2"></a>
+<h3>1.2 Lebenszyklus</h3>
+<p>
+<p><span style="font-weight: bold">Planung und Konzeption</span></p>
+<p>Die hauptsächlich notwendigen Überlegungen finden sich in SYS.1.2.2.M1 Planung von Windows Server 2012 (R2). Auch SYS.1.2.2.M2 Sichere Installation von Windows Server 2012 (R2) und SYS.1.2.2.M3 Sichere Administration von Windows Server 2012 (R2) enthalten wesentliche Konzeptionsanteile.</p>
+<p><span style="font-weight: bold">Beschaffung</span></p>
+<p>Bezüglich der Beschaffung sind die allgemeinen Grundlagen zu beachten, die für allgemeine Serversysteme gelten. Zusätzlich behandelt SYS.1.2.2.M1 Planung von Windows Server 2012 (R2) das Thema der Auswahl der geeigneten Edition.</p>
+<p><span style="font-weight: bold">Umsetzung</span></p>
+<p>Die Hauptmaßnahmen für die Basisabsicherung des Betriebs sind in folgenden drei Maßnahmen beschrieben:</p>
+<ul><li>SYS.1.2.2.M2 Sichere Installation von Windows Server 2012 (R2)</li><li>SYS.1.2.2.M3 Sichere Administration von Windows Server 2012 (R2)</li><li>SYS.1.2.2.M4 Sichere Konfiguration von Windows Server 2012 (R2)</li></ul>
+<p>Hinzu kommen die spezielleren, aber ebenfalls wichtigen Umsetzungen von:</p>
+<ul><li>SYS.1.2.2.M5 Schutz vor Schadsoftware</li><li>SYS.1.2.2.M6 Sichere Authentisierung und Autorisierung in Windows Server 2012 (R2)</li><li>SYS.1.2.2.M8 Schutz der Systemintegrität</li><li>SYS.1.2.2.M9 Lokale Kommunikationsfilterung (CI)</li></ul>
+<p>Bei erhöhtem Schutzbedarf werden exemplarisch die folgenden Maßnahmen eingesetzt:</p>
+<ul><li>SYS.1.2.2.M10 Festplattenverschlüsselung bei Windows Server 2012 (R2) </li><li>SYS.1.2.2.M12 Redundanz und Hochverfügbarkeit (A)</li><li>SYS.1.2.2.M13 Starke Authentifizierung bei Windows Server 2012 (R2) (CI)</li></ul>
+<p><span style="font-weight: bold">Betrieb</span></p>
+<p>Auch im Betrieb bleiben SYS.1.2.2.M3 Sichere Administration von Windows Server 2012 (R2) und SYS.1.2.2.M4 Sichere Konfiguration von Windows Server 2012 (R2) relevant. Als weitere Standardanforderungen ist das erreichte Sicherheitslevel regelmäßig zu prüfen (SYS.1.2.2.M7 Sicherheitsprüfung von Windows Server 2012 (R2)).</p>
+<p>Bei erhöhtem Schutzbedarf können zusätzlich im Betrieb beachtet werden:</p>
+<ul><li>SYS.1.2.2.M11 Angriffserkennung bei Windows Server 2012 (R2) (CIA)</li><li>SYS.1.2.2.M14 Herunterfahren verschlüsselter Server und virtueller Maschinen (CI)</li></ul>
+<p><span style="font-weight: bold">Aussonderung &amp; Notfallvorsorge</span></p>
+<p>Bezüglich der Phasen der Aussonderung und der Notfallvorsorge bestehen keine Besonderheiten von Windows Server 2012 (R2) gegenüber einem allgemeinen Server.</p>
+</p>
+<a name="12480_2"></a>
+<h2>2 Maßnahmen</h2>
+<p>Im Folgenden sind spezifische Umsetzungshinweise im Bereich "Windows Server 2012" aufgeführt.</p>
+<a name="12480_2.1"></a>
+<h3>2.1 Basis-Maßnahmen</h3>
+<p>Die folgenden Maßnahmen sollten vorrangig umgesetzt werden:</p>
+<ul>
+<li>
+<h4>SYS.1.2.2.M1&nbsp;Planung von Windows Server 2012</h4>
+<p>Da Windows Server 2012 (R2) ein komplexes Betriebssystem mit einer Vielzahl von Funktionen und Konfigurationsoptionen darstellt, muss der Einsatz sorgfältig und systematisch geplant werden. Eine Dokumentation der Entscheidungen samt kurzer Begründung sollte dabei angelegt werden, etwa in Form eines Betriebskonzepts oder eines Serverhandbuchs.</p>
+<p><span style="font-weight: bold">Editionen</span></p>
+<p>Windows Server 2012 ist in vier Editionen verfügbar, die für unterschiedliche Einsatzgebiete vorgesehen und optimiert sind:</p>
+<ul><li>Foundation
+<ul><li>Grundlegende Server-Funktionen</li><li>keine Virtualisierung</li></ul>
+</li><li>Essentials
+<ul><li>einfache Benutzeroberfläche</li><li>voreingestellte Konnektivität zu Cloud-Diensten</li><li>keine Virtualisierung</li></ul>
+</li><li>Standard
+<ul><li>Voller Funktionsumfang</li><li>max. zwei virtuelle Instanzen</li></ul>
+</li><li>Datacenter
+<ul><li>wie Standard</li><li>mit unbegrenzten virtuellen Instanzen</li></ul>
+</li></ul>
+<p>Weitere Beschränkungen existieren bei Foundation bzw. Essentials bezüglich Speicher (max. 32/64 GB RAM) und Lizenzierung (max. 15/25 Benutzerkonten) sowie in den installierbaren Rollen und Funktionalitäten. Über weitere Details der Unterschiede bzgl. Beschränkungen, Rollen und Funktionen informiert Microsoft auf seiner Website.<span style="font-weight: bold"> </span>Der Server-Core-Modus etwa ist erst ab Edition Standard verfügbar, die Nutzung von WSUS erst ab Essentials. Zumindest Foundation ist daher nur in sehr begrenzten Szenarien für den professionellen Einsatz im Unternehmen oder in der Behörde zu empfehlen und wird in diesem Baustein nicht näher betrachtet.</p>
+<p>Die Editionen Standard und Datacenter sind aus Sicherheitssicht gleichwertig und unterscheiden sich im Wesentlichen in Hinsicht auf das Lizenzmodell. Es bleibt also die Frage nach der Entscheidung zwischen Essentials und Standard bzw. Datacenter.</p>
+<p><span style="font-weight: bold">Eigenschaften der Essentials-Edition</span></p>
+<p>Foundation und Essentials in Windows 2012 sind nicht dafür gedacht, innerhalb einer vollwertigen Domäne betrieben zu werden. Zwar ist dies für Essentials mit Windows Server 2012 R2 mittlerweile technisch möglich, jedoch richtet sich diese mit ihren Funktionen hauptsächlich an kleinere Institutionen, die nur einen einzigen Server zum Betrieb sämtlicher Funktionen einsetzen. Dies steht im Widerspruch zur etablierten Praxis in größeren IT-Umgebungen, möglichst wenige Dienste pro Server zu betreiben, um Abhängigkeiten aufzulösen und Risiken zu streuen, ein Trend, der durch zunehmende Virtualisierung weitere Verbreitung findet.</p>
+<p>Die Essentials-Edition bietet ohne weitere Konfiguration eine Reihe von Funktionen, welche die Einrichtung erleichtern können:</p>
+<ul><li>Hinzufügen zur Domäne<br>Mit Essentials ist es einfach möglich, Rechner zur Domäne hinzuzufügen, die sich an einem entfernten Standort befinden. Es genügt, dass ein neuer Mitarbeiter auf den Pfad &#34;/connect&#34; der Essentials-Fernzugriffswebsite zugreifen kann.</li><li>Vorkonfiguriertes VPN<br>Es ist ein vorkonfigurierter VPN-Client verfügbar. Der Benutzer kann zudem die Autoeinwahl aktivieren, sodass er immer mit dem Firmen- bzw. Behördennetz verbunden ist.</li><li>Server-SpeicherFür Speicherorte wie etwa die Heimatverzeichnisse der Benutzer können einfach Shared Folder auf einem weiteren Server im selben Netz angelegt werden. Dabei kann eine automatische Alarmierung erfolgen, wenn die Verzeichnisse eine bestimmte Größe überschreiten.</li><li>Health Report<br>Ein grundlegender &#34;Gesundheitscheck&#34; der Windows Server 2012 R2 Essentials-Umgebung ist bereits integriert und muss nicht erst als Add-in installiert werden. Es lassen sich verschiedene Werte konfigurieren, die über unterschiedliche Medien angezeigt werden, etwa auch auf dem Smartphone.</li><li>BranchCache<br>Bereits in Essentials kann der Mechanismus BranchCache aktiviert werden, der die Verfügbarkeit von Daten in Außenstellen durch Caching (Zwischenspeicherung) erhöht. Er verringert darüber hinaus gleichzeitig die Bandbreitennutzung über das WAN.</li><li>Remote Web Access<br>Viele Funktionen von Windows Server 2012 Essentials lassen sich aus der Ferne über eine Weboberfläche erreichen und bedienen (Remote Web Access), die in R2 zudem modernisiert und für die Nutzung mit Tablets und ähnlichen Geräten optimiert wurde.</li></ul>
+<p><span style="font-weight: bold">Microsoft Azure Online Backup</span></p>
+<p>In Windows Server 2012 ist Microsofts Cloud-Speicherlösung Azure Online Backup bereits in Essentials integriert und kann leicht aktiviert werden. Dafür muss lediglich im Essentials Dashboard das entsprechende Add-in installiert werden und ein (je nach Speichervolumen kostenpflichtiger) Account angelegt werden. In R2 ist nicht mal mehr ein Add-in notwendig, hier kann direkt per Klick die Registrierung bei Azure erfolgen.</p>
+<p>Während dies eine sehr einfache Möglichkeit darstellt, regelmäßige Backups der auf dem Server gespeicherten Daten zu erzeugen, sollte diese Funktion keinesfalls leichtfertig aktiviert werden, sondern allenfalls nach einer umfassenden Beschäftigung mit den Themen der Bausteine OPS.2.2 Cloud-Nutzung und OPS.1.16 Datensicherung und einer erfolgten Abwägung zwischen Vertraulichkeit, Verfügbarkeit und verschiedenen Anbietern.</p>
+<p><span style="font-weight: bold">Blockieren von Microsoft-Konten</span></p>
+<p>Der folgende Abschnitt ist nicht anzuwenden, wenn im Rahmen der Beschäftigung mit dem Baustein OPS.2.2 Cloud-Nutzung eine begründete und dokumentierte Entscheidung für die Nutzung von Microsoft Azure in Zusammenhang mit dem Windows Server 2012 (R2)-Serversystem getroffen wurde.</p>
+<p>Andernfalls darf während der Einrichtung des Systems kein Microsoft-Konto angelegt werden. Die Erstellung von Microsoft-Konten auf dem Server muss zudem blockiert werden. Am verlässlichsten geschieht dies zentral über das Active Directory und die folgende Sicherheitsrichtlinie: </p>
+<p>&#34;Windows Settings/Security Settings/Local Policies/Security Options/Accounts: Block Microsoft Accounts&#34;</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M2&nbsp;Sichere Installation von Windows Server 2012</h4>
+<p>Grundlegende Funktionen von Windows Server 2012 (R2) werden durch Serverrollen, Rollendienste und Features gesteuert.</p>
+<p><span style="font-weight: bold">Serverrollen</span></p>
+<p>Eine Serverrolle ist eine Gruppe von Programmen, mittels derer eine bestimmte Funktion für mehrere Benutzer oder für andere IT-Systeme in einem Netz ausgeführt werden kann. Mit ihr wird häufig die Hauptfunktion eines Servers beschrieben. Ein Server könnte jedoch auch mehrere Rollen ausführen, wenn diese nur selten verwendet werden. Sind Rollen korrekt installiert und konfiguriert, werden sie automatisch ausgeführt. </p>
+<p><span style="font-weight: bold">Rollendienste</span></p>
+<p>Rollendienste sind Programme, die die Funktionalität einer Rolle bereitstellen. Eine Rolle kann als Satz zusammenhängender, sich ergänzender Rollendienste betrachtet werden, wobei in der Regel die Installation einer Rolle die Einrichtung mindestens eines zugehörigen Rollendienstes bedingt.</p>
+<p>Je Rolle kann festgelegt werden, welche Rollendienste für andere Benutzer und IT-Systeme mit der Rolle bereitgestellt werden. Einige Rollen (z. B. DNS-Server) haben nur eine Funktion, daher stehen für sie keine Rollendienste zur Verfügung. Andere Rollen (z. B. Remotedesktopdienste) verfügen über mehrere Rollendienste, die je nach Anforderungen installiert werden können.</p>
+<p><span style="font-weight: bold">Features</span></p>
+<p>Features sind Programme, die die Funktionalität des Servers oder aber einer oder mehrerer Rollen unterstützen oder verbessern. Z. B. wird mit dem Feature Failover-Clusterunterstützung die Funktionalität weiterer Rollen (u. a. Dateidienste und DHCP-Server) verbessert, da Servercluster für eine höhere Redundanz und bessere Leistung zusammengeführt werden können. Das Feature Telnet-Client hingegen ermöglicht die Fernkommunikation über das Telnet-Protokoll.</p>
+<p>Rollen, Rollendienste und Features müssen immer so sparsam wie möglich installiert werden, um die Komplexität und Angriffsoberfläche klein zu halten. Die Regel &#34;ein Dienst pro Server&#34; gilt auch hier sinngemäß, es sollte in der Regel nur eine für die Institution wesentliche Serverrolle pro Server installiert sein. Die Auswahl der zu installierenden Rollen, Rollendienste und Features sollte begründet und dokumentiert werden.</p>
+<p><span style="font-weight: bold">Server Core </span></p>
+<p>Server Core ist eine minimale Installationsoption für Windows Server (inkl. 2012 und 2012 R2), die eine Serverumgebung mit beschränkter Funktionalität und geringerem Wartungsbedarf bereitstellt.</p>
+<p>Seit Windows Server 2012 ist ein Wechsel zwischen Full Server und Server Core ohne Neuinstallation möglich.</p>
+<p>Hauptunterschiede sind das Fehlen der vollständigen Windows-Shell und eine extrem begrenzte grafische Oberfläche (GUI), die sich auf ein Kommandoprompt mit PowerShell-Unterstützung beschränkt. </p>
+<p>Verwalten lässt sich Server Core folgendermaßen:</p>
+<ul><li>per PowerShell (lokal und remote)</li><li>über eine Terminal-Server-Verbindung von einer Kommandozeile</li><li>aus der Ferne über die Microsoft Management Console (MMC)</li><li>aus der Ferne mit anderen Kommandozeilentools, die Fernverwaltung unterstützen</li></ul>
+<p>Da Server Core bezüglich der Angriffsfläche das Minimum und damit Optimum darstellt, sollte, wo immer möglich, die Server Core-Variante genutzt werden. Abweichungen sollten begründet sein. Dies fördert zudem die Zentralisierung der Verwaltung.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M3&nbsp;Sichere Administration von Windows Server 2012</h4>
+<p><span style="font-weight: bold">Sichere Passworte für lokale Administrationskonten</span></p>
+<p>Es ist sicherzustellen, dass das Passwort für jedes lokale Administratorkonto nicht nur sicher ist, sondern zudem einzigartig. So wird es einem Angreifer erschwert, sich von einem kompromittierten IT-System zum nächsten lateral weiterzubewegen.</p>
+<p>Mit dem bei Microsoft kostenlos verfügbaren Tool LAPS (Local Administrator Password Solution) ist es möglich, sichere lokale Administratorkonten automatisch per AD zu verwalten. Dessen Einsatz ist stark zu empfehlen, wenn nicht bereits eine Drittlösung hierfür bereitsteht.</p>
+<p><span style="font-weight: bold">Schulung </span>von Administratoren</p>
+<p>Um Windows Server 2012 (R2) sicher einrichten und betreiben zu können, müssen die zuständigen Administratoren über eine Reihe von Fähigkeiten und Kenntnissen verfügen, die teilweise sehr spezifisch für dieses Betriebssystem sind. Zum Allgemeinwissen des Administrators gehören etwa Grundregeln des Arbeitens auf Serversystemen wie</p>
+<ul><li>nicht von Servern aus im WWW zu surfen,</li><li>insbesondere keine möglicherweise unsicheren Seiten anzusteuern,</li><li>Clientsysteme für den Download von Dateien wie etwa Treibern zu verwenden und </li><li>für sämtliche nichtadministrativen Tätigkeiten einen Standardaccount zu verwenden.</li></ul>
+<p>Im Folgenden werden Spezifika von Windows Server 2012 (R2) vorgestellt, mit denen sich die Administratoren auskennen sollten. Notwendige Schulungen sollten vor Installation der Serversysteme durchgeführt werden.</p>
+<p><span style="font-weight: bold">Administrationsthemen</span></p>
+<p>Die folgende Tabelle enthält eine Liste von Administrationsthemen mit Security-Relevanz. Administratoren von Windows Server 2012 (R2) sollten sich mit den genannten Themen und ihren Besonderheiten sowie jeweils geeigneten Tools bei Windows Server 2012 (R2) auskennen.</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>Thema</th>
+<th rowspan='1' colspan='1'>Aufgaben des Administrators</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Zugriff</td>
+<td rowspan='1' colspan='1'>Verwalten des Zugriffs auf Netzressourcen</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Auditing</td>
+<td rowspan='1' colspan='1'>Verwalten des Zugriffs auf Netzressourcen</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Zertifikatsdienste</td>
+<td rowspan='1' colspan='1'>Verwalten einer Zertifizierungsstelle (CA) und andere Active Directory-Zertifikatsdienste-Aufgaben</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Computer</td>
+<td rowspan='1' colspan='1'>Analysieren und Verwalten von Computerprozessen und Leistung</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Anmeldeinformationen</td>
+<td rowspan='1' colspan='1'>Verwalten von Benutzerkonten, Gruppen und Anmeldeinformationen</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Kryptografie</td>
+<td rowspan='1' colspan='1'>Verwalten von Zertifikaten und Verschlüsselung</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Dateien</td>
+<td rowspan='1' colspan='1'>Übernehmen oder dauerhaftes Löschen von Dateien</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Sicherheitsrichtlinien</td>
+<td rowspan='1' colspan='1'>Analysieren und Verwalten von Sicherheitsrichtlinien</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Sicherheitsprinzipale</td>
+<td rowspan='1' colspan='1'>Ändern oder Erstellen neuer Sicherheitsprinzipale</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Systemsicherheit</td>
+<td rowspan='1' colspan='1'>Diagnostizieren, Planen und Berichtigen der globalen Systemsicherheit</td>
+</tr></tbody></table>
+<p>Darüber hinaus bietet Microsoft als Teil der Windows PowerShell Core Modules Sammlungen von PowerShell-Commandlets für Security-Aufgaben an. Administratoren sollten diese kennen, um sie für eine einfache und schlanke Sicherheitsverwaltung nutzen zu können:</p>
+<ul><li>Windows PowerShell Security Cmdlets</li><li>PowerShell Cmdlets for Active Directory</li><li>PowerShell Cmdlets for Active Directory Rights Management Services</li><li>PowerShell Cmdlets for AppLocker</li><li>PowerShell Cmdlets for Group Policy</li><li>PowerShell Cmdlets for Server Manager</li><li>PowerShell Cmdlets for the Best Practice Analyzer</li></ul>
+<p><span style="font-weight: bold">Benutzerkontensteuerung (UAC)</span></p>
+<p>Die Benutzerkontensteuerung (User Account Control, UAC) wurde in Windows Vista eingeführt. Sie sorgt dafür, dass bei administrativen Aufgaben eine Rechteerhöhung erforderlich ist. Bis dahin hatten die meisten Anwender als Administratoren gearbeitet, mit entsprechender Anfälligkeit für Schadsoftware.</p>
+<p>Wenn sich bei aktivierter UAC ein Administrator anmeldet, arbeitet er mit eingeschränkten Rechten. Erst nach Bestätigung in einem speziellen Dialogfeld erhält eine Anwendung administrative Berechtigungen. Im Hintergrund werden dafür Rechte erhöht, indem die Identität gewechselt wird. Die UAC ist damit die Grundlage für das Sandboxing von Programmen und Verzeichnissen unter Windows. Sie regelt die Vergabe von Privilegien an Prozesse und sie isoliert Prozesse und Fenster voneinander, die auf demselben Desktop mit unterschiedlichen Rechten laufen.</p>
+<p>Mit Windows Server 2012 und Windows 7 wurde die UAC verfeinert, um die Verwaltung der Konfiguration und der Nachrichten zu erleichtern.</p>
+<p>Die UAC stellt einen Kompromiss zwischen Sicherheit und Bequemlichkeit dar. Sie bietet kein vollständiges Sandboxing und kann auf verschiedene Arten umgangen werden, erhöht jedoch den Aufwand für Schadsoftware und ähnliche Bedrohungen bzw. kann helfen, deren Effekte einzugrenzen.</p>
+<p>Eine noch stärkere Absicherung würde durch das Arbeiten mit komplett getrennten Konten samt wirklichem Kontowechsel für administrative Aufgaben erreicht. Dies wird bei hohem oder sehr hohem Schutzbedarf empfohlen. Die zweitsicherste Lösung ist die Nutzung getrennter Konten mit Rechteerhöhung für Standardnutzer durch Over-the-Shoulder-Abfrage (OTS). Zumindest sollte Arbeiten im Administratorbestätigungsmodus (Admin Approval Mode, AAM) aktiviert sein. Die Abschaltung der Benutzerkontensteuerung ist mit Windows Server 2012 gar nicht mehr möglich, aber auch eine automatische Rechteerhöhung ohne Nachfrage ist nicht zu empfehlen.</p>
+<p>Allerdings ergibt sich bei vollständiger Trennung der Accounts das Problem, dass wenn sich Administratoren zunächst als Standardnutzer auf Servern anmelden können sollen, auch die Anmeldung aller Domänennutzer auf dem Server möglich ist. Dies ist nicht gewünscht, da sich so die Angriffsfläche deutlich erhöht. Entweder muss dies mit aufwändiger Konfiguration verhindert werden oder es kann auf die Alternative getrennter Admin-Systeme, sogenannte Privileged Access Workstations (PAWs), zurückgegriffen werden. Diese besonders geschützten dedizierten Systeme kommen in der Regel allerdings erst bei höherem Schutzbedarf infrage.</p>
+<p>Achtung: Das vordefinierte Konto &#34;Administrator&#34; wird durch UAC niemals eingeschränkt. Unter Client-Betriebssystemen ab Vista hat dies normalerweise keine Auswirkungen, da dieses Konto nicht zum Login verwendet werden kann; hierfür werden stattdessen weitere Konten der Gruppe &#34;Administratoren&#34; angelegt. Windows Server (ab 2008) hingegen erzeugt bei der Installation keine zusätzlichen Konten und erlaubt die Anmeldung als &#34;Administrator&#34;, ohne UAC. Das Konto &#34;Administrator&#34; sollte daher möglichst nicht zur regelmäßigen Systemverwaltung genutzt werden. Andere lokale oder Domänen-Konten, die &#34;Administratoren&#34;-Mitglieder sind, werden über UAC eingeschränkt.</p>
+</li>
+</ul>
+<a name="12480_2.2"></a>
+<h3>2.2 Standard-Maßnahmen</h3>
+<p>Gemeinsam mit den Basis-Maßnahmen entsprechen die folgenden Maßnahmen dem Stand der Technik im Bereich "Windows Server 2012".</p>
+<ul>
+<li>
+<h4>SYS.1.2.2.M4&nbsp;Sichere Konfiguration von Windows Server 2012</h4>
+<p>Im Folgenden werden diejenigen wichtigen Sicherheitsmechanismen, d. h. Techniken, die der Sicherheit dienen oder eine wesentliche Auswirkung auf diese haben,in Windows Server 2012 (R2) kurz vorgestellt, bei denen der Sicherheitsverantwortliche oder Administrator eine Wahl zu treffen hat. Nicht aufgeführt sind solche Mechanismen, bei denen sich nichts im Vergleich auf die Vorgängerversionen verändert hat oder keine Gestaltungsfreiheit in der Anwendung besteht.</p>
+<p>Windows Server 2012 (R2) bringt eine Reihe von Ressourcen und Tools bereits mit, die für eine Absicherung verwendet werden können und sollten. Diese sollten sich mit Sicherheitsfunktionen anderer IT-Systeme und Drittherstellerprodukte sinnvoll ergänzen, idealerweise im Sinn einer gestaffelten Verteidigung (Defense-in-Depth) überdecken und niemals gegenseitig aushebeln oder schwächen.</p>
+<p>Nicht mehrere wesentliche Funktionen pro <span style="font-weight: bold">Server</span></p>
+<p>Mit der Forderung, dass nicht mehrere wesentliche Funktionen durch einen Server erfüllt werden sollen, wird eine grundlegende Aufteilung kritischer Serverfunktionalität auf verschiedenen Systeme angestrebt. Das im Unix-Bereich verbreitete &#34;ein Dienst pro Server&#34; passt hier nicht, da Dienst im engeren Sinn eher einen einzelnen Netzdienst beschreibt (z. B. Telnet). Hier geht es eher darum, funktional unabhängige Einheiten auch technisch voneinander unabhängig zu machen. Ein Webserver sollte beispielsweise nicht gleichzeitig als Terminalserver dienen, ein Fileserver nicht gleichzeitig als WSUS-Server. Bei Mehrschichtanwendungen wird in der Regel angestrebt, die einzelnen Schichten (etwa Datenbank / Geschäftslogik / Präsentation) in getrennte Server(-Cluster) abzubilden. Dies hat den Vorteil, dass das Netzes einfacher segmentiert werden und so besser dem Schutzbedarf und der Art der Bedrohungen angepasst sein kann. Außerdem ergeben sich Vorteile in der Wartung und Verwaltung. </p>
+<p>S<span style="font-weight: bold">ecurity Baseline </span>und SCM</p>
+<p>Viele sicherheitsrelevante Einstellungen von Windows Server 2012 (R2) lassen sich am einfachsten über GPOs verwalten. Es empfiehlt sich, für alle Serversysteme oder für Serversysteme einer bestimmten Einsatzklasse eine sogenannte Baseline zu erstellen, also eine Vorlage, die optimale Sicherheitseinstellungen enthält, regelmäßig überprüft und fortgeschrieben wird und auf alle betriebenen Serversysteme ausgerollt wird.</p>
+<p>Der Security Compliance Manager (SCM) ist ein kostenloses Tool von Microsoft, mit dem schnell GPOs erzeugt und verwaltet werden können und zudem Sicherheitsvorlagen für verschiedene Zwecke bereits mitbringt. Diese können dann mit verschiedenen Verfahren, wie z. B. Group Policy-Editor oder System Center Configuration Manager (SCCM) bzw. DCM (Desired Configuration Management, inzwischen umbenannt in Configuration Manager Compliance Settings), zentral ausgerollt werden. Auch eine Konfiguration von Stand-alone-Maschinen ist über das GPO Pack-Feature möglich, jedoch nur für die Ausnahme von Nicht-Domänenmitgliedern zu empfehlen.</p>
+<p>Die konsequente Nutzung von SCM oder anderer Sicherheitsvorlagen und das zentrale Deployment von GPOs und/oder DCMs verbessern die Gleichförmigkeit und Nachvollziehbarkeit und helfen damit, Konfigurationsdrift zu verhindern und die Compliance zu erhöhen. Neben Betriebssystemeinstellungen können so auch viele Anwendungen verwaltet werden.</p>
+<p>Insbesondere die im SCM verfügbaren Sicherheitsvorlagen enthalten für sehr viele Parameter bereits sicherere Einstellungen als die Grundeinstellung in Windows Server 2012 (R2). Häufig müssen diese allerdings noch auf den jeweiligen Einsatzzweck und die Gegebenheiten der Institution angepasst werden.</p>
+<p>Falls die Institution nicht bereits über eine grundschutzkonforme Sicherheitsvorlage verfügt, sollte im SCM die Security Baseline für Windows Server 2012 bzw. R2 ausgewählt werden. Die gepackte .cab-Datei enthält die folgenden Komponenten:</p>
+<ul><li>Windows Server 2012
+<ul><li>AD Certificate Services Server Security</li><li>DHCP Server Security</li><li>DNS Server Security</li><li>Domain Controller Security Compliance</li><li>Domain Security Compliance</li><li>File Server Security</li><li>Hyper-V Security</li><li>Member Server Security Compliance</li><li>Network Policy and Access Services Security</li><li>Print Server Security</li><li>Remote Access Services Security</li><li>Remote Desktop Services Security</li><li>Web Server Security</li></ul>
+</li><li>Windows Server 2012 R2
+<ul><li>Domain Controller Security Compliance</li><li>Domain Security Compliance</li><li>Member Server Security Compliance</li></ul>
+</li><li>Folgende Attachments liegen bei beiden jeweils bei:
+<ul><li>Security Guide.docx: dieser enthält die Beschreibung der gewählten Einstellungen</li><li>CCE Reference.xlsm</li></ul>
+</li></ul>
+<p>Die Anpassung sollte auf der Grundlage der GPOs für die avisierte Rolle des Servers 2012 (R2) stattfinden. Alle Einstellungen sollten vor dem Ausrollen auf produktive Systeme gründlich getestet werden, da sonst leicht Fehlfunktionen auftreten können.</p>
+<p>Es sollte nach jeder großen Änderung überprüft werden, ob die Einstellung erfolgreich geändert wurde und ob die Vorlage überhaupt auf die gewünschten Server angewandt wird, da hier viele Fehlerquellen lauern. Ein einfacher Weg dies zu tun ist die Ausführung des Group Policy Results Kommandozeilentools GPResult.exe auf dem Server.</p>
+<p>Für weitere Informationen siehe auch Baustein APP.2.2 Active Directory.</p>
+<p><span style="font-weight: bold">Absicherung des Internet Explorers</span></p>
+<p>Der Browser auf dem Server, im Fall von Windows Server zunächst der IE, stellt ein mögliches Einfallstor für Angriffe aus dem Internet dar. Er sollte daher besonders abgesichert werden, selbst wenn das wilde Surfen per Richtlinie organisatorisch verboten ist.</p>
+<p><span style="font-weight: bold">Enhanced Security Configuration</span></p>
+<p>Bei Installation von Windows Server 2012 wird IE automatisch mit aktivierter Enhanced Security Configuration (ESC) installiert. Diese Konfiguration weist den in IE 10 definierten Zonen (Internet, Intranet, Trusted, Restricted) jeweils spezifische (höhere) Sicherheitslevel zu, z. B. &#34;hoch&#34; im Fall von Internet und Restricted Zone. Darüber hinaus enthält die Konfiguration eine Reihe von anderen Einstellungen, etwa zum Löschen der temporären Internetdateien beim Schließen des Browsers.</p>
+<p>Dieser Modus hilft, die Angriffsfläche im Browser zu verringern und sollte daher beibehalten werden.</p>
+<p>Enhanced <span style="font-weight: bold">Protected Mode</span></p>
+<p>Enhanced Protected Mode (EPM), ebenfalls ab IE 10 verfügbar, ist eine Erweiterung des mit IE 7 auf Windows Vista eingeführten Protected Mode. Zu dessen Maßnahmen gegen die Installation von Software und Manipulation des Systems durch den Browser kamen weitere Beschränkungen im Bezug auf die Informationsabfluss aus dem Intranet hinzu </p>
+<p>EPM lässt sich entweder in der Group Policy Management Console (GPMC) unter &#34;Windows Components\Internet Explorer\Internet Control Panel\Advanced Page&#34; oder in der Registry (computerweit) unter &#34;HKLM\Software\Policies\Microsoft\Internet Explorer\Main!Isolation&#34; konfigurieren.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M5&nbsp;Schutz vor Schadsoftware</h4>
+<p>Bevor ein IT-System mit möglicherweise unsicheren Netzen verbunden wird sowie bevor Wechselmedien an dem IT-System angeschlossen werden, sollte auf jedem System mit Windows Server 2012 (R2) ein Virenschutzprogramm installiert werden, wenn nicht anderweitige Vorkehrungen gegen Schadprogramme getroffen werden. Dies zu planen und zu konfigurieren ist Gegenstand des Bausteins OPS.1.15 Schutz vor Schadprogrammen.</p>
+<p>Bei Verwendung eines Virenschutzprogramms auf dem Server sollten die Signaturen mindestens täglich aktualisiert werden, zudem sollten regelmäßig alle Festplatten inklusive der Betriebssystempartition vollständig gescannt werden. Geeignete Alarme für die zuständigen Administratoren sollten bei allen Arten von Ereignissen in Bezug auf Schadsoftware konfiguriert sein.</p>
+<p>Unabhängig vom gewählten Antivirusprodukt kann zunächst das in Windows Server 2012 (R2) integrierte Microsoft-Produkt Windows Defender verwendet werden, bis die finale Lösung zum Schutz vor Schadprogrammen aktiviert werden kann.</p>
+<p><span style="font-weight: bold">Windows Defender</span></p>
+<p>Windows Defender war vor Windows Server 2012 eine reine Anti-Spyware-Lösung und stellt seitdem einen vollwertigen Virenschutz dar, ist allerdings für den Consumer-Bereich optimiert. Seit R2 ist Windows Defender auf Server Core standardmäßig aktiviert.</p>
+<p>Windows Defender sollte aktiviert bleiben, bis eine alternative vollwertige Virenschutzlösung installiert wurde. Mehrere Antivirenprogramme (einschließlich Windows Defender) parallel dürfen nur betrieben werden, wenn die Empfehlungen beider Hersteller dies ausdrücklich erlauben, in der Regel ist dies nicht der Fall. Zudem erhöht jeder Virenscanner durch potentielle eigene Schwachstellen auch die Angriffsfläche des Servers.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M6&nbsp;Sichere Authentisierung und Autorisierung in Windows Server 2012</h4>
+<p>Authentisierung und Autorisierung spielen als zwei grundlegende Sicherheitstechniken an verschiedenen Stellen in Windows Server 2012 (R2) wichtige Rollen. Folgende Prinzipien können dabei als allgemeine Leitlinien der Realisierung dienen:</p>
+<ul><li>Beschränkung und Schutz privilegierter Domänenaccounts
+<ul><li>Getrennte Accounts für Administration und andere Nutzung für Administratoren</li><li>Spezielle abgesicherte Admin-Workstations</li><li>Einschränkung der Konten, die sich interaktiv einloggen können</li><li>Beschränkung von Account Delegation-Rechten für administrative Accounts</li></ul>
+</li><li>Beschränkung und Schutz lokaler Adminaccounts
+<ul><li>Lokale Account-Beschränkungen für Remote-Zugriff</li><li>Kein Netz-Login für lokale Accounts</li><li>Individuelle Passwörter für lokale Admin-Accounts</li></ul>
+</li></ul>
+<p><span style="font-weight: bold">Geschützte Benutzer</span></p>
+<p>Mit R2 kam die domänenbezogene globale Sicherheitsgruppe &#34;Geschützte Benutzer&#34; (Protected Users) hinzu. Die Anmeldeinformationen der Mitglieder dieser Gruppe werden durch standardmäßig restriktivere Sicherheitseinstellungen zusätzlich geschützt. </p>
+<p>Der nicht weiter konfigurierbare Schutz gilt für alle Geräten, auf denen Windows Server 2012 R2 und Windows 8.1 ausgeführt wird sowie auf Domänencontrollern in Domänen mit einem primären Windows Server 2012 R2 Domänencontroller.</p>
+<p>Der Speicherfußabdruck von Anmeldeinformationen wird durch mehrere Einschränkungen signifikant reduziert:</p>
+<ul><li>NTLM, Digestauthentifizierung oder CredSSP sind deaktiviert.</li><li>Kerberos nutzt in der Vor-Authentifizierung nicht die schwächere DES- oder RC4-Verschlüsselung.</li><li>Das Konto kann nicht mit der eingeschränkten und uneingeschränkten Kerberos-Delegierung delegiert werden. Das bedeutet, dass frühere Verbindungen mit anderen Systemen fehlschlagen, wenn der Benutzer Mitglied der Gruppe &#34;Geschützte Benutzer&#34; ist.</li><li>Eine Ticket-Granting-Ticket-Lebensdauer von vier Stunden kann via Active Directory-Verwaltungscenter (ADAC) über Authentifizierungsrichtlinien und Silos konfiguriert werden, sodass sich der Benutzer alle vier Stunden erneut authentifizieren muss.</li></ul>
+<p>Alle menschlichen Benutzer sollten möglichst Mitglieder der Gruppe &#34;Geschützte Benutzer&#34; sein.</p>
+<p>Achtung: Konten für Dienste und Computer sollten nicht Mitglieder von &#34;Geschützte Benutzer&#34; sein, da die Gruppe keinen lokalen Schutz bietet: Kennwort oder Zertifikat sind immer auf dem System verfügbar.</p>
+<p><span style="font-weight: bold">Gruppe &#34;Managed Service Accounts&#34;</span></p>
+<p>Managed Service Accounts (MSA) sind eines der besonderen Features, die mit Windows Server 2008 R2 und Windows 7 hinzugekommen sind. Es handelt sich hierbei um Konten für Dienste (z. B. SQL Server oder Exchange) im Active Directory, die an einen bestimmten Rechner gebunden sind. Das Konto verfügt über sein eigenes komplexes Passwort und wird automatisch verwaltet. So kann ein MSA einfach und sicher Dienste auf einem bestimmten System ausführen, während die Möglichkeit, als ein bestimmter Benutzer-Principal auf Ressourcen im Netz zuzugreifen, gewahrt bleibt. Die Gruppe &#34;Managed Service Account&#34;, die mit Windows Server 2012 geschaffen wurde, bietet dieselbe Funktionalität in der Domäne, jedoch zusätzlich mit der Möglichkeit, diese über mehrere Server zu erstrecken.</p>
+<p>Wo immer möglich sollten für Dienstkonten MSA eingesetzt werden, sowie im Sinn einer einheitlichen Konfiguration und Beschränkung der Komplexität möglichst auch die Gruppe &#34;Managed Service Account&#34;.</p>
+<p><span style="font-weight: bold">LSA-</span>Schutz in Windows Server 2012 R2</p>
+<p>Die Local Security Authority (LSA), die den Local Security Authority Server Service (LSASS)-Prozess umfasst, authentisiert Benutzer bei lokalen und Netzanmeldungen und setzt die lokalen Sicherheitspolicies durch. Windows 8.1 und Windows Server 2012 R2 bieten zusätzliche Schutzmechanismen dafür, die ein Auslesen von Speicher sowie eine Injektion von Code erschweren. Dies erhöht den Schutz für Credentials, die in der LSA gespeichert und verwaltet werden, etwa gegenüber Pass-the-Hash-Angriffen. Auch Smartcard-Daten inklusive PINs sind dort abgelegt.</p>
+<p>Dazu ist in der Registry unter &#34;HKEY_LOCAL MACHINE &gt; SYSTEM &gt; CurrentControlSet &gt; Control &gt; Lsa&#34; ein DWORD (32-bit) des Namens &#34;RunAsPPL&#34; mit Inhalt &#34;1&#34; einzutragen und der Server neu zu starten. Alternativ geht dies auch über eine GPO (Computer Configuration &gt; Windows Settings &gt; Hive &gt; <span style="font-weight: bold">HKEY_LOCAL_MACHINE </span><span style="font-weight: bold">&gt; </span><span style="font-weight: bold">SYSTEM\CurrentControlSet\Control\Lsa</span><span style="font-weight: bold">)</span>.</p>
+<p>Um die erfolgreiche Einrichtung zu überprüfen, sollte im Event Viewer unter Windows Logs &gt; System nach folgendem WinInit-Event Ausschau gehalten werden: &#34;LSASS.exe was started as a protected process with level: 4&#34;.</p>
+<p>In Kombination mit Secure Boot ist der Schutz besonders sicher, da er in dem Fall in UEFI generell aktiviert ist, unabhängig vom Inhalt der Registry.</p>
+<p><span style="font-weight: bold">Dynamische Zugriffsregeln</span></p>
+<p>In Windows Server 2012 wurde die Möglichkeit geschaffen, für die Autorisierung dynamische Zugriffsregeln für Dateien und Ordner zu definieren. Da diese einen wesentlich schlankeren und dadurch leichter zu pflegenden Regelsatz erlauben können, sollte ihr Einsatz geprüft und bevorzugt werden, wenn nicht andere, betriebliche Gründe dagegen sprechen.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M7&nbsp;Sicherheitsprüfung von Windows Server 2012</h4>
+<p>Auch bei Windows Server 2012 (R2) sollte die tatsächlich effektiv vorhandene Sicherheit regelmäßig auditiert werden, da nur so eine vollständige Umsetzung der Maßnahmen verlässlich geprüft werden kann. </p>
+<p><span style="font-weight: bold">Tools zur Überprüfung der Sicherheitskonfiguration (Assessment Tools)</span></p>
+<p>Neben den Standardmitteln technisches Konfigurationsaudit und Penetrationstest (siehe Baustein SYS.1.1 Allgemeiner Server) bringt Windows Server 2012 (R2) eine Reihe von Tools mit, mittels derer die Administratoren die Konfiguration überprüfen können. Diese sollten regelmäßig genutzt und die Ergebnisse dokumentiert sowie für die Planung der Verbesserung genutzt werden.</p>
+<p><span style="font-weight: bold">Microsoft Security Assessment Tool 4.0</span></p>
+<p>Beim Security Assessment Tool handelt es sich um eine sogenannte Risikomanagement-Anwendung. Diese ist als zweiteiliger Fragebogen realisiert. Der erste, kürzere Fragebogen nennt sich Business Risk Profile und versucht zu messen, wie viel Risiko mit der Geschäftstätigkeit der Institution verbunden ist. Da im IT-Grundschutz vergleichbare Verfahren verwendet werden, kann hier auf eine Anwendung verzichtet werden. Der zweite Teil heißt &#34;Assessment&#34; und ist aufwändiger zu beantworten. Es entsteht eine Auswertung der Effektivität der Sicherheitsstrategie in den vier Themenbereichen Personal, Prozesse, Ressourcen und Technik, basierend auf Best Practices und Standards wie ISO 27001 und NIST-800.x. Zwar ist auch dies in der IT-Grundschutz-Vorgehensweise bereits abgedeckt, jedoch können die vom Tool generierten Empfehlungen insbesondere aufgrund der zusätzlichen Hinweise und Verweise auf Material von Microsofts Trustworthy Computing Group lohnenswerte Quellen darstellen.</p>
+<p>Darüber hinaus besteht die Möglichkeit des anonymisierten Uploads von Ergebnissen im Austausch für den Download von Benchmarks. Im Zweifel sollte auf den Upload verzichtet werden, um die mögliche Weitergabe von internen Informationen zu unterbinden.</p>
+<p><span style="font-weight: bold">Microsoft Baseline Security Analyzer 2.3</span></p>
+<p>Der Baseline Security Analyzer bietet eine effiziente Methode, um eine ganze Reihe häufiger, sicherheitsrelevanter Fehlkonfigurationen zu erkennen.</p>
+<p>Zum einen wird auf fehlende sicherheitsrelevante Updates (und ausschließlich auf solche) geprüft, und zwar bei Windows, Windows-Komponenten wie Internet Explorer, IIS, anderen Microsoft-Produkten wie SQL Server und Office-Makroeinstellungen. Die Updates werden über den Windows Update Agenten abgefragt, der seit Windows 2000 Service Pack 3 auf allen Systemen vorhanden ist. Beim Test auf sogenannte unsichere Einstellungen (&#34;less-secure settings&#34;), auch als Vulnerability Assessment (VA) bezeichnet, wird gegen eine Datenbank von Registry- und Dateieinstellungen geprüft. Beispielsweise könnte ein VA ausgeben, dass die Berechtigungen in einem Verzeichnis unter /www/root zu lasch gewählt sind </p>
+<p>Der Ausführende benötigt auf dem zu scannenden Server lokale Adminrechte, zudem müssen die administrativen Freigaben aktiviert sein.</p>
+<p><span style="font-weight: bold">Security Configuration Wizard</span></p>
+<p>Seit Windows Server 2003 Service Pack 1 auf Windows Serversystemen vorhanden ist das Tool Security Configuration Wizard (SCW). Es dient dazu, das Serverprofil zu prüfen und Empfehlungen zur Verbesserung der Sicherheit zu generieren. Bei Windows Server 2012 (R2) findet sich der SCW im neuen Server Manager-Dashboard.</p>
+<p>Allgemein anerkannte grundlegende Empfehlungen wie &#34;unbenutzte Dienste deaktivieren&#34; oder &#34;unbenutzte Features deinstallieren&#34; werden auch in diesem Baustein genutzt. Wie aber ist in der Praxis nachprüfbar, dass bei einer großen Anzahl von Servern mit möglicherweise dutzenden von Rollen auf dem Netzserver und vielen unterschiedlichen Gruppen von Fileservern, Webservern, Datenbanken etc. alle nach Security Best Practice konfiguriert sind?</p>
+<p>SCW kann helfen die Angriffsfläche zu verkleinern, indem Policies generiert werden, die einen Server auf die minimale Funktionalität beschränken, die für seine Rolle(n) benötigt wird.</p>
+<p>Generierte Policies lassen sich direkt anwenden oder, dies ist zu empfehlen, als XML-Datei abspeichern. Aus diesen lässt sich über die PowerShell via</p>
+<p>scwcmd transform /p:TemplateMeinServer.xml /g:GPO-Hardening-MeinServer</p>
+<p>eine Policy (GPO) erzeugen, die dann auf alle Server mit derselben Charakteristik angewandt werden kann. Wie immer sollten neue Einstellungen kritisch begutachtet und vor Ausrollen auf Produktivsysteme getestet werden. Die Chance ist, dass so eine stärkere Standardisierung der Policies entsteht und die Konfigurationsdrift abnimmt.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M8&nbsp;Schutz der Systemintegrität</h4>
+<p>Secure Boot sollte aktiv sein. AppLocker sollte aktiviert und möglichst strikt konfiguriert sein.</p>
+<p><span style="font-weight: bold">Secure Boot</span></p>
+<p>Bei Secure Boot handelt es sich um einen Sicherheitsstandard aus den Reihen der Computerhersteller. Das Verfahren versucht sicherzustellen, dass nur Software gebootet wird, die vom PC-Hersteller als vertrauenswürdig angesehen wird. Realisiert wird dies durch digitale Signaturen auf Softwarekomponenten sowie eine Datenbank, die der Hersteller des Computers pflegt. </p>
+<p>Beim Start des PCs prüft die Firmware die Signatur jeder Komponente der Boot-Software einschließlich der Treiber und des Betriebssystems. Nur wenn alle Signaturen gültig sind, wird der Bootprozess vollendet, andernfalls kommen herstellerspezifische Notmaßnahmen zum Tragen.</p>
+<p>Nicht möglich ist die Nutzung von Secure Boot bei alter, nicht kompatibler Hardware oder im für den Serverbetrieb in der Regel nicht sinnvollen Dual Boot-Modus sowie bei virtuellen Maschinen, die Secure Boot nicht unterstützen.</p>
+<p>Heutzutage kann in aller Regel von ausreichender Hardware und Kompatibilität ausgegangen werden, sodass es keinen Grund gibt, den wertvollen Integritätsschutz, den Secure Boot anbietet, nicht zu nutzen.</p>
+<p><span style="font-weight: bold">AppLocker</span></p>
+<p>AppLocker bietet richtliniengesteuerte Zugriffskontrolle für Anwendungen und andere ausführbare Dateien. Hiermit können bestimmte Anwendungen erlaubt, andere wiederum blockiert werden. Mit Windows Server 2012 kam die Funktion hinzu, Regeln für Anwendungspakete zu definieren, was die Konfiguration von AppLocker für Apps aus dem Windows Store erlaubt. Seit R2 gibt es die Möglichkeit, Laufzeitinformationen von Prozessen zu beobachten und im Sicherheitsprotokoll festzuhalten, die für die zielgenaue Einstellung von AppLocker verwendet werden können (Audit-Modus). Dies sollte genutzt werden, um Ausfälle bis hin um Aussperren der Administratoren aus dem System zu vermeiden.</p>
+<p>AppLocker ist ein mächtiges Werkzeug, um die Ausführung schädlicher Software deutlich zu erschweren. Trotz diverser Erleichterungen bleibt jedoch immer noch ein erheblicher Konfigurationsaufwand, sodass sich der Einsatz von AppLocker vor allem empfiehlt, wenn hoher Integritätsbedarf besteht oder die Konfiguration eines Servers relativ statisch ist. Dies ist bei Serversystemen unter Windows 2012 (R2), die lediglich eine Rolle anbieten, nicht selten der Fall.</p>
+<p><span style="font-weight: bold">Software Restriction Policies</span></p>
+<p>Software Restriction Policies (SRP) ist eine ältere Funktion, mittels derer Programme identifiziert werden können, die auf Computern in der Domäne laufen sollen. Auch diese kann wie AppLocker dazu genutzt werden, mit großer Flexibilität die erlaubte Software in der ganzen Institution zu kontrollieren. SRP wird benötigt, wenn auch für Betriebssysteme vor Windows Server 2008 R2 oder Windows 7 Softwarebeschränkungen konfiguriert werden sollen, die kein AppLocker unterstützen.</p>
+<p>Wie AppLocker auch wird SRP über GPOs konfiguriert. Wenn sowohl SRP- als auch AppLocker-Policies in derselben Domäne durch Gruppenrichtlinien angewandt werden, so werden die SRP-Richtlinien auf Rechnern, die AppLocker unterstützen, durch die AppLocker-Richtlinien überstimmt.</p>
+<p>Es sollten immer getrennte GPOs verwendet werden, um SRP und AppLocker zu konfigurieren, um Fehler auszuschließen und insbesondere die Fehlersuche zu erleichtern.</p>
+</li>
+</ul>
+<a name="12480_2.3"></a>
+<h3>2.3 Maßnahmen für erhöhten Schutzbedarf</h3>
+<p>Im Folgenden sind Maßnahmenvorschläge aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und bei erhöhtem Schutzbedarf in Betracht gezogen werden sollten. Die jeweils in Klammern angegebenen Buchstaben zeigen an, welche Grundwerte durch die Maßnahme vorrangig geschützt werden (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit).</p>
+<ul>
+<li>
+<h4>SYS.1.2.2.M9&nbsp;Lokale Kommunikationsfilterung(CI)</h4>
+<p>Grundsätzlich werden zentrale Maßnahmen wie Segmentierung von Netzen, Zonenbildung und Paketfilterung im Unternehmens- und Behördenbereich in der Regel durch dedizierte aktive Netzkomponenten realisiert, die an geeigneten Stellen aufgestellt werden. Im Sinn einer gestaffelten Verteidigung (Defense-in-Depth) sollte jedoch bei höherem Schutzbedarf auch die lokale Firewall aktiviert werden.</p>
+<p>Windows Server 2012 (R2) bringt für diesen Zweck eine lokale Firewall mit, die sogenannte &#34;Windows Firewall mit Advanced Security (WFAS)&#34;. Diese sollte aktiviert und für eingehenden wie ausgehenden Verkehr möglichst strikt eingestellt sein.</p>
+<p>Die WFAS kann durch GPOs verwaltet werden. Dies ist zu empfehlen, um die Konfiguration konsistent und zentral zu halten. Die Verwaltung der konkreten Firewallregeln ist außerhalb des Scopes dieses Bausteins. Hierfür ist der Baustein Firewall anzuwenden.</p>
+<p>Ebenfalls durch die WFAS realisiert werden die nativen IPsec-Features von Windows Server 2012 (R2). Diese sollten verwendet werden, um die Identität und Integrität der Verbindung zu Remote-Systemen sicherzustellen, da dies mit Paketfilterfunktionen allein nicht möglich ist. Die sichere Konfiguration von IPsec-Verbindungen ist ebenfalls nicht Inhalt dieses Bausteins. Sie wird im Baustein VPN abgehandelt.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M10&nbsp;Festplattenverschlüsselung bei Windows Server 2012(C)</h4>
+<p>Ein geeignetes Mittel zum Schutz der Vertraulichkeit von Daten im Ruhezustand, also nicht während des Transports, ist die Verschlüsselung von Festplatten und sonstigen Datenträgern. Dabei ist zu beachten, dass die Daten für die Bearbeitung entschlüsselt werden müssen (z. B. im Fall der Verschlüsselung des Bootmediums bereits während des Bootvorgangs) und grundsätzlich lesbar bleiben, bis das System heruntergefahren oder in den Ruhemodus versetzt wird. Da Serversysteme häufig rund um die Uhr laufen, ist der Schutz letztlich beschränkt, kann aber gegen physische Angriffe wie Diebstahl von Datenträgern gleichwohl hilfreich sein, wenn er mit geeigneten anderen Maßnahmen kombiniert wird. Windows bringt zu diesem Zweck das Tool BitLocker mit, das auch in Windows Server 2012 (R2) in allen Editionen verfügbar ist.</p>
+<p>BitLocker unterstützt Geräteverschlüsselung auf x86- und x64-basierten Systemen, welche die Anforderungen des Windows Hardware Certification Kit (HCK) für ein TPM (Trusted Platform Module) und Secure Boot mit sogenannter &#34;Connected Stand-by&#34;-Funktion erfüllen. Die Geräteverschlüsselung schützt sowohl das Betriebssystem als auch weitere angeschlossene Festplatten. Grundsätzlich kann Geräteverschlüsselung mit einem Microsoft-Account oder einem Domänen-Account genutzt werden.</p>
+<p>BitLocker unterstützt mit Windows Server 2012 (R2) die Algorithmen AES-128-CBC und AES-256-CBC. Zur Verschlüsselung mit BitLocker wird ein Key Protector benötigt, der vorhanden sein muss, um das Laufwerk entschlüsseln zu können. In der Standardkonfiguration sind dies ein TPM-Modul und ein zusätzlicher Wiederherstellungsschlüssel, mit dessen Hilfe das Laufwerk auch ohne das TPM-Modul entschlüsselt werden kann. Bei Enterprise-Umgebungen mit einem Active Directory kann der Wiederherstellungsschlüssel auch im Active Directory abgelegt werden.</p>
+<p><span style="font-weight: bold">Windows Server 2012</span></p>
+<p>Bezüglich Vorgängerversionen haben sich die Möglichkeiten von BitLocker in Windows 8 und Server 2012 erweitert:</p>
+<p><span style="font-weight: bold">Installation</span></p>
+<p>BitLocker kann nun Festplatten bereits während der Installation verschlüsseln. Dies ist zu empfehlen, da so das System nicht für gewisse Zeit im Klartext vorliegt.</p>
+<p>Administratoren können dazu BitLocker vor der Installation vom Windows Preinstallation Environment (WinPE) aktivieren. Dies geschieht mit einem zufälligen Klartext-Schlüssel, der auf die frisch formatierte Festplatte angewendet wird, bevor der Setup-Prozess startet. Neu hinzugekommen ist auch die Option &#34;Used Disk Space Only&#34;, bei der nur der bisher tatsächlich verwendete Speicher verschlüsselt wird. Dies benötigt an dieser Stelle in der Regel nur wenige Sekunden und behindert so den Installationsprozess nicht merklich.</p>
+<p>Den BitLocker-Status einer Partition kann der Administrator im BitLocker-Control Panel oder auch im Windows Explorer prüfen. Wurde eine Festplatte während der Installation zunächst mit Klartext-Schlüssel verschlüsselt, wird der Status &#34;Waiting For Activation&#34; mit einem gelben Ausrufezeichen angezeigt. Dies bedeutet, dass für einen vollständigen Schutz der Partition der Schlüssel noch geschützt werden muss. Dafür fügt der Administrator über das Control Panel, das manage-bde-Tool oder die WMI-APIs einen geeigneten Schlüsselschutz hinzu. </p>
+<p><span style="font-weight: bold">Schlüsselschutz (Key Protector)</span></p>
+<p>Für einen vollständigen BitLocker-Schutz muss der zufällige Verschlüsselungsschlüssel seinerseits geschützt werden. Hierfür gibt es verschiedene Varianten:</p>
+<table border="1" cellspacing="1"><tbody><tr>
+<th rowspan='1' colspan='1'>Speichermedium</th>
+<th rowspan='1' colspan='1'>Schlüsselschutz (Key Protector)</th>
+</tr><tr>
+<td rowspan='1' colspan='1'>Betriebssystem</td>
+<td rowspan='1' colspan='1'>
+<ul><li>TPM</li><li>TPM+PIN</li><li>Startup Key (für Systeme ohne TPM) (z. B. VMs)</li><li>Password (für Systeme ohne TPM) (z. B. VMs)</li></ul>
+</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>andere Festplatte</td>
+<td rowspan='1' colspan='1'>
+<ul><li>Automatischer Unlock</li><li>Passwort</li><li>Smartcard</li></ul>
+</td>
+</tr><tr>
+<td rowspan='1' colspan='1'>Wechselfestplatte</td>
+<td rowspan='1' colspan='1'>
+<ul><li>Passwort</li><li>Smartcard</li></ul>
+</td>
+</tr></tbody></table>
+<p><span style="font-weight: bold">Used Disk Space Only</span></p>
+<p>BitLocker bietet nun zwei Verschlüsselungsmethoden, &#34;Used Disk Space Only&#34; und &#34;Full Volume Encryption&#34;. Ersteres arbeitet viel schneller während der Erstverschlüsselung, da zunächst nur die bereits genutzten Blöcke der Partition verschlüsselt werden. Die Vollverschlüsselung verschlüsselt immer alle Blöcke einschließlich des freien Speicherplatzes.</p>
+<p>Folgende GPOs für BitLocker, die Used Drive Encryption bzw. Full Volume Encryption erzwingen, sind verfügbar unter \Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption</p>
+<ul><li>Fixed Data Drives\Enforce drive encryption type on fixed data drives</li><li>Operating System Drives\Enforce drive encryption type on operating system drives</li><li>Removable Data Drives\Enforce drive encryption type on removable data drives</li></ul>
+<p>Ist hier nichts konfiguriert, kann der Administrator frei entscheiden, wenn er BitLocker aktiviert.</p>
+<p>Bei normalen und hohen Vertraulichkeitsanforderungen genügt in der Regel die Teilverschlüsselung. Bei sehr hohen Vertraulichkeitsanforderungen sollte immer eine Vollverschlüsselung gewählt werden, da bereits die sich ändernde Datenmenge, die in dem Fall leicht ablesbar ist, Informationen über die Daten preisgeben kann (ein sogenannter Seitenkanalangriff). Auch für die Erreichung des Ziels Abstreitbarkeit ist eine Vollverschlüsselung zu empfehlen.</p>
+<p>Wenn der erhöhte Zeitbedarf für die Vollverschlüsselung keine negative Auswirkung auf den Deploymentprozess hat, sollte grundsätzlich voll verschlüsselt werden.</p>
+<p><span style="font-weight: bold">PIN- </span>und Passwortänderung für Standardnutzer</p>
+<p>Diese Funktion erlaubt einem Standardnutzer, die BitLocker-PIN bzw. das Passwort auf Betriebssystempartitionen bzw. das BitLocker-Passwort auf Datenpartitionen selbst zu ändern, was helfen kann, Anfragen an den Support zu reduzieren.</p>
+<p><span style="font-weight: bold">Network Unlock</span></p>
+<p>Diese Funktion ermöglicht, ein BitLocker-geschütztes System während des Bootvorgangs automatisch über das Netz zu entschlüsseln. Auch dies kann Anfragen beim Support vermeiden und trägt zur Benutzerfreundlichkeit bei.</p>
+<p>Technisch handelt es sich bei Network Unlock um eine neue Option für den Schlüsselschutz. Benötigt wird dafür ein in der UEFI-Firmware implementierter DHCP-Treiber.</p>
+<p>Betriebssystempartitionen, die mit TPM+PIN geschützt sind, verlangen die manuelle Eingabe der PIN beim Booten und Erwachen aus dem Ruhemodus (Hibernation), z. B. bei konfiguriertem Wake-on-LAN. Dies macht es aufwändig, etwa automatisiert Patches auszurollen. Network Unlock bietet eine Möglichkeit, die Rechner trotzdem ohne Interaktion hochzufahren.</p>
+<p>Ähnlich wie bei TPM+StartupKey wird hier ein verschlüsselter Startup Key aus dem Netz heruntergeladen und mit Hilfe des TPMs entschlüsselt. Der Netzschlüssel ist auf einem Systemlaufwerk im Netz gespeichert und mit einem AES 256-Bit-Sessionkey sowie dem 2048-Bit-RSA-Publickey des Serverzertifikats verschlüsselt. Ist Network Unlock nicht verfügbar, wird wie gehabt der normale TPM+PIN-Eingabebildschirm angezeigt. Serverseitig wird die Verteilung eines RSA-Schlüsselpaars per Group Policy Management Console auf dem Server 2012 Domain Controller benötigt.</p>
+<p><span style="font-weight: bold">Unterstützung von Hardwareverschlüsselung</span></p>
+<p>Mit Windows Server 2012 ist es möglich, auch andere, per Hardwareverschlüsselung verschlüsselte Festplatten in der BitLocker-Konsole zu verwalten, um eine gemeinsame Verwaltungsoberfläche zu schaffen.</p>
+<p><span style="font-weight: bold">Windows Server 2012 R2</span></p>
+<p>Mit Windows 8.1 und Server 2012 R2 kamen folgende Erweiterungen der BitLocker-Funktionalität hinzu:</p>
+<p>Anders als die bisherige BitLocker-Implementierung ist die sogenannte Geräteverschlüsselung (Device Encryption), die im Hintergrund ebenfalls auf BitLocker basiert, automatisch aktiviert, sodass das Gerät von Anfang an verschlüsselt wird. Dies geschieht folgendermaßen:</p>
+<p>Während einer Neuinstallation von Windows Server 2012 R2 wird der Server für die erste Verwendung vorbereitet. Dabei werden auch die Geräteverschlüsselung initialisiert und der Datenträger des Betriebssystems sowie die anderen Festplatten zunächst mit einem im Klartext gespeicherten Schlüssel verschlüsselt. Die Sicherheit der Daten zu diesem Zeitpunkt entspricht einer BitLocker-Verschlüsselung im Standby-Modus (Suspended), bei der der Schlüssel im Klartext auf der Festplatte vorliegt.</p>
+<p>Falls der Server nicht zu einer Domäne hinzugefügt wird, wird ein Microsoft-Account benötigt, dem administrative Rechte auf dem Server eingeräumt wurden. Sobald der Administrator sich mit dem Microsoft-Account anmeldet, wird der Klartextschlüssel gelöscht, ein Wiederherstellungsschlüssel in den Microsoft-Account (online) hochgeladen und der TPM-Schutz erstellt. Sollte der Wiederherstellungsschlüssel später benötigt werden (z. B. bei einem Schaden des TPM), kann der Administrator diesen über ein Zweitgerät und das Microsoft-Konto wieder beziehen.</p>
+<p>Meldet sich der Benutzer über einen Domänenaccount an, wird der Klartextschlüssel erst in dem Moment gelöscht, wenn der Server die Domäne betreten hat und der dann erzeugte Wiederherstellungsschlüssel erfolgreich in die Active Directory Domain Services gesichert wurde. Die GPO &#34;Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives&#34; muss aktiviert und die Option &#34;Do not enable BitLocker until recovery information is stored in AD DS for operating system drives&#34; sollte ausgewählt sein. Erst danach aktiviert sich der TPM-Schutz und schließt so die Geräteverschlüsselung ab.</p>
+<p>Im Einsatz in Behörden und Unternehmen sollte der Wiederherstellungsschlüssel im AD gespeichert und auf die Online-Variante mit dem Microsoft-Konto verzichtet werden, da im letzteren Fall keine Kontrolle darüber besteht, was mit diesem Schlüssel geschieht.</p>
+<p><span style="font-weight: bold">FIPS-Unterstützung für das Recovery-Passwort</span></p>
+<p>Seit Windows Server 2012 R2 existiert ein FIPS-Modus, der es erlaubt, BitLocker kompatibel mit dem US-amerikanischen öffentlichen Krypto-Standard (Federal Information Processing Standard) zu betreiben.</p>
+<p><span style="font-weight: bold">BitLocker auf virtuellen Maschinen</span></p>
+<p>Die Verschlüsselung von virtuellen Maschinen bietet sich an, wenn entweder das Hostsystem nicht verschlüsselt werden kann oder soll oder aber der Vertraulichkeitsbedarf der Daten in der VM höher ist oder diese aus anderen Gründen vom Hostsystem abgeschirmt werden sollen. Auch hier gilt, dass Festplattenverschlüsselung (FDE: Full Disk Encryption) keinen wirksamen Schutz gegen Auslesen von Daten im laufenden Betrieb, d. h. mit entschlüsselten Datenträgern, darstellt. Als Zusatzmaßnahme kann daher organisatorisch festgelegt werden, dass verschlüsselte VMs erst dann entschlüsselt werden dürfen, wenn sie benötigt werden und nach Benutzung möglichst schnell wieder heruntergefahren werden müssen.</p>
+<p>Da virtuelle Maschinen nicht über ein TPM verfügen, müssen folgende zwei Schritte ausgeführt werden, bevor BitLocker (das auf dem Server installiert sein muss) aktiviert werden kann: </p>
+<p>1. In der GPO &#34;Computer Configuration/Administrative Templates/Windows Components/BitLocker Drive Encryption/Operating System Drives&#34; muss &#34;Require additional authentication at startup&#34; auf &#34;Enable&#34; und &#34;Allow BitLocker without a compatible TPM&#34; konfiguriert sein (z. B. mit dem lokalen Gruppenrichtlinieneditor gpedit.msc).</p>
+<p>2. Nach einem Neustart der VM ist im Control Panel BitLocker zu aktivieren.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M11&nbsp;Angriffserkennung bei Windows Server 2012(CIA)</h4>
+<p>Oft stellt sich bei der Sicherheitvorfallsbehandlung heraus, dass die Protokollierung unzureichend war, um den Vorfall aufzuklären und Gegenmaßnahmen zielgerichtet planen zu können. Häufige Fehler sind:</p>
+<ul><li>fehlendes zentrales Logging,</li><li>fehlendes Logging von Mitgliedsservern und Endpunkten (nur Domaincontroller),</li><li>Unübersichtlichkeit durch zu viele Daten im Protokoll,</li><li>fehlende Aufzeichnung zentraler Ereignisse,</li><li>zu schnelles Überlaufen (Rolling / Rotating) der Protokolle.</li></ul>
+<p>Z. B. werden zentrale Events wie Logins standardmäßig nur auf dem System selbst geloggt. Der AD protokolliert seinerseits nur die Ticketerstellung, hat aber kein Bild von der Session als solcher (inklusive deren Anfang und Ende).</p>
+<p>Als Mindestanforderung sollten die folgenden Ereignisse von allen Systemen protokolliert und ausgewertet werden:</p>
+<ul><li>das Löschen von Sicherheits-Logs,</li><li>Änderungen an kritischen Gruppen wie Domänenadministratoren,</li><li>Änderungen an lokalen Admingruppen,</li><li>das Anlegen und Löschen lokaler Benutzer,</li><li>die Installation neuer Dienste, vor allem auf Domänencontrollern (ein mögliches Anzeichen für Schadsoftware oder laterale Bewegungen von Angreifern).</li></ul>
+<p>Der erste Schritt zu einer Angriffserkennung ist die zentrale Sammlung aller relevanten Ereignisdaten. Eigens dafür entwickelte Systeme wie SIEM (Security Incident und Event Management) sind in der Regel teuer und aufwändig einzurichten und zu betreiben. Sie sind nicht Thema dieses Bausteins. Jedoch lässt sich bereits mit Windows Server-Bordmitteln Wesentliches erreichen.</p>
+<p><span style="font-weight: bold">Nutzung des Windows Event Frameworks (WEF)</span></p>
+<p>Mit dem Windows Event Framework (WEF) verfügt Windows über eine bereits integrierte Lösung, die mindestens als Komplement für ein SIEM eingesetzt werden kann. Wichtige Basisfunktionen einer Eventüberwachung können sogar komplett mit WEF realisiert werden.</p>
+<p>Event Forwarding, also die gezielte automatische Weiterleitung von Events, kann die Sichtbarkeit kritischer Events deutlich erhöhen, insbesondere die von dezentralen Servern oder auch Clients, die keinen Agenten eines proprietären Monitoringsystems installiert haben. Die Auswahl, welche Events zentral geloggt werden sollen, ist außerhalb dieses Bausteins und als Teil eines übergreifenden Loggingkonzepts zu sehen (siehe Baustein OPS1.1.7 Protokollierung).</p>
+<p>WEF lässt sich mit GPOs konfigurieren. Events können im nativen .evtx-Format exportiert werden. Dieses ist XML-basiert und damit leicht auswertbar.</p>
+<p>Im Push-Modus leiten Systeme bestimmte Ereignisse automatisch an den sogenannten Collector (‑Server) weiter. Somit ist es für Administratoren, die nicht Sicherheitsverantwortliche sind, möglich, für die von ihnen verantworteten Systeme zusätzliche Events zu konfigurieren.</p>
+<p>Für die Einrichtung wird lediglich ein Windows Server benötigt und eine GPO. Außerdem muss dem Netzdienst (lediglich dem lokalen auf dem jeweiligen System) das Leserecht am Protokoll eingeräumt werden und der WinRM-Dienst muss auf allen zu beobachtenden Systemen gestartet sein. Er braucht nicht (auto-)konfiguriert zu werden, was ihn im lauschenden, sprich eher angreifbaren Zustand belassen würde. Werden lediglich kritisch Events geloggt, so ist nicht mit sehr großen Logdateien zu rechnen.</p>
+<p>Auf dem Collector wird die Autokonfiguration über den Befehl &#34;winrm qc&#34; in einem administrativen Prompt aufgerufen. Automatisches Starten des WinRM-Dienstes sollte auf Nachfrage aktiviert werden, das ebenfalls abgefragte automatische Öffnen der Firewall lässt sich noch sicherer per GPO erledigen. Nun können im Eventviewer unter &#34;Subscriptions&#34; eingehende Events eingesehen werden.</p>
+<p>Anschließend können per GPO die weiterzuleitenden Events definiert werden. Systeme, die die GPO anwenden, werden beim Windows Event Collector nachfragen, ob Subskriptionen für sie vorliegen und nur in diesem Fall die gewünschten Events senden.</p>
+<p>Es ist durchaus möglich, die Gesamtheit aller Security Events der Domäne im WEF einzusammeln. Dies kann sinnvoll sein, wenn kein anderes zentrales Loggingsystem vorhanden ist und trotzdem forensische Untersuchungen möglich sein sollen. Ansonsten besteht die Stärke des WEF hauptsächlich in der gezielten Sammlung und Filterung kritischer Ereignisse. So kann auch ein SIEM, das sämtliche Ereignisse aufzeichnet, am besten ergänzt werden: das SIEM für die Vollständigkeit, WEF für die Sichtbarkeit, auch in Bereiche der Umgebung, die nicht vom SIEM abgedeckt sind. Das SIEM kann Ereignisse aus diesen dann wiederum beim Collector abholen und somit noch besser die einheitliche Sicht auf alles bereitstellen.</p>
+<p><span style="font-weight: bold">Sperrung nach missglückten Entschlüsselungsversuchen</span></p>
+<p>Benutzerkonten können mit einer Schwelle versehen sein, wie viele Anmeldeversuche möglich sind, bevor der Account gesperrt ist. Dies ist ein Standardverfahren, um Brute-Force-Angriffe zu behindern. Gleichzeitig besteht die Gefahr, dass Sperren absichtlich provoziert werden, um Denial-of-Service zu erreichen.</p>
+<p>Da Datenträgerverschlüsselung eine Erweiterung des Zugriffsschutzes auf die Daten auf Festplatten darstellt, die ebenfalls per Brute Force angegriffen werden kann, ist hier eine vergleichbare Maßnahme möglich:</p>
+<p>Seit Windows 8 und Server 2012 ermöglicht die Policy &#34;\Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Interactive logon: Machine account lockout threshold&#34; ein automatisches Sperren von Partitionen nach einer definierten Anzahl vergeblicher Loginversuche im Sinn der Vernichtung des primären Key Protectors. Danach lässt sich das Volume nur noch per Wiederherstellungsschlüssel entschlüsseln. Dieser muss von einem autorisierten Benutzer im sogenannten &#34;Device Lockout-Modus&#34;, in den das System automatisch rebootet, eingegeben werden, um wieder Zugriff zu erhalten. Es zählen fehlerhafte Loginversuche sowohl auf per Strg-Alt-Entf gesperrten Systemen als auch bei passwortgeschützten Bildschirmschonern.</p>
+<p>Der Schwellwert kann zwischen 4 und 999 gewählt werden (1-3 werden automatisch als 4 interpretiert), 0 schaltet die Sperrung ab. Der Wert sollte mit der Schwelle für die normale Accountsperre korrelieren und jedenfalls nicht niedriger als diese sein, damit nach einer normalen Accountsperre noch ein normales Entsperren des Accounts veranlasst werden kann. </p>
+</li>
+<li>
+<h4>SYS.1.2.2.M12&nbsp;Redundanz und Hochverfügbarkeit(A)</h4>
+<p>Wenn besonders hohe Verfügbarkeitsanforderungen an ein System bestehen, das unter Windows Server 2012 (R2) betrieben wird, so ergeben sich mögliche Maßnahmen im Wesentlichen aus der jeweiligen Anwendung. Bei einem Fileserver wird ein verteiltes Dateisystem eine Lösungsvariante darstellen, bei einem Active Directory der Einsatz mehrerer Domaincontroller und bei einem Webserver z. B. Load Balancing. Für das Thema Hochverfügbarkeit sei daher vor allem auf die jeweiligen Anwendungsbausteine verwiesen.</p>
+<p>Darüber hinaus gibt es jedoch einige Maßnahmen, die auf Betriebssystemebene von Windows Server 2012 (R2) umgesetzt werden können, um die Verfügbarkeit zu erhöhen.</p>
+<p><span style="font-weight: bold">Failover Cluster</span></p>
+<p>Mehrere Windows-Server können in einem Verbund betrieben werden. Analog zu den Server-Rollen, die auf einzelnen Systemen laufen, gibt es auch diverse Cluster-Rollen, die in einem Failover-Cluster betrieben werden können. Dabei ist immer jeweils einer der Knoten des Clusters verantwortlich für den Betrieb der Rolle. Fällt der Knoten aus oder verliert er die Konnektivität, übernimmt einer der anderen Knoten. Die Ausfallsicherheit kann so erhöht werden, da im Fehlerfall ein anderes System den Betrieb übernimmt. Die Liste der Rollen, die direkt auf einem Cluster ausgeführt werden können, ist relativ eingeschränkt. Allerdings können auch virtuelle Maschinen auf einem Failover Cluster betrieben werden, so dass ganze Systeme, die kritische Dienste zur Verfügung stellen, als virtuelle Maschine hochverfügbar gemacht werden können.</p>
+<p><span style="font-weight: bold">Network Load Balancing</span></p>
+<p>Mit der Funktion Network Load Balancing können zwei oder mehr Windows Server Netzdienste über TCP/IP unter einer gemeinsamen Adresse anbieten. Die Server und die Dienste sind unabhängig voneinander und teilen keine Ressourcen. Netzanfragen an die gemeinsame Adresse werden auf die Server im Verbund verteilt.</p>
+<p><span style="font-weight: bold">NIC-Teaming</span></p>
+<p>NIC-Teaming (von Network Interface Card), auch bekannt als Load Balancing/Failover (LBFO) ermöglicht es, mehrere Netzschnittstellen in sogenannte Teams zusammenzufassen um</p>
+<p>a.) Bandbreitenkapazitäten zu bündeln und/oder</p>
+<p>b.) im Fall eines Versagens einer Schnittstelle oder Verbindung einen Failover (Rückfall) für den Netzverkehr zu haben.</p>
+<p>Seit Windows Server 2012 ist diese Technik nativ im Betriebssystem verfügbar.</p>
+<p>Da das Thema NIC-Teaming vielfältig ist und stark vom konkreten Einsatzszenario abhängt, können in diesen Umsetzungshinweisen nur allgemeine Hinweise gegeben werden. Für Details zu NIC-Teaming in Windows Server 2012 (R2) bietet Microsoft daher einen &#34;NIC Teaming User Guide&#34; an.</p>
+<p><span style="font-weight: bold">Grundfunktion von NIC-Teaming</span></p>
+<p>Netzwerkkarten der gleichen Geschwindigkeit lassen sich ohne Zusatzwerkzeuge zu Teams zusammenfassen, soweit die Hersteller die Funktion unterstützen. Mit Bluetooth- oder WLAN-Adaptern ist dies nicht möglich. Die Konfiguration erfolgt im Server-Manager oder per PowerShell, auch über das Netz.</p>
+<p>Das LBFO in Windows Server 2012 lässt sich nicht mit NIC-Teaming anderer Hersteller kombinieren. Treten in so einem Fall Störungen auf, lässt sich die Teamkonfiguration mit der PowerShell folgendermaßen löschen:</p>
+<p>Get-NetLbfoTeam | Remove-NetLbfoTeam</p>
+<p>Kommt Virtualisierung mit Hyper-V zum Einsatz, so muss der Teamvorgang vor der Erstellung von virtuellen Switches in Hyper-V durchgeführt werden, da sonst die physische Netzverbindung nicht mehr für den Teamvorgang verfügbar ist. Darüber hinaus sind hier weitere Besonderheiten zu beachten.</p>
+<p><span style="font-weight: bold">NIC-Teaming-Architektur</span></p>
+<p>Es existieren verschiedene Architekturen, in denen NIC-Teaming verwendet werden kann. Bei Switch-unabhängigem Teaming weiß der Switch nichts von Teamzugehörigkeit, die NICs können auch an verschiedenen Switches angeschlossen sein, müssen dies jedoch nicht. Beim Switch-abhängigen Teaming, bei dem das gesamte Team am selben physischen Switch hängen muss, sind Netzwerkkarten und Switch für das Teaming konfiguriert. Dies kann statisch geschehen (eine Funktion, die typischerweise von Server-geeigneten Switchen unterstützt wird) oder dynamisch vereinbart werden über das Protokoll IEEE 802.1ax (LACP: Link Aggregation Control Protocol).</p>
+<p><span style="font-weight: bold">Algorithmen zur Verteilung des Datenverkehrs</span></p>
+<p>Um die mögliche kombinierte Bandbreite auch nutzen zu können, ist es notwendig, den Datenverkehr sinnvoll auf die Netzwerkkarten zu verteilen. In der Regel erfolgt dies nach Adress-Hashing, einem Verfahren, das Pakete anhand ihrer Adressdaten pseudozufällig auf die Adapter verteilt. Beim Einsatz von Virtualisierung kann eine viel feingranularere Verteilung erreicht werden, wenn zusätzlich der virtuelle Hyper-V-Switchport mit in den Verteilungsalgorithmus einbezogen wird.</p>
+<p>Je nach Setup und Anforderungen bieten unterschiedliche Kombinationen aus Architektur und Verteilungsalgorithmus verschiedene Vor- und Nachteile.</p>
+<p><span style="font-weight: bold">Unterschiede zwischen Windows Server 2012 und 2012 R2</span></p>
+<p>Die hauptsächlichen Unterschiede in Bezug auf NIC-Teaming betreffen</p>
+<ul><li>die Ergänzung des dynamischen Load Balancing-Modus (s. o.) und</li><li>verbesserte Interoperabilität und Leistungsfähigkeit in Zusammenhang mit Hyper-V Netzvirtualisierung (NVGRE).</li></ul>
+<p><span style="font-weight: bold">BranchCache</span></p>
+<p>BranchCache ist eine Technik zur Optimierung der Nutzung von Übertragungskapazitäten im WAN, z. B. bei der Anbindung von Außenstellen. Um Bandbreite zu sparen, kopiert BranchCache Inhalte von zentralen Servern und speichert diese in der Außenstelle (englisch branch office) zwischen (sogenanntes Caching), sodass sie bei erneutem Zugriff nicht mehr übertragen werden müssen.</p>
+<p>BranchCache basiert auf tiefliegenden Funktionen des Windows Fileservers. So werden Dateien in kleine Abschnitte eingeteilt, um Duplikate finden und eliminieren zu können. Insbesondere kleinere Änderungen in großen Dateien führen so nicht zur kompletten Neuübertragung.</p>
+<p>Die Konfiguration kann auch für größere Institutionen durch einen einzelnen kleinen Satz von GPOs erfolgen.</p>
+<p>Mit Windows Server 2012 (R2) erfolgt die Speicherung des Caches inzwischen verschlüsselt, sodass zumindest bei normalen Vertraulichkeitsanforderungen auf eine weitere Verschlüsselung etwa der Datenträger verzichtet werden kann.</p>
+<p>In vorherigen Versionen wurden Serverzertifikate benötigt, was einen komplexen PKI-Betrieb voraussetzte. Inzwischen werden diese nicht mehr benötigt, da Verschlüsselung und Authentisierung anders gelöst sind.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M13&nbsp;Starke Authentifizierung bei Windows Server 2012(CI)</h4>
+<p>Es sollte ein rollenbasiertes Administrations-Modell für die Administration unterschiedlicher Serverfunktionen entworfen und umgesetzt werden. Für kritische Dienste sollte eine Zwei-Faktor-Authentifizierung implementiert sein.</p>
+<p><span style="font-weight: bold">Rollenbasiertes Administrationskonzept</span></p>
+<p>Die Unterscheidung in Administratoren und normale Benutzer ist wichtig, allerdings relativ grob. Sie missachtet, dass es in der Realität verschiedene Arten administrativer Aufgaben oder, allgemeiner gesprochen, hierarchischer und teilweise auch überlappender Rollen und Verantwortlichkeiten gibt. Um das Prinzip des Least Privilege konsequenter durchzusetzen, ist daher ein feingranulareres rollenbasiertes Administrationskonzept zu entwickeln. Dies ist insbesondere für größere Institutionen sinnvoll und realistisch.</p>
+<p>Ein solches Administrationskonzept kann nicht allein mit Blick auf Windows Server 2012 (R2) aufgestellt werden. Vielmehr sind unterschiedliche Rollen (verschiedene Arten von Domain Controllern, Mitgliedsserver, Clientsysteme etc.) zu betrachten. Dieser Versuch wird im Baustein APP.2.2 Active Directory unternommen.</p>
+<p><span style="font-weight: bold">Smartcards</span></p>
+<p>Smartcards eignen sich als schwer zu fälschende mobile Sicherheitsmerkmale, etwa in der Zwei-Faktor-Authentifizierung oder für Signaturen. Mit Windows Server 2012 wurde die Nutzung von Smartcards im Sinn der stärkeren Integration in eine größere Anzahl von Anwendungen verbessert. Zudem kam die Möglichkeit hinzu, sogenannte virtuelle Smartcards zu verwenden.</p>
+<p><span style="font-weight: bold">Virtuelle Smartcards</span></p>
+<p>Virtuelle Smartcards ermöglichen Multi-Faktor-Authentifizierung in vielen Arten von Infrastrukturen auch in dem Fall, dass Benutzer keine physische Karte mit sich führen. Hierfür wurde der Prozess vereinfacht, beliebige Geräte mit TPM als virtuelles Smartcard-Gerät zu registrieren, unabhängig davon, ob sie Domänenmitglieder sind und wie ihre Hardware ansonsten beschaffen ist. Dies setzt die Hürde für den Einsatz von Smartcards als weiteres Authentifizierungsmerkmal deutlich herab.</p>
+<p><span style="font-weight: bold">Windows Biometric Framework</span></p>
+<p>Auch das Windows Biometric Framework (WBF), ein Satz an Diensten und Schnittstellen für biometrische Devices, wurden erweitert. Fast User Switching und die Synchronisation von Passwörtern mit Fingerabdrücken sind nun möglich.</p>
+<p>Es ist jedoch zu beachten, dass biometrische Daten einige Nachteile haben, die sie als Identifikations- und Authentifizierungsmerkmale aus Sicherheitssicht weitgehend unbrauchbar machen. Neben der Tatsache, dass viele biometrische Merkmale weltweit nicht eindeutig sind, sind sie häufig relativ leicht zu fälschen und können vor allem, einmal bekannt geworden, nicht geändert werden.</p>
+</li>
+<li>
+<h4>SYS.1.2.2.M14&nbsp;Herunterfahren verschlüsselter Server und virtueller Maschinen(CI)</h4>
+<p>Wenn Festplatten verschlüsselt sind, um die Vertraulichkeit oder Integrität von Daten zu schützen, steht idealerweise der Schlüssel zur Entschlüsselung nicht permanent bereit, sondern erfordert eine Interaktion eines Administrators oder zumindest eine protokollierte technische Anfrage im Netz bzw. am AD. Ansonsten kann ein Angreifer oder Innentäter die Daten im laufenden Betrieb auslesen bzw. manipulieren. Dafür muss BitLocker bzw. die Geräteverschlüsselung in einem Modus aktiviert sein, der nicht ausschließlich auf dem TPM basiert, und der zusätzliche Schlüsselschutz (Key Protector),etwa ein USB-Key, sollte nicht permanent gesteckt sein. Dies erhöht zwar den Aufwand im Betrieb, stellt jedoch eine deutlich höhere Hürde für Angreifer dar.</p>
+</li>
+</ul>
+<a name="12480_3"></a>
+<h2>3 Weiterführende Informationen</h2>
+<a name="12480_3.1"></a>
+<h3>3.1 Wissenswertes</h3>
+<p>
+<p>Derzeit liegen für diesen Baustein keine entsprechenden Informationen vor. Sachdienliche Hinweise nimmt die IT-Grundschutz-Hotline gerne unter grundschutz@bsi.bund.de entgegen.</p>
+</p>
+<a name="12480_3.2"></a>
+<h3>3.2 Literatur</h3>
+<p>Weiterführende Informationen zu Gefährdungen und Sicherheitsmaßnahmen im Bereich "Windows Server 2012" finden sich unter anderem in folgenden Veröffentlichungen:</p>
+<ul>
+<li>[LAPS1] Local Administrator Password Solution<br>
+<p>Microsoft Technet, (zuletzt abgerufen am 05.10.2017)<br><a href="https://technet.microsoft.com/en-us/mt227395.aspx">https://technet.microsoft.com/en-us/mt227395.aspx</a></p>
+</li>
+<li>[LAPS2] Microsoft LAPS Security<br>
+<p>Active Directory Security, (zuletzt abgerufen 05.10.2017)<br><a href="https://adsecurity.org/?s=laps+security">https://adsecurity.org/?s=laps+security</a> </p>
+</li>
+<li>[PAYNE] Windows Event Forwarding for everyone<br>
+<p>Microsoft Technet, Blog, Jessica Payne, 11.2015<br><a href="https://blogs.technet.microsoft.com/jepayne/2015/11/23/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem/">https://blogs.technet.microsoft.com/jepayne/2015/11/23/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem/</a></p>
+</li>
+<li>[TN730960] Security Tools to Administer Windows Server 2012<br>
+<p>Microsoft Technet, 06.2013 <br><a href="https://technet.microsoft.com/en-us/library/jj730960.aspx">https://technet.microsoft.com/en-us/library/jj730960.aspx</a></p>
+</li>
+<li>[TN831360] Secure Windows Server 2012 R2 and Windows Server 2012, Microsoft<br>
+<p>Micorosoft Technet, 11.2013<br><a href="https://technet.microsoft.com/en-us/library/hh831360.aspx">https://technet.microsoft.com/en-us/library/hh831360.aspx</a></p>
+</li>
+<li>[TN831778] Security and Protection, Micorosoft<br>
+<p>Microsoft Technet, 02.2014<br><a href="https://technet.microsoft.com/en-us/library/hh831778.aspx">https://technet.microsoft.com/en-us/library/hh831778.aspx</a></p>
+</li>
+<li>[TN832031] Secure Windows<br>
+<p>Für Windows 8/8.1, gilt größtenteils auch für Windows Server 2012 / 2012 R2, 03.2014<br><a href="https://technet.microsoft.com/en-us/library/hh832031.aspx">https://technet.microsoft.com/en-us/library/hh832031.aspx</a></p>
+</li>
+</ul>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

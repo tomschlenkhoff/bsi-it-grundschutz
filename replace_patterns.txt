@@ -1,0 +1,16 @@
+<div id="servicebox">(.|\n)*?</div>
+
+<div id="menuoben">(.|\n)*?</div>
+
+<div style="clear: both">(.|\n)*?</div>
+
+<div id="trennliniethemen">(.|\n)*?</div>
+
+<div id="navigation">(.|\n)*?</div>
+
+<hr class="linievorcopy" style="width: 730px;">
+
+<div class="copyright">(.|\n)*?</div>
+
+<a class="toTop" href="#top">nach oben</a>
+

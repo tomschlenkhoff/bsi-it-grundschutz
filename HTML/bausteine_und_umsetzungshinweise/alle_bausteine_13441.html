@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+SYS.2.3 Clients unter Unix
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_13441.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_13441.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine und Umsetzungshinweise
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine und Umsetzungshinweise</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine und Umsetzungshinweise</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">SYS.2.3 Clients unter Unix</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>SYS.2.3 Clients unter Unix</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#13441_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#13441_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13441_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13441_1.3">
+<span class="toctext">1.3 Abgrenzung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#13441_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#13441_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#13441_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13441_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13441_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#13441_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#13441_4.1">
+<span class="toctext">4.1 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#13441_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="13441_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="13441_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Neben Windows werden auf immer mehr Client-Betriebssystemen Linux oder seltener Unix installiert. Beispiele für klassische Unix-Systeme sind die BSD-Reihe (FreeBSD, OpenBSD und NetBSD), Solaris und AIX. Linux hingegen ist kein klassisches Unix (der Kernel basiert nicht auf dem ursprünglichen Quelltext, aus dem sich die verschiedenen Unix-Derivate entwickelt haben), sondern ein funktionelles Unix-System. Da sich die Konfiguration und der Betrieb von Linux- und Unix-Client ähneln, werden in diesem Baustein alle Betriebssysteme der Unix-Familie betrachtet.</p>
+<p>Linux ist freie Software und wird von der Open-Source-Gemeinschaft entwickelt. Daneben gibt es Anbieter, die den Linux-Kernel und die verschiedenen Software-Komponenten zu einer Distribution zusammenfassen und pflegen, sowie weitere Dienstleistungen anbieten. Häufig werden Derivate zu den Distributionen Ubuntu, Debian, Red Hat Enterprise Linux SUSE Linux Enterprise eingesetzt. Darüber hinaus gibt es für spezielle Einsatzzwecke und Geräte zugeschnittene Linux-Distributionen wie Qubes OS, das versucht, ein hohes Maß an Sicherheit durch Virtualisierung zu erreichen, IGEL Linux als Thin Client, LibreElec für den Einsatz eines Home Theater PCs (HTPC) oder Kali Linux, eine auf Sicherheit, Computerforensik und Penetrationstests spezialisierte Distribution. Außerdem können Clients auch Live-Distributionen starten, ohne dass das vorhandene Betriebssystem verändert wird.</p>
+<p>Der Marktanteil des Betriebssystems Linux auf Clients hat in den letzten Jahren zugenommen, in speziellen Einsatzumgebungen werden weiterhin &#34;klassische&#34; Unix-Systeme in verschiedenen Derivaten eingesetzt. Durch die Menge der vorausgewählten Softwarepakete einer Standardinstallation der gängigen Linux-Distributionen, beziehungsweise der Unix-Derivate, erhöht sich die Angriffsfläche, gleichzeitig bieten unixähnliche Betriebssysteme aber auch umfangreiche Schutzmechanismen. Typischerweise ist ein solches IT-System vernetzt und wird als Client in einem Client-Server-Netz betrieben. Da Clients oftmals aus Sicherheitsgründen unter Unix oder Linux betrieben werden und wie bei allen Clients nicht auf korrektes Nutzerverhalten vertraut werden kann, kommt der Absicherung von unixähnlichen Clients eine besondere Bedeutung zu.</p>
+</p>
+<a name="13441_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Zielsetzung dieses Bausteins ist der Schutz von Informationen, die auf Unix-Clients erstellt, bearbeitet, gespeichert oder versendet werden. Die Anforderungen des Bausteins adressieren vorrangig Linux-Clients, können aber generell für Unix-Clients adaptiert werden. Der vorliegende Baustein unterscheidet hier weitgehend nicht zwischen Unix- und Linux, unter dem Begriff &#34;Unix&#34; werden Unix- und Linux-Clients zusammengefasst.</p>
+</p>
+<a name="13441_1.3"></a>
+<h3>1.3 Abgrenzung</h3>
+<p>
+<p>Dieser Baustein enthält grundsätzliche Anforderungen zum Betrieb von unixähnlichen Clients auf handelsüblichen IT-Systemen. Er konkretisiert und ergänzt die Aspekte, die im Bausteinen SYS.2.1 Allgemeiner Client behandelt werden, um Spezifika von Unix-Systemen. Auch wenn es sich bei OS X von Apple um ein unixartiges Betriebssystem handelt, wird dieses Betriebssystem nicht in diesem Baustein behandelt, Empfehlungen hierzu sind im Baustein SYS.2.4 Client unter Apple OS X zu finden.</p>
+<p>Soll der Client nicht selber verwaltet werden, sondern wird dieser durch Dritte verwaltet, sind zusätzlich die Anforderungen des Bausteins OPS.3.1 Outsourcing-Nutzung zu berücksichtigen.</p>
+<p>Der Baustein umfasst nur das unixartige Betriebssystem, dass in der Regel bei einer Basisinstallation einer Linux-Desktop-Distribution installiert wird. Der Baustein umfasst insbesondere nicht darauf aufbauende Software wie E-Mail-Clients oder Office-Software, Anforderungen hierzu sind in der Schicht APP.1 Client-Anwendungen des IT-Grundschutz-Kompendiums zu finden. Falls der Client Schnittstellen zum Datenaustausch hat, wie z. B. CD/DVD, USB, Bluetooth oder WLAN, müssen die Sicherheitsvorgaben des Bausteins SYS.3.4 Mobile Datenträger erfüllt werden </p>
+<p>Es wird bei diesem Client-Baustein davon ausgegangen, dass neben dem Administrator dauerhaft nur eine unveränderte Person mit einem interaktiven Benutzerkonto aktiv ist. Clients, die von mehreren Personen nacheinander oder gleichzeitig genutzt werden, erfordern zusätzliche Maßnahmen, die im Rahmen dieses Bausteins nicht behandelt werden.</p>
+</p>
+<a name="13441_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für Clients unter Unix von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Schadprogramme</h3>
+<p>
+<p>Schadprogramme werden mit dem Ziel entwickelt, unerwünschte und meistens schädliche Funktionen auszuführen. Schadprogramme werden meist heimlich, ohne Wissen und Einwilligung des Benutzers aktiv. Schadprogramme bieten heutzutage einem Angreifer umfangreiche Kommunikations- und Steuerungsmöglichkeiten und besitzen eine Vielzahl von Funktionen. Unter anderem können die Programme gezielt Passwörter ausforschen, Systeme fernsteuern, Schutzfunktionen deaktivieren und Daten ausspionieren. Insbesondere sind Anwender, die auf die von vornherein höhere Sicherheit von unixähnlichen Systemen vertrauen, oftmals sorgloser im Umgang mit unbekannten Dateien.</p>
+</p>
+<h3>2.2 Software aus Drittquellen</h3>
+<p>
+<p>Bei unixähnlichen IT-Systemen ist es nicht ungewöhnlich, Software selbst herunterzuladen und zu kompilieren, statt fertige Softwarepakete zu installieren. Wenn fertige Softwarepakete genutzt werden, werden diese oft nicht nur aus den vorhanden Paketquellen des Unix-Derivates installiert, sondern werden aus Drittquellen ohne weitere Prüfung bezogen. Jeder dieser alternativen Wege der Softwareinstallation birgt zusätzliche Risiken, indem so fehlerhafte oder inkompatible Software sowie Schadsoftware installiert werden kann.</p>
+</p>
+<h3>2.3 Software-Schwachstellen oder -Fehler</h3>
+<p>
+<p>Auf unixähnlichen IT-Systemen werden in der Regel eine Vielzahl von Anwendungen zur Installation angeboten. Da jede der installierbaren Anwendungen Software-Schwachstellen und -Fehler haben können, wird die potentielle Angriffsfläche erhöht, wenn bei der Installation nicht darauf geachtet, dass nur die benötigte Software installiert wird.</p>
+</p>
+<h3>2.4 Ausnutzbarkeit der Skriptumgebung</h3>
+<p>
+<p>Oft werden in unixähnlichen Betriebssystemen Skriptsprachen genutzt. Skripte sind eine Auflistung von einzelnen Kommandos, die in einer Textdatei gespeichert und beispielsweise in der Kommandozeile aufgerufen werden. Durch den großen Funktionsumfang der Skriptumgebungen können Angreifer Skripte umfangreich für ihre Zwecke nutzen. Darüber hinaus können aktivierte Skriptsprachen nur sehr schwer eingedämmt werden. </p>
+</p>
+<h3>2.5 Dynamisches Laden von gemeinsam genutzten Bibliotheken</h3>
+<p>
+<p>Mit der Kommandozeilenoption LD_PRELOAD wird die angegebene Bibliothek vor allen anderen in einer Anwendung benötigten Bibliotheken geladen und deren Funktionen werden von der Anwendung genutzt. Ein Angreifer könnte das Betriebssystem so manipulieren, dass Schadfunktionen bei der Nutzung von bestimmten Anwendungen mit ausgeführt werden.</p>
+</p>
+<h3>2.6 Fehlerhafte Konfiguration</h3>
+<p>
+<p>Schon in einer Standardinstallation werden bei unixähnlichen Betriebssystemen zahlreiche Anwendungen installiert, die separat konfiguriert werden müssen. Auch nachinstallierte Anwendungen müssen separat konfiguriert werden, so dass auf unixähnlichen Betriebssystemen unzählige Konfigurationsdateien vorzufinden sind.</p>
+<p>Da diese Anwendungen unabhängig voneinander konfiguriert werden, können die Konfigurationsoptionen im Widerspruch zueinander stehen, ohne dass dies aus den einzelnen Einstellungen ersichtlich ist. Beispielsweise kann ein Dienst für eine Fernadministration auf einem Port lauschen, der von Paketfilterregeln blockiert wird oder Samba gibt das eigene Home-Verzeichnis unbeabsichtigt im Netz frei. Auf diese Weise können die Anwendungen ungewollt zusätzliche Funktionen bereitstellen oder wichtige Funktionen nicht anbieten und so die Aufgabenerfüllung am Client erschweren.</p>
+</p>
+<a name="13441_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind spezifische Anforderungen für den Bereich Client unter Unix aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Abweichungen hiervon werden in den entsprechenden Anforderungen gesondert erwähnt. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür verantwortlich, dass alle Anforderungen gemäß dem festlegten Sicherheitskonzept erfüllt und überprüft werden.</p>
+</p>
+<table>
+<tr>
+<th>Bausteinverantwortlicher</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Verantwortliche</th>
+<td>
+Benutzer
+</td>
+</tr>
+</table>
+<a name="13441_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN vorrangig umgesetzt werden:</p>
+<ul>
+<li><h4>SYS.2.3.A1 Authentisierung von Administratoren und Benutzer [Benutzer]</h4>
+<p>Um den Client zu nutzen, MÜSSEN sich die Benutzer gegenüber dem IT-System authentisieren. Administratoren DÜRFEN sich nicht im Normalbetrieb als root anmelden. Für die Systemadministrationsaufgaben SOLLTE &#34;sudo&#34; oder eine geeignete Alternative mit einer geeigneten Protokollierung genutzt werden. Es SOLLTE verhindert werden, dass sich mehrere Benutzer auf einem Gerät gleichzeitig einloggen können.</p>
+</li>
+<li><h4>SYS.2.3.A2 Auswahl einer geeigneten Distribution</h4>
+<p>Es MUSS auf Grundlage der Sicherheitsanforderungen und des Einsatzzwecks ein geeignetes Unix-Derivat bzw. Linux-Distribution ausgewählt werden. Alle vorinstallierten Anwendungsprogramme, die nicht benötigt werden, MÜSSEN deinstalliert werden können. Es MUSS für die geplante Einsatzzeit des Betriebssystems Support angeboten werden. Alle benötigten Anwendungsprogramme SOLLTEN direkt verfügbar sein, ohne dass diese aus Drittquellen bezogen werden müssen. </p>
+<p>Es SOLLTEN nur Anwendungsprogramme ausgewählt und installiert werden, für die Support angeboten wird. Betriebssystem und Anwendungsprogramme ohne regelmäßige Sicherheitsupdates SOLLTEN nicht eingesetzt werden. Es SOLLTE auf Distributionen mit einem Rolling-Release-Modell verzichtet werden. Distributionen, bei denen das Betriebssystem selber kompiliert wird, SOLLTEN nicht in Produktivumgebungen eingesetzt werden.</p>
+</li>
+<li><h4>SYS.2.3.A3 Cloud- und Online-Inhalte [Benutzer]</h4>
+<p>Nur zwingend notwendige Cloud- und Online-Dienste des Betriebssystems DÜRFEN genutzt werden. Die notwendigen Cloud- und Online-Dienste SOLLTEN dokumentiert werden. Die Einstellungen des Betriebssystems MÜSSEN auf Konformität mit den organisatorischen Datenschutz- und Sicherheitsvorgaben überprüft und restriktiv konfiguriert bzw. deaktiviert werden.</p>
+</li>
+<li><h4>SYS.2.3.A4 Einspielen von Updates und Patches</h4>
+<p>Die Verantwortlichen MÜSSEN sich über bekannt gewordene Schwachstellen informieren. Updates und Patches MÜSSEN so schnell wie möglich eingespielt werden. Vorab SOLLTE auf einem Testsystem überprüft werden, ob die Sicherheitsupdates kompatibel sind und keine Fehler verursachen. Solange keine Patches für bekannte Schwachstellen verfügbar sind, MÜSSEN andere geeignete Maßnahmen getroffen werden, um den Client zu schützen. Der Client SOLLTE zeitnah rebootet werden, nachdem der Kernel aktualisiert wurde. Alternativ MUSS Live-Patching des Kernels aktiviert werden.</p>
+</li>
+<li><h4>SYS.2.3.A5 Sichere Installation von Software-Paketen</h4>
+<p>Es DÜRFEN nur benötigte Anwendungen installiert werden. Nicht mehr benötigte Anwendungen MÜSSEN deinstalliert werden.</p>
+<p>Die Integrität und Authentizität der zu installierenden Softwarepakete MUSS immer geprüft werden. Die Software-Pakete MÜSSEN unter einem unprivilegierten Benutzeraccount entpackt, konfiguriert und übersetzt werden. Erst der letzte Schritt, die eigentliche Installation des übersetzten Programms, DARF mit höheren Privilegien erfolgen. Dabei DARF die zu installierende Software NICHT unkontrolliert in das Wurzeldateisystem des Servers installiert werden.</p>
+<p>Wird die Software aus dem Quelltext übersetzt, dann SOLLTEN die gewählten Parameter geeignet dokumentiert werden. Anhand dieser Dokumentation SOLLTE der Quelltext jederzeit nachvollziehbar und reproduzierbar kompiliert werden können. Alle weiteren Installationsschritte SOLLTEN dabei ebenfalls dokumentiert werden, damit sich die Konfiguration im Notfall schnell reproduzieren lässt.</p>
+</li>
+</ul>
+<a name="13441_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik im Bereich Clients unter Unix. Sie SOLLTEN grundsätzlich umgesetzt werden.</p>
+<ul>
+<li><h4>SYS.2.3.A6 Automatisches Einbinden von Wechsellaufwerken [Benutzer]</h4>
+<p>Wechsellaufwerke SOLLTEN nicht automatisch eingebunden werden. Die Einbindung von Wechsellaufwerken SOLLTE so konfiguriert sein, dass alle Dateien als nicht ausführbar markiert sind (Mountoption &#34;noexec&#34;).</p>
+</li>
+<li><h4>SYS.2.3.A7 Restriktive Rechtevergabe auf Dateien und Verzeichnisse</h4>
+<p>Der Zugriff von Benutzern auf Dateien und Verzeichnisse SOLLTE immer auf das erforderliche Minimum beschränkt werden. Dabei SOLLTE in jedem Fall sichergestellt werden, dass Dienste und Anwendungen nur ihre zugeordneten Dateien erstellen, verändern oder löschen dürfen. Auf Verzeichnissen, in denen alle Benutzer Schreibrechte haben (z. B. /tmp) SOLLTE das Sticky-Bit gesetzt werden. </p>
+</li>
+<li><h4>SYS.2.3.A8 Einsatz von Techniken zur Rechtebeschränkung von Anwendungen</h4>
+<p>Zur Beschränkung der Zugriffsrechte von Anwendungen auf Dateien, Geräte und Netze SOLLTE App-Armor oder SELinux eingesetzt werden. Es SOLLTEN die von der jeweiligen Unix-Derivat bzw. Linux-Distribution am besten unterstützte Lösung eingesetzt werden. Statt Blacklisting SOLLTEN die notwendigen Anwendungen durch Whitelisting reglementiert werden. Erweiterungen zur Rechtebeschränkung SOLLTEN im Enforcement Mode oder mit geeigneten Alternativen verwendet werden.</p>
+</li>
+<li><h4>SYS.2.3.A9 Passwörter auf der Kommandozeile [Benutzer]</h4>
+<p>Passwörter SOLLTEN NICHT als Parameter an Programme übergeben werden.</p>
+</li>
+<li><h4>SYS.2.3.A10 Absicherung des Bootvorgangs</h4>
+<p>Der Client SOLLTE durch Vergabe eines Boot-Passworts in der Firmware abgesichert werden. Zusätzlich SOLLTE eine Bootreihenfolge festgelegt werden, bei der von der eingebauten Boot-Festplatte zuerst gebootet wird. Der Bootloader SOLLTE mit einem Passwort so abgesichert werden, dass nur der unveränderte Standardeintrag ohne Passwort genutzt werden kann.</p>
+<p>Beim Booten SOLLTE die Integrität vom (Pre-)Bootloader bis zum Kernel geprüft werden. Die hierfür genutzten Schlüssel SOLLTEN bei der Ersteinrichtung überprüft werden. Es SOLLTE geprüft werden, ob hierfür Secure Boot als der Teil der UEFI-Spezifikation oder äquivalente Lösungen genutzt werden können.</p>
+</li>
+<li><h4>SYS.2.3.A11 Verhinderung der Überlastung der Festplatte</h4>
+<p>Es SOLLTEN Quotas für Benutzer bzw. Dienste eingerichtet werden, die ausreichend Freiraum für das Betriebssystem lassen. Generell SOLLTEN unterschiedliche Partitionen für Betriebssystem und Daten genutzt werden. Alternativ SOLLTEN auch Mechanismen des verwendeten Dateisystems genutzt werden, die ab einem geeigneten Füllstand nur noch dem Benutzer root Schreibrechte einräumen.</p>
+</li>
+<li><h4>SYS.2.3.A12 Einsatz von Appliances als Clients</h4>
+<p>Es SOLLTE sichergestellt werden, dass Appliances ein ähnliches Sicherheitsniveau wie Clients auf Standard-IT-Systemen erfüllen. Es SOLLTE dokumentiert werden, wie entsprechende Sicherheitsanforderungen mit einer eingesetzten Appliance erfüllt werden. Wenn die Anforderungen nicht zweifelsfrei erfüllt werden können, SOLLTE eine Konformitätserklärung vom Hersteller angefordert werden.</p>
+</li>
+</ul>
+<a name="13441_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse. Die jeweils in Klammern angegebenen Buchstaben zeigen an, welche Grundwerte durch die Anforderung vorrangig geschützt werden (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit).</p>
+<ul>
+<li><h4>SYS.2.3.A13 Schutz vor unbefugten Anmeldungen(CIA)</h4>
+<p>Es SOLLTE eine Zwei-Faktor-Authentisierung verwendet werden.</p>
+</li>
+<li><h4>SYS.2.3.A14 Absicherung gegen Nutzung unbefugter Peripheriegeräte(CIA)</h4>
+<p>Peripheriegeräte SOLLTEN nur nutzbar sein, wenn sie auf einer zentral verwalteten Whitelist geführt sind. Kernelmodule für Peripheriegeräte SOLLTEN nur geladen und aktiviert werden, wenn das Gerät auf der Whitelist steht.</p>
+</li>
+<li><h4>SYS.2.3.A15 Zusätzlicher Schutz vor der Ausführung unerwünschter Dateien(CI)</h4>
+<p>Partitionen und Verzeichnisse, in denen Benutzer Schreibrechte haben, SOLLTEN so gemountet werden, dass keine Dateien ausgeführt werden können (/noexec).</p>
+</li>
+<li><h4>SYS.2.3.A16 Zusätzliche Absicherung des Bootvorgangs(CIA)</h4>
+<p>Bootloader und Kernel SOLLTEN durch selbstkontrolliertes Schlüsselmaterial signiert und nicht benötigtes Schlüsselmaterial entfernt werden.</p>
+</li>
+<li><h4>SYS.2.3.A17 Zusätzliche Verhinderung der Ausbreitung bei der Ausnutzung von Schwachstellen(CI)</h4>
+<p>Die Nutzung von Systemaufrufen SOLLTE insbesondere für exponierte Dienste und Anwendungen auf die unbedingt notwendigen Systemaufrufe beschränkt werden (z B. durch &#34;seccomp&#34;). Die vorhandenen Standardprofile bzw. -Regeln von &#34;SELinux&#34;, &#34;AppArmor&#34; sowie alternativen Erweiterungen SOLLTEN manuell überprüft und gegebenenfalls an die eigene Sicherheitsrichtlinie angepasst werden. Falls erforderlich, SOLLTEN neue Regeln bzw. Profile erstellt werden.</p>
+</li>
+<li><h4>SYS.2.3.A18 Zusätzlicher Schutz des Kernels(CI)</h4>
+<p>Es SOLLTEN mit speziell gehärteten Kernels geeignete Schutzmechanismen wie Speicherschutz, Dateisystemabsicherung und rollenbasierte Zugriffskontrolle, die die Ausnutzung von Schwachstellen und Ausbreitung im Betriebssystem verhindern sollen, genutzt werden (z. B. &#34;grsecurtiy&#34;, &#34;PaX&#34;).</p>
+</li>
+<li><h4>SYS.2.3.A19 Festplatten- oder Dateiverschlüsselung(CI)</h4>
+<p>Festplatten oder die hierauf abgespeicherten Dateien SOLLTEN verschlüsselt werden. Die dazugehörigen Schlüssel SOLLTEN NICHT auf dem IT-System gespeichert sein. Es SOLLTE &#34;AEAD&#34; bei der Festplatten- und Dateiverschlüsselung eingesetzt werden. Alternativ SOLLTE &#34;dm-crypt&#34; in Kombination mit &#34;dm-verity&#34; genutzt werden.</p>
+</li>
+<li><h4>SYS.2.3.A20 Abschaltung kritischer SysRq-Funktionen(CIA)</h4>
+<p>Es SOLLTEN kritische SysRq-Funktionen deaktiviert werden.</p>
+</li>
+</ul>
+<a name="13441_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<a name="13441_4.1"></a>
+<h3>4.1 Literatur</h3>
+<p>Weiterführende Informationen zu Gefährdungen und Sicherheitsmaßnahmen im Bereich "Clients unter Unix" finden sich unter anderem in folgenden Veröffentlichungen:</p>
+<ul class="literaturverzeichnis">
+<li>[ISiClient] Absicherung eines PC-Clients (ISi-Client),<br>(zuletzt abgerufen am 27.09.2017)<br><a href="https://www.bsi.bund.de/DE/Themen/StandardsKriterien/Isi-Reihe/Isi-Client/client_node.html">https://www.bsi.bund.de/DE/Themen/StandardsKriterien/Isi-Reihe/Isi-Client/client_node.html</a></li>
+<li>[NISTSP800123] NIST Special Publication 800-123<br>Guide to General Server Security, NIST, 07.2008<br><a href="https://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf">https://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf</a> </li>
+</ul>
+<a name="13441_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die folgenden elementaren Gefährdungen sind für den Baustein "Clients unter Unix" von Bedeutung.</p>
+<ul>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.39</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SYS.2.3.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A2</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A3</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.3.A4</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A5</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A6</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A7</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A8</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A9</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.3.A10</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.3.A12</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.3.A13</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A14</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A15</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A16</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A17</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.3.A18</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.3.A19</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.3.A20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>
