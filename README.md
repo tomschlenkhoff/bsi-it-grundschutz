@@ -2,7 +2,7 @@
 
 ## ePUB / AZW3 / mobi Version des aktuellen Entwurfs des BSI IT-Grundschutzes
 
-Version: Final Draft vom 27.10.2017
+Stand: Final Draft vom 27.10.2017
 
 Weitere Informationen zum [BSI IT-Grundschutz / ISO27001](https://www.bsi.bund.de/DE/Themen/ITGrundschutz/itgrundschutz_node.html).
 Ich habe lediglich die Original-Fassung von dort in die gängigen eBook-Formate gewandelt damit die Praktiker leichter nachlesen und suchen können.
