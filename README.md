@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# BSI IT-Grundschutz
 
-You can use the [editor on GitHub](https://github.com/tomschlenkhoff/bsi-it-grundschutz/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## ePUB / AZW3 / mobi Version des aktuellen Entwurfs des BSI IT-Grundschutzes
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Version: Final Draft vom 27.10.2017
 
-### Markdown
+Weitere Informationen zum [BSI IT-Grundschutz / ISO27001](https://www.bsi.bund.de/DE/Themen/ITGrundschutz/itgrundschutz_node.html).
+Ich habe lediglich die Original-Fassung von dort in die gängigen eBook-Formate gewandelt damit die Praktiker leichter nachlesen und suchen können.
+Das Urheberrecht liegt vollständig beim BSI.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Die Konvertierung erfolgt per [calibre](https://calibre-ebook.com/) mit folgendem Kommando:
 
-```markdown
-Syntax highlighted code block
+	ebook-convert HTML/startseite_it_grundschutz/startseite.html big.azw3 --output-profile kindle_voyage --search-replace replace_patterns.txt
 
-# Header 1
-## Header 2
-### Header 3
+Auf dem Mac ist das Programm 'ebook-convert' typischerweise unter "/Applications/calibre.app/Contents/MacOS/" zu finden.
 
-- Bulleted
-- List
+Fragen und Anregungen zur Konvertierung bitte per GitHub Issue an mich.
 
-1. Numbered
-2. List
+_Bei Fragen und Anregungen rund um den IT-Grundschutz wenden Sie sich bitte an:_
 
-**Bold** and _Italic_ and `Code` text
+	Bundesamt für Sicherheit in der Informationstechnik
+	Referat CK 31
+	Postfach 20 03 63
+	53133 Bonn
+	Telefon: 0228 99 9582-5369
+	+49 228 99 9582-5369
+	E-Mail: grundschutz@bsi.bund.de
 
-[Link](url) and ![Image](src)
-```
+[IT-Grundschutz Gruppe im Xing Forum](https://www.xing.com/net/itgrundschutz)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tomschlenkhoff/bsi-it-grundschutz/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
