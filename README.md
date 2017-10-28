@@ -16,6 +16,10 @@ Auf dem Mac ist das Programm 'ebook-convert' typischerweise unter "/Applications
 
 Fragen und Anregungen zur Konvertierung bitte per GitHub Issue an mich.
 
+## Download
+<a href="https://github.com/tomschlenkhoff/bsi-it-grundschutz/blob/master/big.azw3" download="download">AZW3</a>
+<a href="https://github.com/tomschlenkhoff/bsi-it-grundschutz/blob/master/big.epub" download="download">ePUB</a>
+
 _Bei Fragen und Anregungen rund um den IT-Grundschutz wenden Sie sich bitte an:_
 
 	Bundesamt für Sicherheit in der Informationstechnik
