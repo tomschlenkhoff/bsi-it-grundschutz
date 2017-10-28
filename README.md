@@ -10,9 +10,15 @@ Das Urheberrecht liegt vollständig beim BSI.
 
 Die Konvertierung erfolgt per [calibre](https://calibre-ebook.com/) mit folgendem Kommando:
 
-	ebook-convert HTML/startseite_it_grundschutz/startseite.html big.azw3 --output-profile kindle_voyage --search-replace replace_patterns.txt
+	/Applications/calibre.app/Contents/MacOS/ebook-convert HTML/startseite_it_grundschutz/startseite.html big.epub --output-profile kindle_voyage --search-replace replace_patterns.txt --author-sort BSI --authors BSI --book-producer BSI --title-sort IT-Grundschutz --title IT-Grundschutz --language de
+
+	/Applications/calibre.app/Contents/MacOS/ebook-convert HTML/startseite_it_grundschutz/startseite.html big.mobi --output-profile kindle_voyage --search-replace replace_patterns.txt --author-sort BSI --authors BSI --book-producer BSI --title-sort IT-Grundschutz --title IT-Grundschutz --language de
+
+[calibre Settings](https://manual.calibre-ebook.com/generated/en/ebook-convert.html#metadata)
 
 Auf dem Mac ist das Programm 'ebook-convert' typischerweise unter "/Applications/calibre.app/Contents/MacOS/" zu finden.
+
+Besser lesbar wird das Ergebnis wenn die CSS-Styles vorher noch entfernt werden.
 
 Fragen und Anregungen zur Konvertierung bitte per GitHub Issue an mich.
 
